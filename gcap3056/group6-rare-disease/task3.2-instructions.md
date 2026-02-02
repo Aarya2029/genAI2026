@@ -156,6 +156,11 @@ Google Docs saves automatically, but you can check:
 
 ### STEP 9: Write Your Moodle Reply
 
+Post to the Moodle forum:
+- **Summary of sources you contributed**
+- **One key finding** from your research
+- **One question you still have**
+
 Copy this template and fill it in:
 
 ```
@@ -173,9 +178,9 @@ I added [number] new sources to my Google Doc for the rare disease project.
 - URL: [Link]
 - Key finding: [What did you learn?]
 
-**Questions I still have:**
-1. [Write a question you want to explore further]
-2. [Write another question]
+**One key finding:** [The most important thing you discovered]
+
+**One question I still have:** [Write a question you want to explore further]
 
 **Link to my Google Doc:** 
 https://docs.google.com/document/d/1IplYThZIHmhCy0a8tcycNCAmia80iBRFTGT8La2ZUoU/edit
@@ -217,6 +222,44 @@ Here are some topics to search for:
 
 ---
 
+## Research Questions to Consider
+
+As you curate information, think about:
+
+| Question Type | What to Ask |
+|---------------|-------------|
+| **Current State** | What does the program do currently? Who is the target audience? |
+| **Effectiveness** | Is the program achieving its goals? What do users/citizens say? |
+| **Comparison** | How does HK compare to similar programs elsewhere? |
+| **Improvement** | What gaps or issues have been identified? What could be done better? |
+
+---
+
+## Grading Criteria
+
+| Criterion | Weight |
+|-----------|--------|
+| Number and quality of sources | 30% |
+| Accuracy of documentation | 25% |
+| Depth of comments/questions | 25% |
+| Collaboration and contribution | 20% |
+
+---
+
+## Tip: Course Materials on GitHub
+
+You may refer to the course folder on GitHub: [genAI2026/gcap3056](https://github.com/tesolchina/genAI2026/tree/main/gcap3056). The teacher may use an AI agent to add online materials there. You can also learn to use **GitHub Copilot agent** for research and writing. [More details here (Moodle forum)](https://buelearning.hkbu.edu.hk/mod/forum/discuss.php?d=347873).
+
+---
+
+## Resources
+
+- [Public Info Curation Demo](https://docs.google.com/document/d/1-GWRw2CCKB1CkiNS_AtpIr1j1EqYPtTQysj_GYf2muQ/edit) - Reference template and examples
+- [Task 3.1: Google Site-Specific Search](../week3/task3.1.md) - Use this technique to find sources
+- [GCAP 3056 ad hoc notes (Google Doc)](https://docs.google.com/document/d/1GCsy8H3-49Z8JgxrxmhFEQDDqKoNTiLQyNfczot1Kd0/edit?tab=t.qijvy1ufquwu#heading=h.hlz6jgayh53u)
+
+---
+
 ## Troubleshooting
 
 ### Problem: "I can't find any new sources"
@@ -240,12 +283,14 @@ Here are some topics to search for:
 
 ## Checklist Before Submitting
 
-- [ ] I added at least 2 new sources to my Google Doc
-- [ ] Each source has a URL
-- [ ] Each source has at least 2 facts
-- [ ] Each source has my comments
-- [ ] I posted my summary on Moodle
-- [ ] I included questions I still have
+Before submitting, ensure each source entry has:
+- [ ] A clear, descriptive title
+- [ ] Your name as contributor
+- [ ] A working URL
+- [ ] At least 2 key facts
+- [ ] Your comments or questions
+- [ ] Relevant excerpts quoted
+- [ ] I posted my summary on Moodle (sources contributed + one key finding + one question)
 
 ---
 
@@ -285,6 +330,18 @@ If you are still stuck:
 4. Watch the recorded class session
 
 Remember: It's okay to ask for help. The teacher wants you to succeed!
+
+---
+
+---
+
+## Connection to Course Goals
+
+Remember our course vision:
+
+> **Our goal is to critically review a government program and make recommendations on how they can serve the people better.**
+
+The information you curate in this task forms the foundation for your analysis and recommendations. The more thorough your research, the stronger your final project will be.
 
 ---
 

@@ -30,6 +30,8 @@ In the search box, type EXACTLY this:
 site:gov.hk rare disease
 ```
 
+Alternatively, you can use: `"rare disease" site:gov.hk` (with quotes around the search terms).
+
 **Important:** 
 - There is NO space between `site:` and `gov.hk`
 - There IS a space between `gov.hk` and `rare disease`
@@ -84,6 +86,13 @@ For EACH search you do, write down:
 
 ### STEP 7: Write Your Reply
 
+Answer these reflection questions in your Moodle forum reply:
+
+1. **What did you search for and why?**
+2. **What useful information did you find?**
+3. **How might this technique help with your group project?**
+4. **What limitations did you encounter?**
+
 Copy this template and fill it in:
 
 ```
@@ -104,8 +113,10 @@ I tried Google site-specific search for my rare disease project.
 - I learned: [write what you found]
 
 **Reflection:**
-This search technique is useful because [explain why].
-For my rare disease project, I can use this to [explain how].
+1. I searched for [X] because [reason].
+2. Useful information I found: [describe].
+3. This technique helps my project by [explain how].
+4. Limitations: [e.g. too many results, hard to find specific info].
 
 [Your name]
 ```
@@ -158,6 +169,43 @@ This search technique is useful because it only shows official government source
 
 ---
 
+## Advanced Operators (Optional)
+
+| Operator | Example | Purpose |
+|----------|---------|---------|
+| `filetype:` | `filetype:pdf rare disease site:gov.hk` | Find specific file types |
+| `intitle:` | `intitle:annual report site:ha.org.hk` | Search in page titles |
+| `"exact phrase"` | `"rare disease drug" site:gov.hk` | Exact match |
+| `-exclude` | `site:gov.hk -legco` | Exclude terms |
+
+---
+
+## Connection to Reflective Learning
+
+Your replies from this task will be curated and used to write your **reflective learning journals**. Consider:
+- What surprised you about the search results?
+- How does this change your research approach?
+- What other search techniques might be useful?
+
+---
+
+## Grading Criteria
+
+| Criterion | Weight |
+|-----------|--------|
+| Demonstrated use of site-specific search | 30% |
+| Quality of sources found | 30% |
+| Depth of reflection | 25% |
+| Connection to group project | 15% |
+
+---
+
+## Tip: Course Materials on GitHub
+
+You may refer to the course folder on GitHub: [genAI2026/gcap3056](https://github.com/tesolchina/genAI2026/tree/main/gcap3056). The teacher may use an AI agent to add online materials there. You can also learn to use **GitHub Copilot agent** for research and writing. [More details here (Moodle forum)](https://buelearning.hkbu.edu.hk/mod/forum/discuss.php?d=347873).
+
+---
+
 ## Checklist Before Submitting
 
 - [ ] I did at least 2 different site-specific searches
@@ -183,6 +231,15 @@ If you are still stuck:
 - Your teacher will read your post
 - Around Week 5, you will edit and update your post with more searches
 - Your posts will help you write your reflective learning journal
+
+---
+
+---
+
+## Resources
+
+- [Google Search Operators Guide](https://support.google.com/websearch/answer/2466433)
+- [GCAP 3056 ad hoc notes (Google Doc)](https://docs.google.com/document/d/1GCsy8H3-49Z8JgxrxmhFEQDDqKoNTiLQyNfczot1Kd0/edit?tab=t.qijvy1ufquwu)
 
 ---
 
