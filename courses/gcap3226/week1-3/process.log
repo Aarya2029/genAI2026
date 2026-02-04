@@ -1,0 +1,27 @@
+# Process log: GCAP3226 Week 1–3 summarization
+
+**Started:** 2025-02-04
+
+## Step 1: Setup
+- Listed folder: found `week1GCAP3226.vtt`, `week2GCAP3226.vtt`, `week3GCAP3226.vtt`, `summarize.md`
+- Created this process.log
+- Next: review VTT format and generate week 1 summary
+
+## Step 2: Week 1 summary
+- Reviewed week1GCAP3226.vtt (course intro, data governance, math/tech intro)
+- Created week1-summary.md with key points and actionable insights
+- Next: generate week 2 summary
+
+## Step 3: Week 2 summary
+- Reviewed week2GCAP3226.vtt (hands-on vibe coding, VS Code, GitHub, data viz, CSV, Jupyter)
+- Created week2-summary.md with key points and actionable insights
+
+## Step 4: Week 3 summary
+- Reviewed week3GCAP3226.vtt — content matches Week 2 transcript
+- Created week3-summary.md based on course roadmap (groups, topic selection, government outreach) and note on transcript
+
+## Step 5: Archive
+- Created folder: week1-3/archive/
+- Moved into archive: week1GCAP3226.vtt, week2GCAP3226.vtt, week3GCAP3226.vtt, summarize.md
+
+**Completed:** 2025-02-04. Summary MD files in week1-3: week1-summary.md, week2-summary.md, week3-summary.md.

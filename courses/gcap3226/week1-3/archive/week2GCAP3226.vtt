@@ -1,0 +1,3998 @@
+WEBVTT
+
+1
+00:00:02.480 --> 00:00:04.120
+Simon Wang: YYY testing.
+
+2
+00:00:10.670 --> 00:00:26.590
+Simon Wang: All right, so, welcome to this course. We're in week 2 now, still at your period. So, last week we already did the introduction. We are going to share the video recording very soon, I haven't got a chance to
+
+3
+00:00:27.060 --> 00:00:31.850
+Simon Wang: Uploaded to the… Website.
+
+4
+00:00:32.110 --> 00:00:36.700
+Simon Wang: And also on Moodle, so we're kind of still, catch up.
+
+5
+00:00:37.290 --> 00:00:43.390
+Simon Wang: So, this week… It would be, quite a bit of hands-on activities.
+
+6
+00:00:43.710 --> 00:00:52.710
+Simon Wang: Which would involve, using GitHub, Vibe coding, but, I hope…
+
+7
+00:00:52.840 --> 00:01:02.880
+Simon Wang: it won't scare you or intimidate you, even though maybe you're not from, you know, technical programming or STEM background.
+
+8
+00:01:02.880 --> 00:01:17.680
+Simon Wang: Because the whole point of, teach you vibe coding is so that you can leverage AI to, write the codes without necessarily worrying too much about all the syntax and everything.
+
+9
+00:01:17.680 --> 00:01:31.339
+Simon Wang: So… and the good news is that this semester we have a very relatively small class size, so I'm sure that everybody will get a sufficient amount of attention and support.
+
+10
+00:01:31.390 --> 00:01:34.729
+Simon Wang: To be able to learn, all the technical stuff.
+
+11
+00:01:35.840 --> 00:01:37.430
+Simon Wang: So,
+
+12
+00:01:37.650 --> 00:01:51.880
+Simon Wang: Maybe I just very quickly go through, week one, kind of what… where you can find the materials, and also in the… in the video. We have a QR code here, and also we have a WhatsApp group, yeah.
+
+13
+00:01:53.400 --> 00:01:54.790
+Simon Wang: So it's not…
+
+14
+00:01:58.670 --> 00:02:02.180
+Simon Wang: I think what we need to do is to…
+
+15
+00:02:11.050 --> 00:02:17.930
+Simon Wang: So we have, QR code you can scan, but then I also already shared a link
+
+16
+00:02:18.170 --> 00:02:19.650
+Simon Wang: to our WhatsApp group.
+
+17
+00:02:20.100 --> 00:02:23.790
+Simon Wang: So, you should be able to have access to this page.
+
+18
+00:02:26.280 --> 00:02:34.210
+Simon Wang: So, in, in, the course homepage, you can see that we got information about the course objectives.
+
+19
+00:02:34.390 --> 00:02:38.599
+Simon Wang: And all the information we already went through, last week.
+
+20
+00:02:38.940 --> 00:02:47.099
+Simon Wang: And we also have a course roadmap that kind of mapped out the journey of this course, starting from week 1 all the way to week 13.
+
+21
+00:02:47.740 --> 00:03:04.790
+Simon Wang: And in week one, we have already talked a little bit about data governance. That's, that's from me and my colleague, Talia, Dr. Wu. She's from maths department, and she talks a little bit about technology and math. So, you know, just basic stuff.
+
+22
+00:03:04.970 --> 00:03:10.319
+Simon Wang: Now, in week 2, today, we're going to, focus on
+
+23
+00:03:10.510 --> 00:03:26.929
+Simon Wang: you know, how we can do vibe coding and write some code to visualize the data. So, the input would be some spreadsheet, some data that's a little bit difficult to understand, it's all just rows of
+
+24
+00:03:26.930 --> 00:03:43.079
+Simon Wang: Numbers and everything. But, we're going to write some codes to learn how to visualize it and turn the relatively boring data sets into something more visually appealing, something that everybody can understand.
+
+25
+00:03:43.430 --> 00:04:00.959
+Simon Wang: And more importantly, we want to demonstrate how AI can actually help us to write code, to write Python, to be more specific, so that we can leverage the technology, even though we haven't done much training, in this, in this area.
+
+26
+00:04:01.170 --> 00:04:12.459
+Simon Wang: So hopefully you will be able to appreciate the power and the potential of AI and the technology, especially for students who are not from the programming or STEM background.
+
+27
+00:04:12.900 --> 00:04:30.210
+Simon Wang: Okay, so just to be mentally prepared for a little bit of challenges and, you know, technical stuff, and also for the students who are watching the video, you know, we will support you to make sure that you will be able to learn all the techniques you need.
+
+28
+00:04:30.700 --> 00:04:39.959
+Simon Wang: So, without further ado, I'd like to invite Talia to, start talking about the technical, aspects.
+
+29
+00:04:44.930 --> 00:04:50.140
+Simon Wang: Okay, thank you, Simon. May I know whether you bring your laptop With you?
+
+30
+00:04:50.540 --> 00:04:52.060
+Simon Wang: Yeah, I can't see your laptop.
+
+31
+00:04:52.160 --> 00:04:53.420
+Simon Wang: How about others?
+
+32
+00:04:53.760 --> 00:04:55.839
+Simon Wang: No? Yes? Okay, great.
+
+33
+00:04:56.460 --> 00:04:58.200
+Simon Wang: So, half-half, I think.
+
+34
+00:04:59.240 --> 00:05:00.110
+Simon Wang: Okay.
+
+35
+00:05:02.340 --> 00:05:07.699
+Simon Wang: So, as mentioned by Simon, we will focus on the data visualization task today.
+
+36
+00:05:07.800 --> 00:05:13.739
+Simon Wang: And later, I will introduce the context of the dataset we will be analyzing.
+
+37
+00:05:14.020 --> 00:05:18.029
+Simon Wang: But before that, I would like to do some technical setup.
+
+38
+00:05:20.210 --> 00:05:29.210
+Simon Wang: I think first, it is about the, the interface that we will use to, type code, or type the prompt.
+
+39
+00:05:29.320 --> 00:05:31.329
+Simon Wang: So it is called the VS Code.
+
+40
+00:05:33.180 --> 00:05:38.229
+Simon Wang: I think here is, if you can go to our course website.
+
+41
+00:05:38.520 --> 00:05:44.219
+Simon Wang: Under the setup steps, the first step will be install the Visual Studio Code.
+
+42
+00:05:44.970 --> 00:05:52.429
+Simon Wang: So if you have not installed this software into your laptop, you can just go to this website.
+
+43
+00:05:52.730 --> 00:05:55.380
+Simon Wang: And just click the download button.
+
+44
+00:05:55.480 --> 00:05:57.440
+Simon Wang: And run the installer.
+
+45
+00:05:57.770 --> 00:06:01.639
+Simon Wang: And follow the instructions, and then you can launch the VS Code.
+
+46
+00:06:01.890 --> 00:06:03.770
+Simon Wang: And to confirm that it works.
+
+47
+00:06:04.560 --> 00:06:08.640
+Simon Wang: So this will be a, like, installation for this VS Code.
+
+48
+00:06:09.430 --> 00:06:19.000
+Simon Wang: So later, we will, as mentioned, type the code or write our prompt, within this interface.
+
+49
+00:06:31.360 --> 00:06:34.399
+Simon Wang: So this is about the software installation.
+
+50
+00:06:34.890 --> 00:06:39.010
+Simon Wang: Shall we go to the,
+
+51
+00:06:42.310 --> 00:06:50.260
+Simon Wang: So, for the newcomers, we have a QR code. You can scan this QR code to, get our course website.
+
+52
+00:06:54.630 --> 00:06:56.930
+Simon Wang: Okay, so now we are at week 2.
+
+53
+00:07:03.640 --> 00:07:04.550
+Simon Wang: Okay.
+
+54
+00:07:08.840 --> 00:07:16.630
+Simon Wang: So after the installation of the VS Code, you also need to sign up for a GitHub account.
+
+55
+00:07:16.960 --> 00:07:25.500
+Simon Wang: Because later, we will make use of GitHub Copilot, as your assistant when you do the programming task.
+
+56
+00:07:26.380 --> 00:07:30.709
+Simon Wang: And on the slides, there are some, useful links.
+
+57
+00:07:31.410 --> 00:07:37.919
+Simon Wang: For example, this… here is a quick start for GitHub Copilot. It's about the GitHub docs.
+
+58
+00:07:38.790 --> 00:07:40.409
+Simon Wang: So, say, if I click it.
+
+59
+00:07:41.610 --> 00:07:44.650
+Simon Wang: You will see some, instructions.
+
+60
+00:07:45.460 --> 00:07:49.570
+Simon Wang: So specifically, sign up for GitHub Copilot.
+
+61
+00:07:50.830 --> 00:07:55.610
+Simon Wang: To use the co-pilot, you first need a personal GitHub account.
+
+62
+00:07:56.440 --> 00:07:59.330
+Simon Wang: Then, with access to a co-pilot plan.
+
+63
+00:08:01.420 --> 00:08:03.060
+Simon Wang: So if,
+
+64
+00:08:04.080 --> 00:08:10.810
+Simon Wang: all of you are full-time students here, so you can use your Hong Kong BU email address to sign up
+
+65
+00:08:10.990 --> 00:08:13.129
+Simon Wang: this, GitHub account.
+
+66
+00:08:13.500 --> 00:08:18.980
+Simon Wang: So that later you can, apply for the educational benefit.
+
+67
+00:08:19.280 --> 00:08:28.280
+Simon Wang: Which, basically, there's no limitation when you chat with the GitHub Copilot, and also use the agent mode.
+
+68
+00:08:30.650 --> 00:08:36.809
+Simon Wang: So you may, like, spend a few minutes to, sign up for, GitHub.
+
+69
+00:08:43.450 --> 00:08:47.540
+Simon Wang: And for the second hyperlink on this page.
+
+70
+00:08:47.730 --> 00:08:53.250
+Simon Wang: there is an introduction about the GitHub education documentation.
+
+71
+00:08:53.780 --> 00:08:58.220
+Simon Wang: So you can click this Apply to GitHub Education as a student.
+
+72
+00:09:03.300 --> 00:09:09.519
+Simon Wang: Then, once you have the GitHub account, you can go to the setting.
+
+73
+00:09:09.860 --> 00:09:11.370
+Simon Wang: page.
+
+74
+00:09:12.740 --> 00:09:17.009
+Simon Wang: That will be… That will look like this.
+
+75
+00:09:17.840 --> 00:09:23.110
+Simon Wang: So, on the right-hand side, this is my account, and if I click Setting.
+
+76
+00:09:23.430 --> 00:09:27.080
+Simon Wang: I will be able to see the, the sidebar.
+
+77
+00:09:29.040 --> 00:09:33.289
+Simon Wang: And at the left-hand side, there is the billing and licensing.
+
+78
+00:09:34.030 --> 00:09:38.509
+Simon Wang: And under this section, there will be an educational benefit.
+
+79
+00:09:41.040 --> 00:09:46.190
+Simon Wang: So this needs the, needs application to be, to be activated.
+
+80
+00:09:47.570 --> 00:09:52.229
+Simon Wang: And I think previously I… when I first applied
+
+81
+00:09:52.520 --> 00:09:56.930
+Simon Wang: applied for this education benefits, I actually met some problem.
+
+82
+00:09:57.040 --> 00:10:05.779
+Simon Wang: Because I did not set up the, like, two-step author… authentic… authentication.
+
+83
+00:10:06.510 --> 00:10:11.030
+Simon Wang: So, it's like, key tub.
+
+84
+00:10:12.770 --> 00:10:15.050
+Simon Wang: 2… vector.
+
+85
+00:10:18.530 --> 00:10:22.550
+Simon Wang: authentication. Two-factor authentication.
+
+86
+00:10:24.810 --> 00:10:25.590
+Simon Wang: Oops.
+
+87
+00:10:42.200 --> 00:10:44.670
+Simon Wang: So basically, you need to download an app.
+
+88
+00:10:45.210 --> 00:10:49.279
+Simon Wang: Which allows for this multi-factor authentication.
+
+89
+00:10:49.680 --> 00:10:56.100
+Simon Wang: and then add your GitHub account into this into this app.
+
+90
+00:10:56.240 --> 00:11:04.950
+Simon Wang: So that every time when you sign in the, your GitHub account, it will ask you, like, a 6-digit code.
+
+91
+00:11:05.090 --> 00:11:06.829
+Simon Wang: Like what is shown here.
+
+92
+00:11:07.980 --> 00:11:16.320
+Simon Wang: And this app will generate a 6-digit code, and it will be refreshed, like, every 60 seconds.
+
+93
+00:11:16.710 --> 00:11:21.850
+Simon Wang: So… so after that, 60 seconds, a new code will be generated.
+
+94
+00:11:22.630 --> 00:11:30.580
+Simon Wang: when you… sign in via GitHub account, you need to input this 6-digit code.
+
+95
+00:11:34.030 --> 00:11:38.699
+Simon Wang: And I think only after you, install this app and
+
+96
+00:11:39.730 --> 00:11:50.560
+Simon Wang: enroll your GitHub account into this app, then you can, like, apply for the educational benefit. Otherwise, it will, reject your application.
+
+97
+00:11:56.880 --> 00:12:06.400
+Simon Wang: So this is, the basics of the GitHub Copilot, Yep.
+
+98
+00:12:06.690 --> 00:12:11.210
+Simon Wang: And the other, important element is Python, so…
+
+99
+00:12:11.410 --> 00:12:14.130
+Simon Wang: Basically all of the code that
+
+100
+00:12:14.230 --> 00:12:21.469
+Simon Wang: We will use to implement our… either the data visualization or later some,
+
+101
+00:12:21.700 --> 00:12:27.569
+Simon Wang: like, regression models, or the simulation, all of them will be implemented using Python.
+
+102
+00:12:27.860 --> 00:12:31.669
+Simon Wang: So you need to also, download and install Python.
+
+103
+00:12:31.810 --> 00:12:33.799
+Simon Wang: In your laptop.
+
+104
+00:12:38.160 --> 00:12:41.910
+Simon Wang: I think maybe I leave, like, 10 minutes for you to…
+
+105
+00:12:42.160 --> 00:12:52.829
+Simon Wang: like, sign up for GitHub Copilot, and also download the VS Code and Python, so that we will be on the same page.
+
+106
+00:12:53.410 --> 00:13:11.400
+Simon Wang: And if you need any help, just feel free to raise your hand. Today, Simon and I, and also we have a student partner who took this course last semester, Waiman. She will also be help, be helping if you have any questions.
+
+107
+00:13:14.510 --> 00:13:15.680
+Simon Wang: Right.
+
+108
+00:13:15.900 --> 00:13:20.150
+Simon Wang: So I think it would be easier if you are using your notebook computer.
+
+109
+00:13:20.300 --> 00:13:26.940
+Simon Wang: But, if you got a tablet, I think that… should work.
+
+110
+00:13:27.450 --> 00:13:35.100
+Simon Wang: To a limited extent, Right? Because, I think they can go to the… virtual Codespace.
+
+111
+00:13:35.340 --> 00:13:40.019
+Simon Wang: But I think we still recommend you to bring a mobile computer whenever possible.
+
+112
+00:13:40.160 --> 00:13:50.119
+Simon Wang: If you got a mobile phone, that would be very, very hard. But, you can maybe share the computer with your friend.
+
+113
+00:13:50.340 --> 00:13:51.610
+Simon Wang: First.
+
+114
+00:13:52.180 --> 00:14:09.600
+Simon Wang: Okay, so when we do this kind of technical things, I hope we can, also remember the big picture, okay? So there's two levels of understanding. One is the conceptual level, the other is technical level. Of course, we want to make sure that the technical part will work.
+
+115
+00:14:09.680 --> 00:14:27.160
+Simon Wang: But then, even if you run into the technical issues or problems, don't get too frustrated, because at least you should be able to understand something at a conceptual level first, right? You need to know how this technology… what can it accomplish?
+
+116
+00:14:27.220 --> 00:14:37.109
+Simon Wang: Right? Because if you understand what this technology can help you with, and then you can decide, you know, how much effort you want to put into it to make it work.
+
+117
+00:14:37.260 --> 00:14:49.680
+Simon Wang: You will probably get a little bit more motivation to make it work if you first understand what this technology can accomplish. So, to answer the question, what the technology can accomplish, the short answer would be
+
+118
+00:14:49.870 --> 00:14:52.390
+Simon Wang: It can enable us to write codes.
+
+119
+00:14:52.610 --> 00:14:57.099
+Simon Wang: That, previously would require at least 50 hours of training.
+
+120
+00:14:57.380 --> 00:14:59.650
+Simon Wang: Right? But now, you only need…
+
+121
+00:14:59.840 --> 00:15:03.589
+Simon Wang: At one-hour training, you can start, writing codes.
+
+122
+00:15:04.320 --> 00:15:17.009
+Simon Wang: So, so, so that's… that's what this is about. That's… this is what Vibe coding is about. So… so hopefully you appreciate the potential, and then you can try to get… get into details and try to figure out how things work.
+
+123
+00:15:17.450 --> 00:15:35.139
+Simon Wang: All right? So, yeah, so whenever you feel there's a technical challenge, we are here to help, and also remember, once you figure this out, you will become a, someone who can write codes without learning how to write the codes, okay? So, which I believe is really, really amazing.
+
+124
+00:16:38.490 --> 00:16:44.030
+Simon Wang: So, while you're… you're working, let me also download the… WS Code.
+
+125
+00:16:44.490 --> 00:16:45.809
+Simon Wang: But, heh.
+
+126
+00:16:46.030 --> 00:16:58.079
+Simon Wang: the funny thing about, me downloading is that, once I restart a computer, everything will be gone. So it's, you know, kind of a temporary, thing.
+
+127
+00:17:15.890 --> 00:17:22.319
+Simon Wang: But I think, the good thing is we are actually going…
+
+128
+00:17:23.740 --> 00:17:28.359
+Simon Wang: we have this recorded, so I think that will be… Helpful.
+
+129
+00:17:56.370 --> 00:17:58.940
+Simon Wang: Okay, so as you can see here…
+
+130
+00:17:59.110 --> 00:18:02.030
+Simon Wang: This is the VS Code.
+
+131
+00:18:08.650 --> 00:18:15.089
+Simon Wang: Now, if you are using your tablet computer, then you have to first log in to GitHub.
+
+132
+00:18:15.410 --> 00:18:17.610
+Simon Wang: You can go to GitHub first and log in.
+
+133
+00:18:17.810 --> 00:18:21.170
+Simon Wang: It will be a slightly different, approach.
+
+134
+00:18:21.620 --> 00:18:29.790
+Simon Wang: Now, once you are here, you need to log in… to your… Keyhop?
+
+135
+00:18:30.430 --> 00:18:37.430
+Simon Wang: So… It's, the profile here, let me see…
+
+136
+00:18:44.080 --> 00:18:46.379
+Simon Wang: You can try talk to the agent.
+
+137
+00:18:46.830 --> 00:18:49.590
+Simon Wang: You know, when you, when you type hi.
+
+138
+00:18:49.890 --> 00:18:56.670
+Simon Wang: on the right-hand side, immediately you will, it will ask you to continue to GitHub.
+
+139
+00:18:57.220 --> 00:19:05.730
+Simon Wang: So… This is when you can actually log in.
+
+140
+00:19:10.800 --> 00:19:11.830
+Simon Wang: Okay?
+
+141
+00:19:12.220 --> 00:19:15.280
+Simon Wang: So… In case you,
+
+142
+00:19:16.300 --> 00:19:22.039
+Simon Wang: So, you see, when you, when you say hi to the agent, the agent will ask you to log in.
+
+143
+00:19:22.350 --> 00:19:24.640
+Simon Wang: And then you just go ahead and log in.
+
+144
+00:19:26.550 --> 00:19:32.590
+Simon Wang: As, as Talia mentioned, you need to do this, two-way authentication.
+
+145
+00:19:33.200 --> 00:19:37.400
+Simon Wang: So… and I have the… the… app.
+
+146
+00:19:38.280 --> 00:19:47.040
+Simon Wang: So I just need to type in the two figures on my app to approve my login from another computer.
+
+147
+00:19:48.240 --> 00:19:55.479
+Simon Wang: And I need to authorize VS Code, you know, to access my GitHub.
+
+148
+00:19:58.710 --> 00:20:02.310
+Simon Wang: So now, as you can see,
+
+149
+00:20:04.410 --> 00:20:08.749
+Simon Wang: the AI agent is about to, start working.
+
+150
+00:20:12.550 --> 00:20:22.260
+Simon Wang: Now, this… As you can see here, the AI has got several modes. There's Agent, Ask, Edit, and Plan.
+
+151
+00:20:23.060 --> 00:20:25.609
+Simon Wang: Hmo is a bit more advanced.
+
+152
+00:20:26.130 --> 00:20:28.460
+Simon Wang: We are going to start with Ask.
+
+153
+00:20:28.850 --> 00:20:29.570
+Simon Wang: Right?
+
+154
+00:20:29.890 --> 00:20:32.530
+Simon Wang: So, ask mode would be,
+
+155
+00:20:33.340 --> 00:20:47.990
+Simon Wang: the function is more limited, but it's useful for you to learn things, right? Because the agent mode is, like, everything… it will do it for you, but then you won't have the opportunity to actually learn anything. So, I would recommend start with ask mode.
+
+156
+00:20:48.110 --> 00:20:50.130
+Simon Wang: later on.
+
+157
+00:20:50.550 --> 00:21:00.709
+Simon Wang: when, when you become more comfortable with this technology, I would encourage you to, explore agent mode, which would be actually, more powerful.
+
+158
+00:21:00.920 --> 00:21:01.710
+Simon Wang: Okay?
+
+159
+00:21:02.250 --> 00:21:06.660
+Simon Wang: Now, I want to make sure that everybody is on this page.
+
+160
+00:21:06.880 --> 00:21:16.500
+Simon Wang: Which means you have your VS Code, downloaded, installed, and also log in with your GitHub account.
+
+161
+00:21:16.900 --> 00:21:20.709
+Simon Wang: Alright, so this will take a little while, but I hope you can be patient.
+
+162
+00:21:20.930 --> 00:21:30.630
+Simon Wang: and try to figure things out, and we're here to help. And then the next step is to download some codes and start doing the coding.
+
+163
+00:23:57.380 --> 00:24:02.650
+Simon Wang: Now, if you are ahead of the game, you can go to Moodle.
+
+164
+00:24:02.910 --> 00:24:09.239
+Simon Wang: And, check out the week 2, there's a link there. You can download the CSV file.
+
+165
+00:24:12.920 --> 00:24:16.800
+Simon Wang: If you already, got… the VS Code.
+
+166
+00:24:17.590 --> 00:24:18.580
+Simon Wang: Ready.
+
+167
+00:24:24.750 --> 00:24:29.579
+Simon Wang: Raise your hand if you already got your VS Code and GitHub.
+
+168
+00:24:29.890 --> 00:24:30.710
+Simon Wang: Okay?
+
+169
+00:24:30.820 --> 00:24:32.060
+Simon Wang: GitHub loin?
+
+170
+00:24:32.400 --> 00:24:33.420
+Simon Wang: Okay, great.
+
+171
+00:30:34.680 --> 00:30:36.610
+Simon Wang: So, are we… are we good?
+
+172
+00:30:48.330 --> 00:30:57.060
+Simon Wang: Now… once we… have your VS Code installed.
+
+173
+00:30:58.460 --> 00:31:02.450
+Simon Wang: You can look at this setup a little bit.
+
+174
+00:31:02.830 --> 00:31:07.770
+Simon Wang: You can see that on the left-hand side, we've got
+
+175
+00:31:07.920 --> 00:31:11.159
+Simon Wang: A space to navigate files, right?
+
+176
+00:31:11.340 --> 00:31:16.130
+Simon Wang: You can open a… folder.
+
+177
+00:31:16.530 --> 00:31:19.950
+Simon Wang: Or you can start, creating a new folder.
+
+178
+00:31:21.770 --> 00:31:26.829
+Simon Wang: So, like, right now, I just create a new folder for demo.
+
+179
+00:31:33.790 --> 00:31:37.900
+Simon Wang: Okay, so right now, this folder is, empty.
+
+180
+00:31:42.860 --> 00:31:46.640
+Simon Wang: And we need to, get some files.
+
+181
+00:31:47.030 --> 00:31:55.289
+Simon Wang: So what do we do? Well, we go to Moodle, Because we have already, prepared some files there.
+
+182
+00:31:56.530 --> 00:32:00.679
+Simon Wang: So, we go to Moodle, and go to week 2,
+
+183
+00:32:01.840 --> 00:32:07.550
+Simon Wang: And you can see here, we've got a spreadsheet, and also the Jupyter Notebook.
+
+184
+00:32:07.960 --> 00:32:11.650
+Simon Wang: So now your job is to download the file.
+
+185
+00:32:12.790 --> 00:32:18.420
+Simon Wang: 2… Where you, you know, where you put your folder.
+
+186
+00:32:18.590 --> 00:32:24.079
+Simon Wang: Like, in my case, I… got a folder here, so I saved the file.
+
+187
+00:32:27.890 --> 00:32:34.879
+Simon Wang: And, I need to save… This file as well.
+
+188
+00:32:35.510 --> 00:32:40.510
+Simon Wang: So now we've got two files, all on the same folder, right here.
+
+189
+00:32:42.400 --> 00:32:43.390
+Simon Wang: Okay?
+
+190
+00:32:43.500 --> 00:32:49.760
+Simon Wang: So now you see… The CSV file is kind of a simplified version of spreadsheet.
+
+191
+00:32:50.280 --> 00:32:52.960
+Simon Wang: There's a total of 98…
+
+192
+00:32:53.290 --> 00:32:55.930
+Simon Wang: lines. The first line is the metadata.
+
+193
+00:32:56.100 --> 00:33:00.790
+Simon Wang: So there's, 97 lines of raw data.
+
+194
+00:33:01.010 --> 00:33:06.670
+Simon Wang: And you can see this is actually, the results of some survey questionnaire.
+
+195
+00:33:07.090 --> 00:33:12.390
+Simon Wang: And which… If you just look at this, you can't really gain any insights from it.
+
+196
+00:33:12.510 --> 00:33:15.830
+Simon Wang: Right? Because there's just too many… Numbers.
+
+197
+00:33:16.520 --> 00:33:21.670
+Simon Wang: And our job is to write some codes To read this.
+
+198
+00:33:22.000 --> 00:33:34.780
+Simon Wang: File, but the machine is going to run the code on this file, so that we're going to generate some nice pictures, and human will be able to see those pictures and gain insights about the data.
+
+199
+00:33:35.660 --> 00:33:38.189
+Simon Wang: That's what data visualization is about.
+
+200
+00:33:38.850 --> 00:33:43.980
+Simon Wang: I mean, you could potentially go to
+
+201
+00:33:44.280 --> 00:33:57.419
+Simon Wang: GitHub, I'm sorry, go to, like, Poe, or go to HKBU AI, and say, look, we have this CSV, can you teach me how to write Python, right? But then you have to do a lot of copy and paste.
+
+202
+00:33:58.230 --> 00:34:01.300
+Simon Wang: In order to get some codes that work.
+
+203
+00:34:01.570 --> 00:34:02.400
+Simon Wang: Okay?
+
+204
+00:34:02.900 --> 00:34:10.449
+Simon Wang: And, as you can see here, this is very raw, because this is CSV.
+
+205
+00:34:10.900 --> 00:34:12.549
+Simon Wang: Do you know what's CSV?
+
+206
+00:34:14.260 --> 00:34:19.600
+Simon Wang: CSV stands for comma… separated… what's the V?
+
+207
+00:34:19.969 --> 00:34:21.139
+Simon Wang: Value, okay.
+
+208
+00:34:21.830 --> 00:34:22.909
+Simon Wang: Good, thanks.
+
+209
+00:34:23.350 --> 00:34:27.450
+Simon Wang: But if you, install this rainbow thing.
+
+210
+00:34:27.840 --> 00:34:35.639
+Simon Wang: you will be able to view the CSV, in a kind of more visually appealing way, but it's still kind of, like,
+
+211
+00:34:35.889 --> 00:34:38.809
+Simon Wang: It's still no spreadsheet, right?
+
+212
+00:34:38.949 --> 00:34:44.730
+Simon Wang: But if you want to open up in Excel, you can also do that.
+
+213
+00:34:48.170 --> 00:34:52.030
+Simon Wang: Okay, so you can actually open it on Excel.
+
+214
+00:34:52.370 --> 00:35:04.490
+Simon Wang: So if it's on Excel, you can see a table, okay? But it doesn't really matter. No matter which format you are reading this file, it's still not very, kind of intuitive.
+
+215
+00:35:04.610 --> 00:35:05.420
+Simon Wang: Right?
+
+216
+00:35:06.670 --> 00:35:15.280
+Simon Wang: Now, let's very quickly go through the Jupyter Notebook. It's the student version. We're going to share the teacher, the full version a bit later.
+
+217
+00:35:15.670 --> 00:35:17.910
+Simon Wang: Now, as you can see here,
+
+218
+00:35:18.390 --> 00:35:25.370
+Simon Wang: My computer is… it's smart. It's already asked me to, kind of, install some kind of Python.
+
+219
+00:35:25.790 --> 00:35:28.229
+Simon Wang: I think we can just go ahead and do that.
+
+220
+00:35:39.420 --> 00:35:40.500
+Simon Wang: Oh, okay.
+
+221
+00:35:41.140 --> 00:35:45.940
+Simon Wang: Right, so we do need to download Python,
+
+222
+00:35:46.660 --> 00:35:52.989
+Simon Wang: But I think what we could do is, just ask agent, do we have Python installed?
+
+223
+00:36:01.400 --> 00:36:08.009
+Simon Wang: And, and, it would, would ask you, so, so, and then, well, I actually would kind of get ahead of ourselves.
+
+224
+00:36:08.230 --> 00:36:12.989
+Simon Wang: But… but Agent would… check the Python for us.
+
+225
+00:36:17.810 --> 00:36:21.740
+Simon Wang: And also run this command line here.
+
+226
+00:36:36.180 --> 00:36:38.350
+Simon Wang: So, we, we just ask,
+
+227
+00:36:40.970 --> 00:36:49.020
+Simon Wang: I mean, there are different ways to do this, right? We can go to a website to download it and do it manually, but here we're trying to do it
+
+228
+00:36:49.290 --> 00:36:51.870
+Simon Wang: You know, AI is helping us to do it.
+
+229
+00:36:57.030 --> 00:37:00.990
+Simon Wang: And, you can also enable auto-approve.
+
+230
+00:37:06.810 --> 00:37:10.590
+Simon Wang: And as you can see, this is the command line interface.
+
+231
+00:37:10.710 --> 00:37:15.890
+Simon Wang: The agent writes some command lines to run on the terminal.
+
+232
+00:37:16.380 --> 00:37:20.920
+Simon Wang: And then it will start downloading and installing Python for us.
+
+233
+00:37:27.710 --> 00:37:29.740
+Simon Wang: Now, Python is being installed.
+
+234
+00:37:33.670 --> 00:37:38.739
+Simon Wang: So you can see this is the power of AI, because AI is kind of take over
+
+235
+00:37:38.850 --> 00:37:47.019
+Simon Wang: and do all the stuff for us. As long as we set up the goal, we tell agent, you know, we want to install Python.
+
+236
+00:37:47.480 --> 00:37:55.579
+Simon Wang: And, the agent will try to figure it out, start by checking whether why the Python is available.
+
+237
+00:37:56.330 --> 00:38:01.719
+Simon Wang: Whether it's installed, and when it is not installed, then they will try to set up something.
+
+238
+00:38:02.700 --> 00:38:09.089
+Simon Wang: And blah blah blah, and then check again, And as you can see.
+
+239
+00:38:22.540 --> 00:38:24.730
+Simon Wang: So now, Python is installed.
+
+240
+00:38:25.520 --> 00:38:28.059
+Simon Wang: We're going to test it directly.
+
+241
+00:38:31.680 --> 00:38:37.049
+Simon Wang: But, you know, it works here for me, it may not work on your computer.
+
+242
+00:38:37.620 --> 00:38:41.090
+Simon Wang: So, if, you, you got, you know.
+
+243
+00:38:41.640 --> 00:38:45.770
+Simon Wang: If it doesn't work, there are different ways to make it happen.
+
+244
+00:38:54.730 --> 00:38:59.999
+Simon Wang: Now, if you look at all these codes and command and everything, you feel a bit overwhelmed.
+
+245
+00:39:00.300 --> 00:39:08.390
+Simon Wang: I understand, that's okay. But, the good news is, is that you don't really have to worry too much about all these details.
+
+246
+00:39:08.790 --> 00:39:14.790
+Simon Wang: all these technical issues, because, you know, AI is going to take care of this for us.
+
+247
+00:39:15.320 --> 00:39:16.100
+Simon Wang: Right?
+
+248
+00:39:22.890 --> 00:39:28.229
+Simon Wang: See, now, you see Python, this particular version has been installed and working.
+
+249
+00:39:28.850 --> 00:39:35.230
+Simon Wang: Right? And we don't really do anything. All we do is click, click, click, and let the AI to do the work for us.
+
+250
+00:39:35.860 --> 00:39:42.429
+Simon Wang: Now, once, AI, once Python is installed, you have to go back here.
+
+251
+00:39:42.880 --> 00:39:47.900
+Simon Wang: Which is the file and folder navigation ping.
+
+252
+00:39:48.110 --> 00:39:53.190
+Simon Wang: So you see, we go back here, and this is the file, and this is Jupyter…
+
+253
+00:39:54.100 --> 00:40:00.150
+Simon Wang: And, you, you have to click this in order to, get the…
+
+254
+00:40:01.490 --> 00:40:06.930
+Simon Wang: Right, in order to… to get back to the chat, Okay?
+
+255
+00:40:07.220 --> 00:40:12.339
+Simon Wang: Now, if you want to start a new session, you can do that.
+
+256
+00:40:12.620 --> 00:40:17.659
+Simon Wang: So this is a new session? Okay, because the context window of AI is limited.
+
+257
+00:40:17.820 --> 00:40:24.110
+Simon Wang: It will start forgetting things, so maybe you want to start a new session to do a new task.
+
+258
+00:40:24.450 --> 00:40:25.330
+Simon Wang: Okay?
+
+259
+00:40:26.890 --> 00:40:27.910
+Simon Wang: Are we good?
+
+260
+00:40:33.100 --> 00:40:35.319
+Simon Wang: So let me just quickly look at…
+
+261
+00:40:35.880 --> 00:40:39.700
+Simon Wang: this Jupyter notebook. It actually provides a little bit of background.
+
+262
+00:40:40.400 --> 00:40:46.879
+Simon Wang: our goal is to visualize the data for MSW charging scheme.
+
+263
+00:40:47.230 --> 00:40:52.740
+Simon Wang: In Hong Kong. So, this dataset is actually the result of some questionnaire.
+
+264
+00:40:53.020 --> 00:40:55.570
+Simon Wang: On the charging scheme.
+
+265
+00:40:56.230 --> 00:40:59.460
+Simon Wang: MSW stands for Municipal Solid Waste.
+
+266
+00:40:59.750 --> 00:41:00.630
+Simon Wang: Okay.
+
+267
+00:41:01.160 --> 00:41:04.540
+Simon Wang: So… Yeah.
+
+268
+00:41:07.040 --> 00:41:07.840
+Simon Wang: Okay.
+
+269
+00:41:17.280 --> 00:41:21.249
+Simon Wang: Right, so I hope everybody can reach this… this stage.
+
+270
+00:41:21.650 --> 00:41:28.289
+Simon Wang: Whether you use the agent method, or you just download and install it manually yourself, it doesn't really matter.
+
+271
+00:41:28.630 --> 00:41:34.560
+Simon Wang: Before we start looking at how to manipulate or process the data.
+
+272
+00:41:35.020 --> 00:41:35.860
+Simon Wang: Okay.
+
+273
+00:44:34.180 --> 00:44:34.990
+Simon Wang: downloadable.
+
+274
+00:47:00.020 --> 00:47:00.700
+Simon Wang: set up.
+
+275
+00:49:49.960 --> 00:49:55.350
+Simon Wang: Alright, so, I… we didn't prepare for students who, are going to
+
+276
+00:49:55.750 --> 00:49:59.340
+Simon Wang: Use tablet computer, but if you do.
+
+277
+00:49:59.470 --> 00:50:04.380
+Simon Wang: I mean, you can even try it on your mobile phone. Please go to week 2,
+
+278
+00:50:05.140 --> 00:50:11.170
+Simon Wang: And, we have a new file, we have a new, page, which is for GitHub Online.
+
+279
+00:50:12.360 --> 00:50:22.870
+Simon Wang: And, what, you can do is just, send this line to AI Agent,
+
+280
+00:50:24.510 --> 00:50:32.640
+Simon Wang: Because what… what we did is to set up a… public… repository here.
+
+281
+00:50:35.770 --> 00:50:39.260
+Simon Wang: was… the two files.
+
+282
+00:50:39.990 --> 00:50:40.830
+Simon Wang: Okay?
+
+283
+00:50:41.530 --> 00:50:48.089
+Simon Wang: So what you can… what you can do is go to your…
+
+284
+00:50:54.240 --> 00:50:56.319
+Simon Wang: Well, actually, let me, let me think.
+
+285
+00:50:57.180 --> 00:51:03.849
+Simon Wang: there are a couple things you can do. One… one is, actually, you can fork We can fork this.
+
+286
+00:51:04.850 --> 00:51:05.770
+Simon Wang: Okay.
+
+287
+00:51:07.660 --> 00:51:11.280
+Simon Wang: So you can fork this, I think that that might be,
+
+288
+00:51:12.020 --> 00:51:15.860
+Simon Wang: a good way. Or if you're already on your code space.
+
+289
+00:51:16.130 --> 00:51:20.040
+Simon Wang: Then you can just ask agent to clone this to my local folder.
+
+290
+00:51:20.470 --> 00:51:22.980
+Simon Wang: Alright, so either way, either way should work.
+
+291
+00:51:26.380 --> 00:51:33.549
+Simon Wang: So other than… and anyone else is using a tablet computer? Raise your hand if you are using a tablet computer.
+
+292
+00:51:34.980 --> 00:51:36.759
+Simon Wang: No, you are not, you are using Notebook.
+
+293
+00:51:37.500 --> 00:51:40.770
+Simon Wang: Oh, okay. So,
+
+294
+00:51:49.800 --> 00:51:52.240
+Simon Wang: Yeah, so let me, let me just show you how to do this.
+
+295
+00:59:57.760 --> 00:59:59.470
+Simon Wang: So, are we all good?
+
+296
+01:00:01.060 --> 01:00:04.589
+Simon Wang: Now, if you are, on VS Code.
+
+297
+01:00:11.300 --> 01:00:22.240
+Simon Wang: on VS Code, you should have the two files opened, locally,
+
+298
+01:00:30.890 --> 01:00:41.569
+Simon Wang: And, if you are… On your tablet computer, You should have… an online VS Code environment.
+
+299
+01:00:42.100 --> 01:00:44.600
+Simon Wang: Also got the two files.
+
+300
+01:00:44.870 --> 01:00:46.030
+Simon Wang: Downloaded.
+
+301
+01:00:46.870 --> 01:00:50.829
+Simon Wang: You know, by, cloning fork and clone.
+
+302
+01:00:52.180 --> 01:00:55.899
+Simon Wang: the folders I provided through Moodle.
+
+303
+01:00:56.340 --> 01:01:00.820
+Simon Wang: So either way, we should be able to start, doing a little bit of coding.
+
+304
+01:01:01.150 --> 01:01:07.750
+Simon Wang: Because… Right now, we have the CSV file, which is the data.
+
+305
+01:01:08.200 --> 01:01:10.899
+Simon Wang: And we also have a Jupyter Notebook.
+
+306
+01:01:11.540 --> 01:01:16.450
+Simon Wang: The Jupyter Notebook is an environment Where we can actually…
+
+307
+01:01:16.870 --> 01:01:20.910
+Simon Wang: Do a little bit of coding, And also to run it.
+
+308
+01:01:21.620 --> 01:01:22.420
+Simon Wang: Okay?
+
+309
+01:01:23.210 --> 01:01:25.819
+Simon Wang: So, this is, this is,
+
+310
+01:01:26.410 --> 01:01:33.269
+Simon Wang: an environment that, we can… we can do stuff. So, so actually, Talia, maybe you can start talking a little bit.
+
+311
+01:01:33.440 --> 01:01:34.550
+Simon Wang: about…
+
+312
+01:01:38.530 --> 01:01:39.470
+Simon Wang: Okay.
+
+313
+01:01:41.130 --> 01:01:42.519
+Simon Wang: We need…
+
+314
+01:01:55.790 --> 01:02:07.170
+Simon Wang: Okay, so suppose, the, you have already installed the VS Code, and signed up your GitHub account, and also applied for the educational benefit.
+
+315
+01:02:07.510 --> 01:02:12.420
+Simon Wang: And also installed Python, so… Then we can,
+
+316
+01:02:12.590 --> 01:02:17.840
+Simon Wang: Move forward a little bit to talk about the interface that you just saw.
+
+317
+01:02:18.480 --> 01:02:24.859
+Simon Wang: Actually, it is called the Integrated Development Environment. So, basically, there are four main areas.
+
+318
+01:02:25.680 --> 01:02:34.299
+Simon Wang: On the left-hand side, it is a left panel. Basically, it is the, where your working directory is.
+
+319
+01:02:35.310 --> 01:02:41.320
+Simon Wang: So Simon just created a folder, which is called, like, GCAP3226,
+
+320
+01:02:41.880 --> 01:02:48.639
+Simon Wang: And you can download the CSV file and also the Jupyter Notebook into that file.
+
+321
+01:02:50.510 --> 01:03:01.889
+Simon Wang: Let me… Switch to… So here, if you cannot see the left-hand side bar, You can click File.
+
+322
+01:03:02.080 --> 01:03:03.969
+Simon Wang: And then, open folder.
+
+323
+01:03:05.020 --> 01:03:09.640
+Simon Wang: Then select the folder you save all your course-related documents.
+
+324
+01:03:09.980 --> 01:03:13.060
+Simon Wang: And then hit this select folder.
+
+325
+01:03:14.190 --> 01:03:25.890
+Simon Wang: So then, later, when you communicate with GitHub Copilot, you ask it to, say, load this data file, it will know where to find that data set.
+
+326
+01:03:27.120 --> 01:03:29.259
+Simon Wang: So this is your working directory.
+
+327
+01:03:30.740 --> 01:03:37.530
+Simon Wang: Reported here, it will know Oh, I will go to this working directory to find the data set.
+
+328
+01:03:38.580 --> 01:03:41.369
+Simon Wang: So this is the live left-hand sidebar.
+
+329
+01:03:48.690 --> 01:03:54.379
+Simon Wang: Then, in the middle, we have this middle panel, which is the editor area.
+
+330
+01:03:54.570 --> 01:03:58.569
+Simon Wang: So then, we mainly, type prompt.
+
+331
+01:03:59.130 --> 01:04:03.470
+Simon Wang: So the demand that you want GitHub Copilot to implement
+
+332
+01:04:04.180 --> 01:04:08.489
+Simon Wang: and later some code generated by the GitHub Copilot.
+
+333
+01:04:08.680 --> 01:04:11.370
+Simon Wang: So they will all show up in this middle panel.
+
+334
+01:04:13.080 --> 01:04:18.480
+Simon Wang: Then here, at the bottom, there is a bottom middle area, so it is terminal.
+
+335
+01:04:18.830 --> 01:04:25.750
+Simon Wang: I think we won't, like, intentionally use this area, at least in this course.
+
+336
+01:04:26.590 --> 01:04:42.750
+Simon Wang: And then, on the right-hand side, there is a right panel. Basically, you communicate with the GitHub Copilot, you, either ask questions or ask the agent to help you, implement your
+
+337
+01:04:42.860 --> 01:04:44.550
+Simon Wang: Demand, or comment.
+
+338
+01:04:46.880 --> 01:04:51.100
+Simon Wang: So that is the four main areas of this interface.
+
+339
+01:04:52.620 --> 01:05:01.369
+Simon Wang: And specifically, in VS Code, this is shown here, actually, on the left hand… on the most left-hand side, there is an activity bar.
+
+340
+01:05:02.080 --> 01:05:06.180
+Simon Wang: So if we click this, you can open the working directory.
+
+341
+01:05:06.580 --> 01:05:16.030
+Simon Wang: And another commonly used, area or icon is actually this one. There are four, squares.
+
+342
+01:05:16.220 --> 01:05:19.039
+Simon Wang: So this is called the, extensions.
+
+343
+01:05:19.410 --> 01:05:26.599
+Simon Wang: So if you want to install some, extra, extensions, you could click this and type the
+
+344
+01:05:26.870 --> 01:05:28.200
+Simon Wang: Extension name.
+
+345
+01:05:28.560 --> 01:05:31.670
+Simon Wang: So that those extensions can be installed.
+
+346
+01:05:33.540 --> 01:05:37.020
+Simon Wang: And as mentioned, this editor pa… pens.
+
+347
+01:05:37.150 --> 01:05:41.449
+Simon Wang: As the middle area where we added, our code.
+
+348
+01:05:41.910 --> 01:05:46.000
+Simon Wang: or reads the code generated by the GitHub Copilot.
+
+349
+01:05:48.130 --> 01:05:53.979
+Simon Wang: So here is the, the bottom middle panel. It is the output and terminal.
+
+350
+01:05:54.170 --> 01:06:03.339
+Simon Wang: Whereas on the right-hand side, there is, a right sidebar where you can communicate with your programming assistant.
+
+351
+01:06:06.020 --> 01:06:09.270
+Simon Wang: And once you sign in the GitHub Copilot.
+
+352
+01:06:09.710 --> 01:06:17.850
+Simon Wang: In the VS Code, you will see this little icon. So this is an icon of the co-pilot. So you are the pilot.
+
+353
+01:06:18.100 --> 01:06:21.910
+Simon Wang: You are the one who decides what to do, whereas the,
+
+354
+01:06:22.590 --> 01:06:27.170
+Simon Wang: the AI, the generative AI, works only as a co-pilot.
+
+355
+01:06:27.650 --> 01:06:35.299
+Simon Wang: So it implements your, You are demand. You are command about a task.
+
+356
+01:06:37.780 --> 01:06:39.759
+Simon Wang: So this is the overall interface.
+
+357
+01:06:42.410 --> 01:06:47.570
+Simon Wang: So you can see here is actually, an example of the Python script.
+
+358
+01:06:48.090 --> 01:06:51.549
+Simon Wang: So the Python script ends with .py, right?
+
+359
+01:06:53.090 --> 01:06:56.850
+Simon Wang: So maybe let's… maybe let's, quickly…
+
+360
+01:06:57.570 --> 01:07:01.760
+Simon Wang: Gen… Create a new… Python script.
+
+361
+01:07:02.120 --> 01:07:06.179
+Simon Wang: So we can click File, and then New Text File.
+
+362
+01:07:07.590 --> 01:07:13.130
+Simon Wang: And there will be, a new file or a new document called Untitled.
+
+363
+01:07:14.450 --> 01:07:21.139
+Simon Wang: And at this moment, it is just a text file. If you want to change it to a Python script.
+
+364
+01:07:21.570 --> 01:07:28.629
+Simon Wang: We can click this… Button next to the… Next to the GitHub Copilot.
+
+365
+01:07:29.030 --> 01:07:31.700
+Simon Wang: So at this moment, it should be plain text.
+
+366
+01:07:32.350 --> 01:07:40.280
+Simon Wang: And if you click it, there will be a drop-down menu, and we can type Python.
+
+367
+01:07:40.790 --> 01:07:43.950
+Simon Wang: And then select Python. It becomes Python.
+
+368
+01:07:49.150 --> 01:07:54.220
+Simon Wang: So then I, save it first, say I… Safe…
+
+369
+01:07:54.550 --> 01:07:57.469
+Simon Wang: I give you the name, maybe… hello?
+
+370
+01:08:01.880 --> 01:08:07.439
+Simon Wang: Then you can see that hello.py shows up in this working directory.
+
+371
+01:08:09.640 --> 01:08:13.819
+Simon Wang: And then we can write a very simple prompt.
+
+372
+01:08:14.560 --> 01:08:21.560
+Simon Wang: By starting with a hashtag, So, I want to print… Hello, world.
+
+373
+01:08:26.020 --> 01:08:27.990
+Simon Wang: So once I type this.
+
+374
+01:08:28.279 --> 01:08:34.699
+Simon Wang: Prompt, starting with this hashtag, you can see that the ghost text shows up in the next line.
+
+375
+01:08:35.229 --> 01:08:40.459
+Simon Wang: It shows print, parentheses, Quotation mark, hello world.
+
+376
+01:08:41.950 --> 01:08:47.679
+Simon Wang: So as long as I… I know what I want to do, I want to print Hello World, then…
+
+377
+01:08:48.500 --> 01:08:51.270
+Simon Wang: I type it as a prompt, then…
+
+378
+01:08:51.720 --> 01:08:54.609
+Simon Wang: the Python code is automatically generated.
+
+379
+01:08:58.040 --> 01:09:01.599
+Simon Wang: And to accept it, you can either click this Accept.
+
+380
+01:09:01.880 --> 01:09:05.350
+Simon Wang: Or hit the tab button on the keyboard.
+
+381
+01:09:06.109 --> 01:09:10.109
+Simon Wang: So then it becomes a Python command.
+
+382
+01:09:15.010 --> 01:09:19.399
+Simon Wang: So once we have this, we can run, we can run this code.
+
+383
+01:09:19.580 --> 01:09:24.970
+Simon Wang: By clicking this play or run button, here.
+
+384
+01:09:25.359 --> 01:09:26.640
+Simon Wang: So if we run it…
+
+385
+01:09:37.740 --> 01:09:40.800
+Simon Wang: It should… let me show the,
+
+386
+01:09:55.070 --> 01:09:58.760
+Simon Wang: Did we install Python in the computer?
+
+387
+01:10:04.160 --> 01:10:08.380
+Simon Wang: Yeah, I think if the, Python is… You can try playing again.
+
+388
+01:10:10.160 --> 01:10:11.570
+Simon Wang: Run? Yeah, run.
+
+389
+01:10:13.770 --> 01:10:14.600
+Simon Wang: Does it work?
+
+390
+01:10:17.150 --> 01:10:21.419
+Simon Wang: No, I don't think we… I need to select Interpreter A.
+
+391
+01:10:24.390 --> 01:10:35.720
+Simon Wang: That means the Python is not yet… Installed, I think. But it says it's installed. Yeah, I think it's better to download it manually. I would think it's faster.
+
+392
+01:10:35.920 --> 01:10:37.040
+Simon Wang: Anyway…
+
+393
+01:10:37.350 --> 01:10:47.650
+Simon Wang: So if Python is already installed in your laptop, when you click this run button, there should be Hello World printed in this output area.
+
+394
+01:10:49.120 --> 01:10:53.259
+Simon Wang: So this is the code, and we run it, and we got some output.
+
+395
+01:10:55.020 --> 01:10:58.530
+Simon Wang: So that's, basically, how it works.
+
+396
+01:11:03.960 --> 01:11:14.700
+Simon Wang: That, depends on whether you have… whether we have installed the Adjuster Notebook Library, and also extension.
+
+397
+01:11:15.440 --> 01:11:21.240
+Simon Wang: I think… Maybe later, when I show the Jupyter Notebook, I will give it a shot.
+
+398
+01:11:23.540 --> 01:11:24.280
+Simon Wang: Okay.
+
+399
+01:11:25.900 --> 01:11:30.499
+Simon Wang: So this is the VS Code interface, and about the Python script.
+
+400
+01:11:31.380 --> 01:11:34.979
+Simon Wang: But in our course, we will mainly use this Jupyter notebook.
+
+401
+01:11:37.020 --> 01:11:49.650
+Simon Wang: Which is an interactive tool that led us to write and also run code, and also immediately view the results of the output, and also add notes.
+
+402
+01:11:51.200 --> 01:11:56.269
+Simon Wang: So, in the, website version of Jupyter Notebook.
+
+403
+01:11:56.580 --> 01:12:01.629
+Simon Wang: You can see that there are… These gray boxes.
+
+404
+01:12:02.150 --> 01:12:05.719
+Simon Wang: So these gray boxes are, called cells.
+
+405
+01:12:06.170 --> 01:12:09.350
+Simon Wang: Where we put, our code there.
+
+406
+01:12:10.240 --> 01:12:14.589
+Simon Wang: So, for example, we define a variable called X,
+
+407
+01:12:15.050 --> 01:12:17.060
+Simon Wang: X equals to 1 plus 1.
+
+408
+01:12:17.900 --> 01:12:29.640
+Simon Wang: then we ask, hey, print out the value of X, then we just type print X, and then if we run this code cell, then the output will be 2.
+
+409
+01:12:30.260 --> 01:12:31.930
+Simon Wang: So I print out the value.
+
+410
+01:12:34.200 --> 01:12:39.169
+Simon Wang: And similarly, if we define another new variable, which is called Y,
+
+411
+01:12:39.570 --> 01:12:43.300
+Simon Wang: which equals to 2 times X, Then print Y.
+
+412
+01:12:43.520 --> 01:12:50.440
+Simon Wang: And after we click the run button, this code is executed, And then the output.
+
+413
+01:12:50.880 --> 01:12:54.280
+Simon Wang: It returns 4, which is the value of 1.
+
+414
+01:12:55.120 --> 01:12:58.810
+Simon Wang: So basically, we can immediately see the output of this program.
+
+415
+01:13:00.810 --> 01:13:05.289
+Simon Wang: And for a more complicated example, so suppose we have a data set.
+
+416
+01:13:06.120 --> 01:13:12.330
+Simon Wang: And we want to show the distribution of certain variables.
+
+417
+01:13:13.740 --> 01:13:17.339
+Simon Wang: For example, we want to know the, in the dataset.
+
+418
+01:13:17.890 --> 01:13:22.250
+Simon Wang: How this, average ticket price is distributed.
+
+419
+01:13:24.150 --> 01:13:26.739
+Simon Wang: Because there are many data points.
+
+420
+01:13:26.950 --> 01:13:30.569
+Simon Wang: So, I think, must be over 10,000 data points.
+
+421
+01:13:30.770 --> 01:13:32.690
+Simon Wang: We can use this histogram.
+
+422
+01:13:33.240 --> 01:13:38.119
+Simon Wang: To show the overall distribution of ticket price in this dataset.
+
+423
+01:13:40.590 --> 01:13:44.639
+Simon Wang: So from this, histogram, it's a little bit…
+
+424
+01:13:45.170 --> 01:13:47.729
+Simon Wang: small, how I can zoom in.
+
+425
+01:13:52.430 --> 01:13:59.700
+Simon Wang: So overall, this shape Mmm, this is not a symmetric Distribution, right?
+
+426
+01:14:00.450 --> 01:14:09.130
+Simon Wang: And we can see that The, typical values of the ticket price in this dataset is between
+
+427
+01:14:09.250 --> 01:14:14.509
+Simon Wang: So here is about 600 And here is about 1,000.
+
+428
+01:14:16.810 --> 01:14:20.000
+Simon Wang: So this means that the typical ticket price
+
+429
+01:14:20.180 --> 01:14:28.199
+Simon Wang: In that data set, it's between this… it's within this range, from 6,000 to 1… 600 to 1,000.
+
+430
+01:14:32.980 --> 01:14:35.660
+Simon Wang: Yeah, and this is,
+
+431
+01:14:37.440 --> 01:14:40.300
+Simon Wang: This is the distribution of the ticket price.
+
+432
+01:14:40.710 --> 01:14:42.660
+Simon Wang: And there's only one peak.
+
+433
+01:14:43.240 --> 01:14:45.639
+Simon Wang: Generally speaking, there's only one peak.
+
+434
+01:14:46.000 --> 01:14:56.059
+Simon Wang: So there's no, like, extreme values, too much extreme values over, like, 1,200 or, near zero.
+
+435
+01:14:58.490 --> 01:15:03.679
+Simon Wang: Whereas for another variable in this dataset, which is called the distance.
+
+436
+01:15:04.170 --> 01:15:11.340
+Simon Wang: So the distribution of the value, you can see that it's quite different from the distribution of this ticket price.
+
+437
+01:15:12.170 --> 01:15:14.660
+Simon Wang: For example, there are two peaks.
+
+438
+01:15:14.890 --> 01:15:17.689
+Simon Wang: In this… in the second histogram.
+
+439
+01:15:19.370 --> 01:15:26.769
+Simon Wang: The first peak is when the value equals to zero. So you can see there are around 3,000 data points
+
+440
+01:15:27.640 --> 01:15:31.959
+Simon Wang: Of this distance variable, the value equals to zero.
+
+441
+01:15:32.580 --> 01:15:37.430
+Simon Wang: So this is one typical value of distance in this dataset.
+
+442
+01:15:38.950 --> 01:15:45.530
+Simon Wang: And the other typical value is around 8,000, so this is the second peak, right?
+
+443
+01:15:48.060 --> 01:15:59.680
+Simon Wang: And overall, this distribution is also not symmetric because of this, very large amount of zero values, right?
+
+444
+01:16:00.840 --> 01:16:06.370
+Simon Wang: And that is the, another, like, kind of,
+
+445
+01:16:06.720 --> 01:16:12.140
+Simon Wang: Variable. If we do the, histogram, we can see the distribution.
+
+446
+01:16:12.890 --> 01:16:14.880
+Simon Wang: Of the values of this variable.
+
+447
+01:16:15.990 --> 01:16:23.140
+Simon Wang: So, when we use Jupiter Notebook, we have the code to plot the histogram of different variables.
+
+448
+01:16:23.830 --> 01:16:26.380
+Simon Wang: We can immediately see the output.
+
+449
+01:16:26.940 --> 01:16:32.630
+Simon Wang: like, in the, like, after the code.
+
+450
+01:16:33.260 --> 01:16:38.159
+Simon Wang: We have the code, and we can immediately see the result. And if there's something wrong.
+
+451
+01:16:38.740 --> 01:16:45.900
+Simon Wang: If we find that, well, this visualization might not… that, might not be that appropriate.
+
+452
+01:16:46.150 --> 01:16:51.219
+Simon Wang: Then we may change our code, and then, again, we can see the output immediately.
+
+453
+01:16:53.700 --> 01:17:04.589
+Simon Wang: So that is, the… I think one of the reasons why Jupyter Notebook is actually quite commonly used in the, in either academia and industry.
+
+454
+01:17:06.050 --> 01:17:08.789
+Simon Wang: It can show the output, immediately.
+
+455
+01:17:12.660 --> 01:17:17.230
+Simon Wang: And later, when we started to work on this Jupyter Notebook.
+
+456
+01:17:17.520 --> 01:17:21.689
+Simon Wang: And when we try to run the code in these cold cells.
+
+457
+01:17:22.870 --> 01:17:27.000
+Simon Wang: the, VS Code will pop out an option.
+
+458
+01:17:27.400 --> 01:17:30.480
+Simon Wang: which asks you to select your Python environment.
+
+459
+01:17:31.610 --> 01:17:37.749
+Simon Wang: So there's the top, manual, it's called Select Kernel.
+
+460
+01:17:38.710 --> 01:17:41.870
+Simon Wang: And for this course, I would suggest
+
+461
+01:17:42.120 --> 01:17:47.699
+Simon Wang: We just select the Python environments, Specifically, the global environment.
+
+462
+01:17:48.970 --> 01:17:53.710
+Simon Wang: And only after we select the kernel, then the program will be run.
+
+463
+01:17:55.630 --> 01:18:01.429
+Simon Wang: then what's… what… what is this kernel? What… what is the Heisen environment?
+
+464
+01:18:02.010 --> 01:18:12.490
+Simon Wang: So I will use this, analogy to, give you… try to give you a brief idea of what the Python kernel… actually, Jupyter kernel is.
+
+465
+01:18:15.350 --> 01:18:22.750
+Simon Wang: So when we select the Python environment, I think you just simply regard it as a restaurant.
+
+466
+01:18:23.990 --> 01:18:28.269
+Simon Wang: So a restaurant is, an example of environment, right?
+
+467
+01:18:29.900 --> 01:18:40.740
+Simon Wang: Where the Jupyter Notebook is like the, is the front end, because we can see the notebook, and we can type code in that Jupyter Notebook.
+
+468
+01:18:41.790 --> 01:18:47.409
+Simon Wang: So you can imagine it as the dining area where you can place your order.
+
+469
+01:18:48.670 --> 01:18:53.689
+Simon Wang: that I want to have, steak tonight, so I will order that one.
+
+470
+01:18:53.860 --> 01:19:01.649
+Simon Wang: I put steak in my cold cell so that I can tell the kitchen that I want to… I want to eat steak, right?
+
+471
+01:19:02.480 --> 01:19:10.009
+Simon Wang: So you can regard the Python, the Jupyter notebook, as the dining area, we can… where you can place the order.
+
+472
+01:19:12.150 --> 01:19:18.330
+Simon Wang: And then, the Python kernel, or the IPY kernel, so this package.
+
+473
+01:19:18.670 --> 01:19:21.709
+Simon Wang: Works like the, restaurant manager.
+
+474
+01:19:22.860 --> 01:19:25.639
+Simon Wang: So you pass the, order.
+
+475
+01:19:26.340 --> 01:19:31.520
+Simon Wang: to the kitchen via this Python kernel, via this restaurant manager.
+
+476
+01:19:32.350 --> 01:19:40.029
+Simon Wang: So he, the manager, they, do not only take care about your single order.
+
+477
+01:19:40.330 --> 01:19:44.059
+Simon Wang: They will try to manage all of the orders together.
+
+478
+01:19:44.260 --> 01:19:46.790
+Simon Wang: And also communicate with the chef.
+
+479
+01:19:47.080 --> 01:19:50.560
+Simon Wang: Who really, cook the food you want.
+
+480
+01:19:52.390 --> 01:19:57.590
+Simon Wang: So the chef is the interpreter, Which is a program.
+
+481
+01:19:58.320 --> 01:20:07.100
+Simon Wang: So you may imagine if the interpreter has a file name, It is ended by .exe.
+
+482
+01:20:08.310 --> 01:20:10.890
+Simon Wang: So the interpreter can be executed.
+
+483
+01:20:11.120 --> 01:20:18.570
+Simon Wang: And it will be used to execute the, the, your, your order, to cook the food you want.
+
+484
+01:20:21.250 --> 01:20:28.030
+Simon Wang: So once the manager, like, supervised the chef to really cook the food you want.
+
+485
+01:20:28.400 --> 01:20:32.090
+Simon Wang: They will only consider about what they have in the restaurant.
+
+486
+01:20:32.250 --> 01:20:34.320
+Simon Wang: Like the ingredients.
+
+487
+01:20:36.520 --> 01:20:46.930
+Simon Wang: And then, after the food is ready, then the food is passed back to this restaurant manager, and then the restaurant manager will bring the food
+
+488
+01:20:47.380 --> 01:20:52.740
+Simon Wang: To you, so that at the front end, you can see the output of the program.
+
+489
+01:20:55.250 --> 01:21:03.909
+Simon Wang: So overall, this is the, like, a simplified version of what is, kernel means.
+
+490
+01:21:04.880 --> 01:21:14.289
+Simon Wang: So, in development, in, like, software development, people may set up different Python environments for different projects.
+
+491
+01:21:14.830 --> 01:21:22.389
+Simon Wang: That will be helpful if there are, different versions of, like, Python libraries.
+
+492
+01:21:23.900 --> 01:21:34.210
+Simon Wang: That will be easier for the, like, the, say, the software engineer to manage different, projects with different, like, Python library versions.
+
+493
+01:21:35.350 --> 01:21:44.970
+Simon Wang: But in our course, I think we… we don't need that complicated settings, so just focus on one global environment of Python.
+
+494
+01:21:45.180 --> 01:21:46.550
+Simon Wang: And that will be fine.
+
+495
+01:21:49.450 --> 01:21:56.839
+Simon Wang: So we… in this course, we only stick to one environment, and that is the global Python environment.
+
+496
+01:21:58.260 --> 01:22:04.679
+Simon Wang: I think in the, when you try to run the, code cell in the Jupyter Notebook.
+
+497
+01:22:04.920 --> 01:22:13.270
+Simon Wang: And… There is a window pop-up to ask you to select the, the, the kernel.
+
+498
+01:22:13.720 --> 01:22:15.960
+Simon Wang: Then you can see,
+
+499
+01:22:16.600 --> 01:22:30.679
+Simon Wang: in one of the op… I think in one… any one of these options on the right-hand side, it has some, brief descriptions, whether it is global or whether it is virtual or something. So we would just stick…
+
+500
+01:22:31.130 --> 01:22:35.510
+Simon Wang: to this global Python environment, and that will be good enough.
+
+501
+01:22:38.780 --> 01:22:47.789
+Simon Wang: And, also, when we select kernel, do not go to the Jupyter server. Try to use local Python environment.
+
+502
+01:22:48.720 --> 01:22:51.440
+Simon Wang: So that is the… that are the two tips.
+
+503
+01:22:57.400 --> 01:23:13.259
+Simon Wang: Okay, so, that is all about the, so, so far, that is all about the, setting, the technical part, the setting of the technical part. So then, I will give a, brief introduction to the data set that we will be working on.
+
+504
+01:23:14.830 --> 01:23:20.339
+Simon Wang: And as Simon mentioned, it is a data set about the survey.
+
+505
+01:23:20.910 --> 01:23:28.170
+Simon Wang: Regarding, citizens' opinion, About the municipal solid waste charging scheme.
+
+506
+01:23:29.800 --> 01:23:41.440
+Simon Wang: And actually, this charging scheme can date back to a long time ago, which is around the time when you were… when you were born, I think, so 2005.
+
+507
+01:23:42.640 --> 01:23:45.899
+Simon Wang: So, dating back to 20 years ago.
+
+508
+01:23:46.430 --> 01:23:50.810
+Simon Wang: in one of the meetings in the Legislative Council.
+
+509
+01:23:51.410 --> 01:23:57.929
+Simon Wang: Some members of this, Environmental Affairs Panel.
+
+510
+01:23:58.540 --> 01:24:06.380
+Simon Wang: proposed that for Hong Kong, it is necessary to introduce the charging scheme for the municipal solid waste.
+
+511
+01:24:06.820 --> 01:24:10.220
+Simon Wang: To provide incentive for sorting and recycling.
+
+512
+01:24:10.530 --> 01:24:14.400
+Simon Wang: With the overall purpose to reduce the overall waste.
+
+513
+01:24:14.590 --> 01:24:16.080
+Simon Wang: generated.
+
+514
+01:24:16.580 --> 01:24:17.699
+Simon Wang: In Hong Kong.
+
+515
+01:24:19.990 --> 01:24:30.470
+Simon Wang: And then, after around 10 years, so now time… the time goes to 2015, in another meeting.
+
+516
+01:24:31.670 --> 01:24:38.740
+Simon Wang: It summarizes what, had been done in this Solid waste charging scheme.
+
+517
+01:24:40.400 --> 01:24:46.470
+Simon Wang: So this panel, framework proposal for implementation of this charging scheme.
+
+518
+01:24:47.260 --> 01:24:55.570
+Simon Wang: It says that… The panel had already conducted an extensive public consultation in the past 3 years.
+
+519
+01:24:56.220 --> 01:25:05.860
+Simon Wang: And the overall attitude of citizens towards this charging scheme is that majority support This charging scheme.
+
+520
+01:25:06.140 --> 01:25:12.860
+Simon Wang: So they affirmed the introduction of a quantity-based municipal solid waste charging scheme in Hong Kong.
+
+521
+01:25:15.690 --> 01:25:28.340
+Simon Wang: So the so-called quantity-based means that the more garbage the people dump, then the more amount of money, the amount of money they have to pay.
+
+522
+01:25:28.720 --> 01:25:31.999
+Simon Wang: So it is like the, polluter-pay principle.
+
+523
+01:25:32.460 --> 01:25:36.650
+Simon Wang: But that is… The meaning of the quantity-based.
+
+524
+01:25:37.910 --> 01:25:47.350
+Simon Wang: And it also mentioned that this will be one of the, like, major waste reduction initiatives under this Hong Kong blueprint.
+
+525
+01:25:47.530 --> 01:25:51.939
+Simon Wang: For sustainable use of resources in this 10 years.
+
+526
+01:25:55.340 --> 01:26:00.910
+Simon Wang: Then, after another 10 years, Everything looks different.
+
+527
+01:26:02.100 --> 01:26:07.150
+Simon Wang: So, in a meeting in the middle of 2024,
+
+528
+01:26:07.560 --> 01:26:15.889
+Simon Wang: in the title called The Way Forward to Municipal Solid Waste Charging and Other Waste Reduction and Management Measures.
+
+529
+01:26:17.550 --> 01:26:28.500
+Simon Wang: It says that the Hong Kong government, which is cited as the administration here, the government advised that, taking into account a number of factors.
+
+530
+01:26:29.420 --> 01:26:37.979
+Simon Wang: Including strong reservations about the implementation of this MSW charging by the majority of the public.
+
+531
+01:26:39.770 --> 01:26:45.040
+Simon Wang: So it turns out that the attitude of citizens just Turn around.
+
+532
+01:26:45.280 --> 01:26:52.479
+Simon Wang: totally reversed And people have, like, strong reservation about this, the implementation.
+
+533
+01:26:52.890 --> 01:27:00.010
+Simon Wang: And then, the government decided to further defer the implementation of the MSW charging scheme.
+
+534
+01:27:01.660 --> 01:27:07.369
+Simon Wang: And this is when the, our survey data was collected.
+
+535
+01:27:07.760 --> 01:27:12.119
+Simon Wang: Because at that time, this decision was not made yet.
+
+536
+01:27:12.790 --> 01:27:16.699
+Simon Wang: So, at that time, one of, one student.
+
+537
+01:27:16.810 --> 01:27:23.470
+Simon Wang: She is interested to know the overall level of support of citizens to this charging scheme.
+
+538
+01:27:23.960 --> 01:27:29.819
+Simon Wang: And would like to explore the potential influencing factors of the level of support.
+
+539
+01:27:32.760 --> 01:27:39.499
+Simon Wang: Then, the most recent, like, discussion about this, charging scheme
+
+540
+01:27:39.780 --> 01:27:45.900
+Simon Wang: was under the topic of Hong Kong's Climate Action Plan 2050.
+
+541
+01:27:46.170 --> 01:27:47.970
+Simon Wang: It's a little bit weird to…
+
+542
+01:27:48.240 --> 01:27:51.519
+Simon Wang: This topic is put under the climate action.
+
+543
+01:27:52.520 --> 01:27:54.790
+Simon Wang: And it's cited that
+
+544
+01:27:54.950 --> 01:28:04.630
+Simon Wang: The government was conducting an in-depth study on how to optimize this charging scheme, and intended to report the latest progress to the panel.
+
+545
+01:28:04.860 --> 01:28:06.600
+Simon Wang: In mid-2025.
+
+546
+01:28:07.320 --> 01:28:16.189
+Simon Wang: Actually, the overall, situation is that their scheme basically is, postponed indefinitely.
+
+547
+01:28:19.790 --> 01:28:28.990
+Simon Wang: So these information, Works like the overall context of… about this, municipal solid waste charging scheme.
+
+548
+01:28:32.110 --> 01:28:47.239
+Simon Wang: So, as mentioned, this questionnaire is conducted by a previous student. She's a master's student, and now we have this link for the questionnaire. So, if you click the link on this slide.
+
+549
+01:28:47.450 --> 01:28:50.899
+Simon Wang: you can go to the… the Google Form.
+
+550
+01:28:51.230 --> 01:28:53.940
+Simon Wang: That contains the whole questionnaire.
+
+551
+01:28:55.500 --> 01:29:03.509
+Simon Wang: So last time, we only provided the QR code. It's not that friendly. This time, we provided this link.
+
+552
+01:29:08.040 --> 01:29:12.050
+Simon Wang: So overall, as mentioned, the purpose
+
+553
+01:29:12.580 --> 01:29:16.830
+Simon Wang: of this survey is to understand Hong Kong residents' awareness.
+
+554
+01:29:17.020 --> 01:29:24.469
+Simon Wang: Attitudes, and also daily waste management behaviors related to the waste charging policy.
+
+555
+01:29:26.740 --> 01:29:29.259
+Simon Wang: So, in total, there are 4 sections.
+
+556
+01:29:29.750 --> 01:29:35.509
+Simon Wang: The first section is about the overall level of support to this policy.
+
+557
+01:29:36.470 --> 01:29:41.139
+Simon Wang: And then the second part is about the, is from the behavioral level.
+
+558
+01:29:41.530 --> 01:29:46.150
+Simon Wang: To measure the existing recycling behavior of citizens.
+
+559
+01:29:47.820 --> 01:29:57.729
+Simon Wang: And the third part is about knowledge, so whether the participants are aware that the, municipal waste
+
+560
+01:29:58.570 --> 01:30:02.340
+Simon Wang: problem is actually quite severe in Hong Kong.
+
+561
+01:30:03.010 --> 01:30:04.020
+Simon Wang: So…
+
+562
+01:30:04.690 --> 01:30:13.879
+Simon Wang: whether they know something about the situation, and whether they know something about recycling. What type of items can be recycled.
+
+563
+01:30:16.270 --> 01:30:23.180
+Simon Wang: And the last part is the demographic information, which is quite standard in this kind of survey.
+
+564
+01:30:23.920 --> 01:30:27.010
+Simon Wang: Because intuitively, you would,
+
+565
+01:30:27.190 --> 01:30:36.040
+Simon Wang: You would be, like, curious whether, like, people who have higher education level would be more likely to support this kind of
+
+566
+01:30:36.220 --> 01:30:39.979
+Simon Wang: Environment protection policies.
+
+567
+01:30:41.200 --> 01:30:45.020
+Simon Wang: So that's the overall four sections of this questionnaire.
+
+568
+01:30:46.570 --> 01:30:51.210
+Simon Wang: And in the data file, in the CSV file.
+
+569
+01:30:55.660 --> 01:30:59.490
+Simon Wang: All of the options are coded as numbers.
+
+570
+01:30:59.860 --> 01:31:04.039
+Simon Wang: So, for example, the first column is called Support Level.
+
+571
+01:31:04.490 --> 01:31:11.259
+Simon Wang: The one just represent, strongly, strongly oppose.
+
+572
+01:31:11.640 --> 01:31:15.630
+Simon Wang: Whereas 5 represents strongly, support.
+
+573
+01:31:18.100 --> 01:31:20.440
+Simon Wang: And, for example, the fairness.
+
+574
+01:31:20.900 --> 01:31:22.080
+Simon Wang: the fairness.
+
+575
+01:31:22.480 --> 01:31:33.670
+Simon Wang: means the perceived level of fairness of the policy. So whether the participant believes that this policy is fair to all of us.
+
+576
+01:31:34.080 --> 01:31:44.400
+Simon Wang: Whereas 1 represents for, strongly not… strongly unfair, and 5 represents for strongly, strongly fair.
+
+577
+01:31:44.840 --> 01:31:46.200
+Simon Wang: So on and so forth.
+
+578
+01:31:49.100 --> 01:31:59.519
+Simon Wang: So later, we will work on some of these, variables to do the visualization, because still, numbers are a little bit hard to read.
+
+579
+01:32:06.920 --> 01:32:14.980
+Simon Wang: Yep, I think that, is all about the slides, the content in the slides, and then I think we can move to the, Jupiter notebook.
+
+580
+01:32:15.730 --> 01:32:19.410
+Simon Wang: So you can find it, again, from the, Moodle.
+
+581
+01:32:19.660 --> 01:32:24.030
+Simon Wang: You can download it and save it into the working directory.
+
+582
+01:32:26.270 --> 01:32:34.959
+Simon Wang: It is strongly suggested to put the data document and also your Jupiter notebook under the same directory.
+
+583
+01:32:35.790 --> 01:32:42.450
+Simon Wang: So that, when you load the data into the Python, it will be easier.
+
+584
+01:32:45.510 --> 01:32:51.200
+Simon Wang: So for this visualization task, there will be, I think 6 steps.
+
+585
+01:32:53.150 --> 01:33:00.429
+Simon Wang: The first is just to load the, data into our, into Python.
+
+586
+01:33:01.020 --> 01:33:04.189
+Simon Wang: And then, we will have a brief,
+
+587
+01:33:04.620 --> 01:33:11.750
+Simon Wang: Understanding about the overall structure of this dataset, What variables it includes.
+
+588
+01:33:12.020 --> 01:33:18.140
+Simon Wang: And then, use some commonly seen type of charts.
+
+589
+01:33:18.870 --> 01:33:24.259
+Simon Wang: Like, bar chart, pie chart, To visualize the categorical data.
+
+590
+01:33:24.620 --> 01:33:30.910
+Simon Wang: And then for continuous data, or quantitative data, we can use histogram.
+
+591
+01:33:31.170 --> 01:33:37.849
+Simon Wang: as what we have seen, and also this box whisker plot, which I will talk more about it next time.
+
+592
+01:33:38.170 --> 01:33:40.770
+Simon Wang: To visualize this quantitative data.
+
+593
+01:33:42.760 --> 01:33:49.389
+Simon Wang: Then, we can also explore the relationships between two variables using scatterplot.
+
+594
+01:33:49.690 --> 01:33:55.889
+Simon Wang: And then we can save the, those, charts generated to our working directory.
+
+595
+01:33:56.490 --> 01:34:00.850
+Simon Wang: But that will be the overall structure of this data visualization task.
+
+596
+01:34:05.220 --> 01:34:10.530
+Simon Wang: So the first step is just to install and import the relevant libraries.
+
+597
+01:34:10.920 --> 01:34:18.620
+Simon Wang: So as mentioned, the library just works as the ingredients in the kitchen, or the recipes of the food.
+
+598
+01:34:19.150 --> 01:34:24.489
+Simon Wang: So it can help us to quickly, get the figures we want.
+
+599
+01:34:25.730 --> 01:34:31.009
+Simon Wang: And specifically in this data visualization task, we will use this, pandas.
+
+600
+01:34:31.240 --> 01:34:37.219
+Simon Wang: Which is a library related to the, data frame manipulation.
+
+601
+01:34:37.910 --> 01:34:48.289
+Simon Wang: And metaphotlib, which is a commonly used library to do the visualization, data visualization, and also Seaborn. Seabourn is also for visualization.
+
+602
+01:34:49.330 --> 01:34:59.530
+Simon Wang: So if we have not installed these, libraries in the, in Python, Then we can… like…
+
+603
+01:35:00.150 --> 01:35:05.289
+Simon Wang: Add a cold cell, so click this Lost Colt.
+
+604
+01:35:06.390 --> 01:35:09.780
+Simon Wang: So then a new, box shows up.
+
+605
+01:35:11.300 --> 01:35:15.590
+Simon Wang: We can type code here, and specifically, we can run this
+
+606
+01:35:16.320 --> 01:35:23.340
+Simon Wang: percentage sign, PIP install, pandas, MetLib Seabourn. So we can copy this.
+
+607
+01:35:27.820 --> 01:35:31.240
+Simon Wang: And then run this cell. Run the code in this cell.
+
+608
+01:35:32.010 --> 01:35:38.159
+Simon Wang: So this line will help us to install these three packages we will be using.
+
+609
+01:35:39.680 --> 01:35:48.160
+Simon Wang: So the run button is just at the left-hand side of the cell… cell… Cold cell.
+
+610
+01:35:49.960 --> 01:35:53.830
+Simon Wang: If you have not installed these libraries before, then…
+
+611
+01:35:53.940 --> 01:35:56.040
+Simon Wang: You need to install the…
+
+612
+01:35:56.170 --> 01:35:59.559
+Simon Wang: So that later we can import them and use them.
+
+613
+01:36:03.080 --> 01:36:07.000
+Simon Wang: So, and after this installation, then we can,
+
+614
+01:36:07.860 --> 01:36:11.160
+Simon Wang: Import these libraries for… for further use.
+
+615
+01:36:14.950 --> 01:36:22.330
+Simon Wang: So, in this… In this prompt, it just said, write a prompt to… to import pandas
+
+616
+01:36:22.660 --> 01:36:24.990
+Simon Wang: And the two libraries.
+
+617
+01:36:25.890 --> 01:36:29.749
+Simon Wang: then I can change this to write Python code.
+
+618
+01:36:36.100 --> 01:36:37.870
+Simon Wang: to import pandas.
+
+619
+01:36:38.700 --> 01:36:40.080
+Simon Wang: And the remaining 2.
+
+620
+01:36:42.970 --> 01:36:46.659
+Simon Wang: So once I type this, prompt like this.
+
+621
+01:36:47.610 --> 01:36:51.599
+Simon Wang: And when I hit enter, then the ghost tag shows up.
+
+622
+01:36:52.930 --> 01:36:57.539
+Simon Wang: So this is the, the, the sentence.
+
+623
+01:36:58.360 --> 01:37:03.879
+Simon Wang: that, in Python, To import the three libraries.
+
+624
+01:37:05.000 --> 01:37:08.330
+Simon Wang: So I just click tab to accept
+
+625
+01:37:08.830 --> 01:37:11.799
+Simon Wang: the suggestions made by GitHub Copilot.
+
+626
+01:37:13.530 --> 01:37:17.199
+Simon Wang: Then these three lines will show up automatically.
+
+627
+01:37:17.670 --> 01:37:19.179
+Simon Wang: And then I can run.
+
+628
+01:37:19.920 --> 01:37:21.970
+Simon Wang: So here, I cannot run because
+
+629
+01:37:22.250 --> 01:37:24.820
+Simon Wang: As we mentioned, it is not correctly installed.
+
+630
+01:37:25.180 --> 01:37:30.789
+Simon Wang: But in your laptop, This should be, running correctly.
+
+631
+01:37:32.700 --> 01:37:39.090
+Simon Wang: So once we import these libraries, then we can load and, examine the dataset.
+
+632
+01:37:44.020 --> 01:37:48.589
+Simon Wang: And to load it, I think we have already created this folder.
+
+633
+01:37:49.360 --> 01:37:53.169
+Simon Wang: Saving the, documents in our, course.
+
+634
+01:37:54.280 --> 01:37:55.430
+Simon Wang: And…
+
+635
+01:37:56.790 --> 01:38:07.899
+Simon Wang: Then we can write a prompt to generate Python code that loads the CSV files into a Pandas data frame, and displays the first few rows, then run the code.
+
+636
+01:38:08.520 --> 01:38:16.369
+Simon Wang: So then I can just… write code to load this DSV from the working directory into Pandas.
+
+637
+01:38:16.530 --> 01:38:18.390
+Simon Wang: Show the first 5 rows.
+
+638
+01:38:20.350 --> 01:38:26.980
+Simon Wang: You see, after I… Hit the enter, then there is a line.
+
+639
+01:38:27.510 --> 01:38:35.589
+Simon Wang: So although we haven't, learned much about Python, but I think it's still readable.
+
+640
+01:38:35.700 --> 01:38:40.529
+Simon Wang: the pd.read… underscore CSV, so read CSV.
+
+641
+01:38:40.720 --> 01:38:43.720
+Simon Wang: It's already quite,
+
+642
+01:38:44.050 --> 01:38:50.680
+Simon Wang: It's quite like English, read CSV. Then there's a parentheses, then there is a file name.
+
+643
+01:38:51.670 --> 01:38:59.980
+Simon Wang: And this… Data will be saved into a so-called data frame, called DF.
+
+644
+01:39:02.170 --> 01:39:06.100
+Simon Wang: Okay, then I just… Hit the tab button.
+
+645
+01:39:06.510 --> 01:39:10.829
+Simon Wang: to make the suggestion to become a real Python command.
+
+646
+01:39:12.800 --> 01:39:19.130
+Simon Wang: Then, it shows df.had, parentheses, So, because I asked
+
+647
+01:39:19.290 --> 01:39:23.119
+Simon Wang: the, GitHub Copilot to display the first 5 rows.
+
+648
+01:39:23.460 --> 01:39:30.530
+Simon Wang: Then this dot had, We'll make the, first 5 rows, to be printed.
+
+649
+01:39:31.430 --> 01:39:33.940
+Simon Wang: So again, I hit… HAB.
+
+650
+01:39:34.080 --> 01:39:39.890
+Simon Wang: then this… line becomes a command, real command. I accept it.
+
+651
+01:39:41.230 --> 01:39:42.850
+Simon Wang: then I can run.
+
+652
+01:39:43.380 --> 01:39:48.759
+Simon Wang: And if everything goes smoothly, then the first 5 rows will be printed.
+
+653
+01:39:57.480 --> 01:40:05.920
+Simon Wang: And then, the next step will be to understand the dataset structure and the variables Because…
+
+654
+01:40:06.020 --> 01:40:13.989
+Simon Wang: Here, when we open this CSV file, there are quite many variables. There are many columns, right?
+
+655
+01:40:14.090 --> 01:40:22.800
+Simon Wang: then… They… these columns are, corresponding to the, the questions in the questionnaire.
+
+656
+01:40:25.940 --> 01:40:34.620
+Simon Wang: So I want to, display the dataset information and generate some summary statistics, So if it's a…
+
+657
+01:40:34.920 --> 01:40:36.690
+Simon Wang: Like, the,
+
+658
+01:40:36.930 --> 01:40:44.689
+Simon Wang: Continuous, then what is the minimum value? What is the maximum value, what is the mean? What is the median?
+
+659
+01:40:44.810 --> 01:40:50.329
+Simon Wang: I'm interested to know some basic information about my data.
+
+660
+01:40:52.760 --> 01:40:57.709
+Simon Wang: And also, in case that I… I don't understand the…
+
+661
+01:40:58.030 --> 01:41:03.380
+Simon Wang: Python code generated by, GitHub Copilot, I asked.
+
+662
+01:41:03.970 --> 01:41:07.990
+Simon Wang: I ask it to add comments explaining each line.
+
+663
+01:41:09.810 --> 01:41:13.269
+Simon Wang: So instead of only, writing out these
+
+664
+01:41:13.620 --> 01:41:18.619
+Simon Wang: comment, I also require the, comments.
+
+665
+01:41:18.870 --> 01:41:24.739
+Simon Wang: So that I can easily understand what that line of code means.
+
+666
+01:41:27.460 --> 01:41:32.070
+Simon Wang: Then write prompt as a comment at the top of the next cell, then run the code.
+
+667
+01:41:32.780 --> 01:41:36.000
+Simon Wang: Okay, so I will just remove this example.
+
+668
+01:41:36.290 --> 01:41:38.919
+Simon Wang: So this will… this will be my prompt.
+
+669
+01:41:39.210 --> 01:41:43.390
+Simon Wang: Write code to display dataset information and summary statistics.
+
+670
+01:41:43.920 --> 01:41:44.640
+Simon Wang: Ep.
+
+671
+01:41:45.170 --> 01:41:48.199
+Simon Wang: Common lines to explain what each line of code does.
+
+672
+01:41:51.670 --> 01:41:53.779
+Simon Wang: Then you can see the suggestion.
+
+673
+01:41:53.940 --> 01:42:01.730
+Simon Wang: made by this GitHub co-pilot, instead of only have… having this, dab.info.
+
+674
+01:42:02.450 --> 01:42:06.340
+Simon Wang: So this will show the… summarize the basic information of the data set.
+
+675
+01:42:06.570 --> 01:42:10.010
+Simon Wang: It also has this… comment.
+
+676
+01:42:10.890 --> 01:42:13.300
+Simon Wang: Starting with this hashtag.
+
+677
+01:42:15.740 --> 01:42:22.409
+Simon Wang: So the sentence after the hashtag will not be executed. It is just a comment.
+
+678
+01:42:23.400 --> 01:42:25.950
+Simon Wang: But this is for human, this is for the user.
+
+679
+01:42:26.240 --> 01:42:30.019
+Simon Wang: If I want to, made some comments, or…
+
+680
+01:42:30.570 --> 01:42:37.369
+Simon Wang: try to explain what this… what this df.info means, I can put the information after this hashtag.
+
+681
+01:42:38.370 --> 01:42:44.549
+Simon Wang: So it says, display information about the dataset, including data types and non-null counts.
+
+682
+01:42:47.970 --> 01:42:49.720
+Simon Wang: So this is what it means.
+
+683
+01:42:50.000 --> 01:42:52.599
+Simon Wang: Of this df.info.
+
+684
+01:42:54.630 --> 01:43:00.099
+Simon Wang: And also, Because my requirement is to show the summary statistics.
+
+685
+01:43:00.620 --> 01:43:07.060
+Simon Wang: This df.describe will display the summary statistics for numerical columns in the dataset.
+
+686
+01:43:11.770 --> 01:43:19.060
+Simon Wang: And if I hit the tab, Then, these two…
+
+687
+01:43:19.520 --> 01:43:22.210
+Simon Wang: Python command will become… become real.
+
+688
+01:43:25.730 --> 01:43:34.839
+Simon Wang: I think, maybe, again, we have a 10-minute break first, and make sure that we… we're all on the same page to be able to
+
+689
+01:43:35.000 --> 01:43:37.680
+Simon Wang: Like, run the code up to Section 2.
+
+690
+01:44:03.850 --> 01:44:13.690
+Simon Wang: I think, for VS Code, we have this option to click Auto Save, alright?
+
+691
+01:44:13.810 --> 01:44:22.719
+Simon Wang: So, if you select auto-save, then, it will be auto-saved. Then you don't have to save every time.
+
+692
+01:44:23.280 --> 01:44:25.140
+Simon Wang: So you might want to,
+
+693
+01:44:25.780 --> 01:44:31.869
+Simon Wang: You might want to, enable this, check this, add item.
+
+694
+01:44:49.270 --> 01:44:57.499
+Simon Wang: Okay? And, let me check why it doesn't work.
+
+695
+01:44:59.910 --> 01:45:01.849
+Simon Wang: Seems should be working, right?
+
+696
+01:45:07.240 --> 01:45:17.550
+Simon Wang: So, we want to install and enable the extension. Maybe we can try that. Telly, is that your… should we, install this?
+
+697
+01:45:18.140 --> 01:45:20.500
+Simon Wang: Install the extension?
+
+698
+01:45:23.120 --> 01:45:27.109
+Simon Wang: It says, enable install the Python plus Jupyter.
+
+699
+01:45:28.310 --> 01:45:29.140
+Simon Wang: Okay.
+
+700
+01:45:29.400 --> 01:45:36.000
+Simon Wang: Because, yeah, so… It's kind of funny, because if you used,
+
+701
+01:45:37.470 --> 01:45:42.330
+Simon Wang: If you use the online one, actually, it might be… it might be easier.
+
+702
+01:45:42.970 --> 01:45:44.169
+Simon Wang: But what will we see.
+
+703
+01:45:45.190 --> 01:45:52.460
+Simon Wang: So for those of you who are using, the online version.
+
+704
+01:45:53.660 --> 01:45:56.170
+Simon Wang: You can also try the same.
+
+705
+01:45:59.410 --> 01:46:05.930
+Simon Wang: Because what, Talia just demonstrated is the autocomplete approach.
+
+706
+01:46:06.650 --> 01:46:11.080
+Simon Wang: Which is actually probably the most convenient one.
+
+707
+01:46:11.200 --> 01:46:16.410
+Simon Wang: All you have to do is just, tell the…
+
+708
+01:46:18.780 --> 01:46:24.500
+Simon Wang: You know, you write… you write some comments saying what you want to accomplish, and then through autocomplete.
+
+709
+01:46:24.710 --> 01:46:29.519
+Simon Wang: the AI will, write the codes for you, and then you just run the codes, alright?
+
+710
+01:46:34.620 --> 01:46:41.190
+Simon Wang: So, let me try again. We want to see… do we need to select the kernel?
+
+711
+01:46:44.050 --> 01:46:46.880
+Simon Wang: Right, so now we have Python environment…
+
+712
+01:46:47.880 --> 01:46:50.890
+Simon Wang: So we should, select a global environment, right?
+
+713
+01:46:57.980 --> 01:47:03.560
+Simon Wang: So we just select the global environment. I think we still need to install the Python.
+
+714
+01:47:05.560 --> 01:47:12.750
+Simon Wang: And once it is installed, Then we can run all the codes.
+
+715
+01:47:13.600 --> 01:47:16.170
+Simon Wang: Starting from here…
+
+716
+01:47:20.070 --> 01:47:21.160
+Simon Wang: Okay.
+
+717
+01:47:23.380 --> 01:47:26.820
+Simon Wang: So we need to install the, kernel.
+
+718
+01:47:28.070 --> 01:47:34.589
+Simon Wang: Yeah, I think this part is a little bit tricky, because everybody got its, their own, computers.
+
+719
+01:47:40.060 --> 01:47:45.619
+Simon Wang: But, once we get past this, we should be in business. It should be quite straightforward.
+
+720
+01:47:46.530 --> 01:47:48.759
+Simon Wang: So please be patient here.
+
+721
+01:48:01.060 --> 01:48:06.520
+Simon Wang: I think we also got, some… Isoo here.
+
+722
+01:48:07.210 --> 01:48:09.809
+Simon Wang: But let's see, if it will work.
+
+723
+01:48:10.350 --> 01:48:13.870
+Simon Wang: So, here, we just say, write Python…
+
+724
+01:48:43.050 --> 01:48:52.269
+Simon Wang: Okay, so I'm not sure whether, autocomplete is working on the… on the, Codespace.
+
+725
+01:48:52.540 --> 01:49:02.050
+Simon Wang: If it doesn't work, then we can, maybe go to ask more or agent mode. I mean, if it's agent mode, then it will be very,
+
+726
+01:49:02.470 --> 01:49:04.290
+Simon Wang: fast.
+
+727
+01:49:04.540 --> 01:49:09.510
+Simon Wang: But, I think we can also just… Copy this…
+
+728
+01:49:18.460 --> 01:49:22.250
+Simon Wang: And we send this instruction to, AI.
+
+729
+01:49:23.240 --> 01:49:26.169
+Simon Wang: And we asked the AI to write some code.
+
+730
+01:49:34.890 --> 01:49:39.050
+Simon Wang: So you see, this is already, written?
+
+731
+01:49:39.640 --> 01:49:44.459
+Simon Wang: So what we do is, we can just, send it over.
+
+732
+01:49:46.700 --> 01:49:51.530
+Simon Wang: Apply the code, Block here.
+
+733
+01:49:51.890 --> 01:49:53.940
+Simon Wang: So, we, we got this.
+
+734
+01:49:54.490 --> 01:50:00.459
+Simon Wang: And then we can run it, right? I think we can run… How do you run this?
+
+735
+01:50:05.480 --> 01:50:08.289
+Simon Wang: Right, so, so, so we have this code here.
+
+736
+01:50:08.640 --> 01:50:11.370
+Simon Wang: And then we're gonna go ahead and run it.
+
+737
+01:50:44.060 --> 01:50:48.220
+Simon Wang: I think they're still asking me for kernel.
+
+738
+01:51:34.750 --> 01:51:38.150
+Simon Wang: So actually, this is, what, what they suggest.
+
+739
+01:51:56.530 --> 01:52:03.180
+Simon Wang: So, yeah, so AI, the AI agent is helping us to install, some of the
+
+740
+01:52:03.410 --> 01:52:04.759
+Simon Wang: Things we need.
+
+741
+01:52:05.290 --> 01:52:08.440
+Simon Wang: So you can see now it's being imported.
+
+742
+01:57:01.690 --> 01:57:08.479
+Simon Wang: Okay, so in my case, I think it is working now.
+
+743
+01:57:13.800 --> 01:57:16.540
+Simon Wang: Because when I run the code.
+
+744
+01:57:24.480 --> 01:57:27.499
+Simon Wang: It's… it's supposed to be working.
+
+745
+01:57:27.750 --> 01:57:30.690
+Simon Wang: And then we move on, because I'm on the…
+
+746
+01:57:31.030 --> 01:57:36.540
+Simon Wang: environment here, I'm not sure whether… it would…
+
+747
+01:57:37.050 --> 01:57:41.599
+Simon Wang: Yeah, so it actually allowed me to do that, so it's just autocomplete like this.
+
+748
+01:57:42.370 --> 01:57:44.999
+Simon Wang: Okay, and then I'm going to run.
+
+749
+02:01:06.260 --> 02:01:09.060
+Simon Wang: So, have you got it working on your computer?
+
+750
+02:01:13.020 --> 02:01:14.020
+Simon Wang: Nothing new?
+
+751
+02:01:14.230 --> 02:01:18.759
+Simon Wang: Working for you? Which kernel do you use? Or you already got your Python installed?
+
+752
+02:01:22.870 --> 02:01:24.100
+Simon Wang: Oh, okay.
+
+753
+02:01:29.390 --> 02:01:41.129
+Simon Wang: See, the thing is, I'm not sure… I mean, the whole Jupyter Notebook thing is, causing… making it, a bit more difficult. I think, what if we simply,
+
+754
+02:01:41.480 --> 02:01:45.240
+Simon Wang: write some separate codes, I think that might work.
+
+755
+02:01:46.210 --> 02:01:50.520
+Simon Wang: So, let me, let me, let me do a quick demo this way.
+
+756
+02:03:02.700 --> 02:03:03.640
+Simon Wang: Didn't have that one.
+
+757
+02:05:23.300 --> 02:05:24.360
+Simon Wang: Okay.
+
+758
+02:05:24.710 --> 02:05:28.230
+Simon Wang: Finally, I cheated, sorry.
+
+759
+02:05:28.370 --> 02:05:30.719
+Simon Wang: I use the AI agent mode to make it work.
+
+760
+02:05:31.290 --> 02:05:37.770
+Simon Wang: But I can, I can, I can share this, code with you.
+
+761
+02:05:39.350 --> 02:05:46.629
+Simon Wang: But, at least, we… we make it work, even though it's… it's a bit like cheating.
+
+762
+02:05:52.060 --> 02:05:54.340
+Simon Wang: Okay, it works here as well.
+
+763
+02:06:18.760 --> 02:06:26.260
+Simon Wang: Now, for students who are using tablet, computer on an online environment, before you close this.
+
+764
+02:06:26.560 --> 02:06:33.769
+Simon Wang: you need to run the command line and say, commit, and push everything back to GitHub.
+
+765
+02:06:34.060 --> 02:06:36.590
+Simon Wang: Because otherwise,
+
+766
+02:06:36.890 --> 02:06:44.770
+Simon Wang: whatever you write here is just temporary. You may be lost… it will be lost, like, in, I don't know, 10 days or so.
+
+767
+02:06:45.100 --> 02:06:51.860
+Simon Wang: Okay? But, Do you want to quickly take a look at what I just did?
+
+768
+02:06:52.310 --> 02:07:01.910
+Simon Wang: Because, I'm… of course, I'm using, I'm using… Agent, So…
+
+769
+02:07:04.280 --> 02:07:11.699
+Simon Wang: But I think this is also a good opportunity to kind of look at how Agent may be working.
+
+770
+02:07:12.370 --> 02:07:13.390
+Simon Wang: Okay?
+
+771
+02:07:19.240 --> 02:07:25.410
+Simon Wang: So, as you can see, this is the command line that I put.
+
+772
+02:07:26.200 --> 02:07:31.379
+Simon Wang: what I did is I sent… this, Jupyter Notebook.
+
+773
+02:07:33.400 --> 02:07:36.650
+Simon Wang: You see, we have this Jupyter Notebook, here.
+
+774
+02:07:36.930 --> 02:07:41.460
+Simon Wang: I create a file path, Copy the past.
+
+775
+02:07:41.900 --> 02:07:48.569
+Simon Wang: And I put it here, and then say, review the instruction and task here, and write separate Python files, then run and do all the tasks.
+
+776
+02:07:49.070 --> 02:07:55.460
+Simon Wang: So, what the agent did is, you know, run the scripts…
+
+777
+02:07:55.770 --> 02:08:03.019
+Simon Wang: and, generate all the scripts, and then, actually, they run… they write a Python code to run all the, scripts.
+
+778
+02:08:03.950 --> 02:08:06.700
+Simon Wang: And then we will get all the results.
+
+779
+02:08:07.410 --> 02:08:15.850
+Simon Wang: Well… Of course, this is probably not the best pedagogical experience, because you just,
+
+780
+02:08:16.160 --> 02:08:19.810
+Simon Wang: give it to AI to do everything.
+
+781
+02:08:20.890 --> 02:08:26.820
+Simon Wang: In order to actually learn things, you have to come back and start reading some of the files.
+
+782
+02:08:27.340 --> 02:08:33.450
+Simon Wang: But, you can see all these files are pretty well annotated.
+
+783
+02:08:33.750 --> 02:08:40.130
+Simon Wang: So, it actually explained to you what each… section is doing.
+
+784
+02:08:40.850 --> 02:08:47.569
+Simon Wang: And then, we got all the results here. Distance analysis.
+
+785
+02:08:48.100 --> 02:08:55.539
+Simon Wang: distance versus recycling, distance distribution, comparison. So, we got all the results here.
+
+786
+02:08:55.650 --> 02:08:57.980
+Simon Wang: Now, my main…
+
+787
+02:08:58.450 --> 02:09:17.389
+Simon Wang: point, I think this is going to be the most important message for today's session, you know, we spend a lot of time trying to figure things out, all the technical things, but that's actually not as important as the conceptual understanding, right? So the conceptual understanding is that we don't necessarily have to
+
+788
+02:09:17.960 --> 02:09:21.180
+Simon Wang: Learn how to write these codes.
+
+789
+02:09:22.070 --> 02:09:27.639
+Simon Wang: you know, all these codes are actually in Python, before AI, if you…
+
+790
+02:09:28.460 --> 02:09:34.659
+Simon Wang: travel back to 2021, for example, or 2022, before ChatGPT, before GenAI,
+
+791
+02:09:34.910 --> 02:09:41.350
+Simon Wang: Anyone who wants to generate this kind of, nice… the diagrams.
+
+792
+02:09:41.470 --> 02:09:46.519
+Simon Wang: from the codes here, we'll have to learn Python in the hard way.
+
+793
+02:09:46.710 --> 02:09:50.269
+Simon Wang: So you have to start looking at, oh, okay, so…
+
+794
+02:09:50.660 --> 02:09:57.559
+Simon Wang: What does import? What does import mean? Import is a function that, would actually,
+
+795
+02:09:57.770 --> 02:10:00.349
+Simon Wang: Followed by some kind of package name.
+
+796
+02:10:00.870 --> 02:10:05.960
+Simon Wang: And then you have to define PD as a specific variable, You see what I mean?
+
+797
+02:10:08.000 --> 02:10:21.060
+Simon Wang: And then you look at this, okay, print, what does print mean? Print means, you know, you add some arguments or parameters into the parenthesis, and then the,
+
+798
+02:10:21.760 --> 02:10:27.860
+Simon Wang: Python, the interpreter, will read these lines in order to do whatever we need to do. So.
+
+799
+02:10:27.900 --> 02:10:46.349
+Simon Wang: So learning Python the hard way would be… you go through each line, you try to figure out what these lines mean, you type, you know, one character, character by character line by line, and then you run it, and you run into all kinds of bugs and errors, and you debug, and you spend hours to figure things out, and then you become a Python programmer.
+
+800
+02:10:46.960 --> 02:10:51.530
+Simon Wang: Right? So that's how the conventional way of learning programming works.
+
+801
+02:10:51.900 --> 02:10:58.439
+Simon Wang: But, now, with the AI agent, as you can see, all I did is just write one line.
+
+802
+02:10:59.150 --> 02:11:03.799
+Simon Wang: And, and I got… we… we got all the files, figured out.
+
+803
+02:11:03.930 --> 02:11:10.019
+Simon Wang: So, I think that's the power of vibe coding, and I hope you can recognize
+
+804
+02:11:10.220 --> 02:11:20.060
+Simon Wang: There's, there's a huge, potential…
+
+805
+02:11:24.330 --> 02:11:29.989
+Simon Wang: The huge potential of, being able to leverage the technology to create the codes.
+
+806
+02:11:49.660 --> 02:11:50.619
+Simon Wang: Does it make sense?
+
+807
+02:12:01.130 --> 02:12:02.450
+Simon Wang: Any question?
+
+808
+02:12:08.650 --> 02:12:15.720
+Simon Wang: Shall we continue this, or maybe I can touch on the project topics?
+
+809
+02:12:19.310 --> 02:12:20.170
+Simon Wang: Okay.
+
+810
+02:12:20.520 --> 02:12:26.919
+Simon Wang: All right, so one more thing before I pass it over to, Talia is that.
+
+811
+02:12:27.300 --> 02:12:31.220
+Simon Wang: If you are doing… this online.
+
+812
+02:12:31.830 --> 02:12:33.840
+Simon Wang: like, what I'm doing here.
+
+813
+02:12:39.210 --> 02:12:45.009
+Simon Wang: For, for, for students who are doing it, on, On key hub.
+
+814
+02:12:45.470 --> 02:12:47.960
+Simon Wang: I mean, the, the online version.
+
+815
+02:12:49.560 --> 02:12:50.519
+Simon Wang: Where is that?
+
+816
+02:13:00.620 --> 02:13:08.460
+Simon Wang: Okay, so this is… This is the online version, right? So, so, so we got everything here.
+
+817
+02:13:10.040 --> 02:13:13.430
+Simon Wang: We got all the, all the… The files and everything?
+
+818
+02:13:33.770 --> 02:13:40.660
+Simon Wang: So there's one thing you have to do, you have to say, commit, And, push.
+
+819
+02:13:41.420 --> 02:13:43.379
+Simon Wang: to GitHub.
+
+820
+02:13:43.990 --> 02:13:49.909
+Simon Wang: Because right now, we are in a virtual environment, all the codes here are not being…
+
+821
+02:13:50.170 --> 02:13:56.779
+Simon Wang: So you can see… The codes here, there's only the basic codes, right?
+
+822
+02:14:00.510 --> 02:14:05.610
+Simon Wang: And, if you go to… Here…
+
+823
+02:14:05.930 --> 02:14:18.089
+Simon Wang: You can see we have a code space, but then there's uncommitted changes, and that's not good, because that means the codes, the changes will be lost later.
+
+824
+02:14:18.470 --> 02:14:22.239
+Simon Wang: So what you have to do is to write commit and push to GitHub.
+
+825
+02:14:25.830 --> 02:14:30.460
+Simon Wang: And you can ask agent to, run the command line.
+
+826
+02:14:31.480 --> 02:14:40.160
+Simon Wang: So you can see… the agent is going to help you to commit and push everything to GitHub.
+
+827
+02:14:40.770 --> 02:14:41.580
+Simon Wang: Alright.
+
+828
+02:15:51.110 --> 02:15:53.440
+Simon Wang: So, as you can see here,
+
+829
+02:15:53.560 --> 02:16:00.869
+Simon Wang: The agent is now doing all the command Run all the command lines.
+
+830
+02:16:01.380 --> 02:16:04.119
+Simon Wang: And in order to compete and push everything.
+
+831
+02:16:05.110 --> 02:16:11.069
+Simon Wang: Again, you know, even this kind of command line, you know, you have to learn the syntax before.
+
+832
+02:16:11.540 --> 02:16:13.800
+Simon Wang: But now, it's all done.
+
+833
+02:16:14.410 --> 02:16:21.450
+Simon Wang: And, you can check here… To see whether everything… is already committed.
+
+834
+02:16:22.780 --> 02:16:23.700
+Simon Wang: Not yet.
+
+835
+02:16:24.630 --> 02:16:27.310
+Simon Wang: So, you have to… Wait a bit.
+
+836
+02:16:40.340 --> 02:16:47.809
+Simon Wang: But anyway, so that's kind of a reminder for you. If you are using your
+
+837
+02:16:50.629 --> 02:16:52.699
+Simon Wang: Wait, it should be working now, right?
+
+838
+02:16:53.370 --> 02:16:56.619
+Simon Wang: How come it's not, committed?
+
+839
+02:17:16.250 --> 02:17:23.009
+Simon Wang: Okay, anyway, I'll try to fix it myself, but, yeah, Talia, maybe you can talk a bit more about…
+
+840
+02:17:44.850 --> 02:17:53.029
+Simon Wang: Yeah, okay, I think we have finished the two… first two sessions, and I will quickly go through the remaining
+
+841
+02:17:53.559 --> 02:17:54.940
+Simon Wang: four sections.
+
+842
+02:17:55.370 --> 02:17:59.909
+Simon Wang: Actually, the Section 3 is for categorical data visualization.
+
+843
+02:18:00.190 --> 02:18:07.869
+Simon Wang: And example of categorical data is, like, the, all the, options about opinion, like.
+
+844
+02:18:07.990 --> 02:18:18.640
+Simon Wang: To what extent you support, this policy, or to, to… to what extent do you think this policy would be effective?
+
+845
+02:18:18.790 --> 02:18:22.880
+Simon Wang: For, like, reducing the weight, so on and so forth.
+
+846
+02:18:23.040 --> 02:18:27.920
+Simon Wang: As long as it's… a Likert scale, like, from 1 to 5.
+
+847
+02:18:28.090 --> 02:18:31.639
+Simon Wang: Then we can regard it as a categorical data.
+
+848
+02:18:32.969 --> 02:18:40.440
+Simon Wang: And for the categorical data, it's usually used as either bar chart or pie chart to do the visualization.
+
+849
+02:18:42.379 --> 02:18:48.200
+Simon Wang: So here, I actually typed the, relevant prompts already.
+
+850
+02:18:48.639 --> 02:18:55.179
+Simon Wang: For example, write Python code to create a frequency table for the level support variable.
+
+851
+02:18:56.129 --> 02:19:02.299
+Simon Wang: So because this is the, I think, one of the variables that we care most.
+
+852
+02:19:02.660 --> 02:19:09.490
+Simon Wang: Because we want to know how… how many percent of people would like to support this scheme.
+
+853
+02:19:09.820 --> 02:19:15.649
+Simon Wang: So, I want to, generate a frequency table.
+
+854
+02:19:15.799 --> 02:19:22.259
+Simon Wang: To show the numbers, and then later, to create a bar chart, For the support level.
+
+855
+02:19:23.059 --> 02:19:27.239
+Simon Wang: I think the outcome… Should look like this.
+
+856
+02:19:27.680 --> 02:19:33.500
+Simon Wang: So the, it seems that the, majority of people still support their scheme.
+
+857
+02:19:34.219 --> 02:19:38.339
+Simon Wang: On the x-axis, there are different, categories.
+
+858
+02:19:38.680 --> 02:19:46.889
+Simon Wang: Where on the y-axis, it represents the frequency, or the count, the number of people who select the corresponding option.
+
+859
+02:19:51.000 --> 02:19:57.119
+Simon Wang: We can also use this pie chart to show the percentages of different groups.
+
+860
+02:19:58.840 --> 02:20:01.819
+Simon Wang: Let me see whether I can find the,
+
+861
+02:20:02.950 --> 02:20:12.720
+Simon Wang: Yeah, so if you, like, modify the… Given prompt, And generate the code, To plot this pie chart.
+
+862
+02:20:12.860 --> 02:20:14.630
+Simon Wang: It may look like this.
+
+863
+02:20:15.860 --> 02:20:20.369
+Simon Wang: So, but of course, some details of the pie chart might be different.
+
+864
+02:20:20.620 --> 02:20:27.880
+Simon Wang: Because, as mentioned last time, the answer given by LLM is not deterministic.
+
+865
+02:20:28.210 --> 02:20:30.540
+Simon Wang: It contains certain random part.
+
+866
+02:20:30.810 --> 02:20:37.329
+Simon Wang: And even you ask it the same question today and tomorrow, the answer will not be exactly the same.
+
+867
+02:20:38.620 --> 02:20:55.469
+Simon Wang: So similar here, the code it generates in my computer might not be exactly the same with the code generated on your… in your computer. So it is possible that all… the looking of the charts are not exactly the same. But overall, like, the percentages must be the same.
+
+868
+02:21:00.000 --> 02:21:08.680
+Simon Wang: And I think for the, following, this, these are called the, marked down cells.
+
+869
+02:21:08.970 --> 02:21:14.770
+Simon Wang: Sorry, these are still the cold cells, but for, like, more tasks.
+
+870
+02:21:15.110 --> 02:21:19.970
+Simon Wang: like this cell, this is a marked-down cell, so you can see that
+
+871
+02:21:20.260 --> 02:21:27.119
+Simon Wang: If I click this button, I can add new markdown cells to this notebook.
+
+872
+02:21:27.860 --> 02:21:34.019
+Simon Wang: And in Markdown Cell, I can, type the text with formatting.
+
+873
+02:21:34.460 --> 02:21:38.970
+Simon Wang: So, for example, for these more tasks, it's bold, right? He's bolded.
+
+874
+02:21:39.730 --> 02:21:44.509
+Simon Wang: And for this food waste behavior, it's somewhat highlighted, right?
+
+875
+02:21:44.830 --> 02:21:49.490
+Simon Wang: And this can all be, formatted
+
+876
+02:21:49.730 --> 02:21:53.300
+Simon Wang: By this, using this markdown format.
+
+877
+02:21:53.910 --> 02:21:57.820
+Simon Wang: So, say, if I add the, asterisks.
+
+878
+02:21:57.920 --> 02:22:05.740
+Simon Wang: Two asterisks, in front of, and after there's more tasks, it will be… it will be… become bold.
+
+879
+02:22:09.170 --> 02:22:18.120
+Simon Wang: So you may, play with this prompt and see how this, Python code were, are generated.
+
+880
+02:22:20.060 --> 02:22:27.960
+Simon Wang: So here comes more, but I think we do not have time to… Go through them in details.
+
+881
+02:22:29.010 --> 02:22:33.079
+Simon Wang: And then the Section 4 is about the continuous data.
+
+882
+02:22:33.180 --> 02:22:42.059
+Simon Wang: So this type of data is different from the categorical data, which, like, can only group the individuals into groups.
+
+883
+02:22:44.070 --> 02:22:49.519
+Simon Wang: There's only, I think, one continuous data in our dataset, which is called the distance.
+
+884
+02:22:49.710 --> 02:22:59.049
+Simon Wang: Which measures the distance between the participant's apartment to the nearest recycling facility.
+
+885
+02:22:59.700 --> 02:23:08.179
+Simon Wang: So whether it is 100 meters, 150 meters, like, 210 meters, That is, quantitative data.
+
+886
+02:23:08.770 --> 02:23:13.289
+Simon Wang: Which gives you a numerical measurement of the distance between
+
+887
+02:23:13.410 --> 02:23:18.069
+Simon Wang: Where the participants leave, and the nearest recycling facilities.
+
+888
+02:23:19.780 --> 02:23:26.540
+Simon Wang: And the reason that I mentioned this type of data is different compared to the previous is because
+
+889
+02:23:27.620 --> 02:23:31.190
+Simon Wang: The type of visualization depends on the data type.
+
+890
+02:23:33.840 --> 02:23:40.709
+Simon Wang: So previously, when we have categorical data, we use bar chart, right? We use pie chart.
+
+891
+02:23:41.480 --> 02:23:49.829
+Simon Wang: Whereas for the continuous data type, we often use histogram to show the distribution, or use the box and whisker plot.
+
+892
+02:23:50.430 --> 02:23:55.230
+Simon Wang: So at least the type of data will determine which…
+
+893
+02:23:55.630 --> 02:23:59.690
+Simon Wang: Which type of visualization is the most appropriate one?
+
+894
+02:24:02.370 --> 02:24:13.099
+Simon Wang: So for this continuous data, we can, simply ask GitHub Compiler to, write code to generate histogram or box whisker plot.
+
+895
+02:24:13.730 --> 02:24:19.559
+Simon Wang: And then once the code is generated, then we can run and see the output immediately.
+
+896
+02:24:22.050 --> 02:24:27.119
+Simon Wang: And Section 5 is about exploring the relationship between variables.
+
+897
+02:24:27.330 --> 02:24:38.559
+Simon Wang: say… If we want to know whether the longer the distance between home and the nearest recycling facilities.
+
+898
+02:24:38.720 --> 02:24:42.609
+Simon Wang: The less recycling effort the participant will pay.
+
+899
+02:24:43.220 --> 02:24:50.769
+Simon Wang: If we want to explore the relationship between these two variables, then we can use this scatter plot.
+
+900
+02:24:53.470 --> 02:24:58.010
+Simon Wang: And the last part is, once we generate this, like,
+
+901
+02:24:58.640 --> 02:25:05.790
+Simon Wang: plots, we may want to save them into our, Like, working directory.
+
+902
+02:25:06.400 --> 02:25:16.979
+Simon Wang: So again, we can ask GitHub Copilot to generate code, and save them under the same folder called plots, so that later, when we want to
+
+903
+02:25:17.140 --> 02:25:23.650
+Simon Wang: Say, use this charts in our, say, presentations, and we can easily
+
+904
+02:25:23.800 --> 02:25:26.579
+Simon Wang: Paste them to, to our slides.
+
+905
+02:25:28.440 --> 02:25:40.149
+Simon Wang: Yeah, I think that will be all of the visualization part, and for specific visualizations, like box and whisker plot, I will spend some more time next week.
+
+906
+02:25:41.900 --> 02:25:49.850
+Simon Wang: Then I will pass the mic back to Simon to briefly introduce about the, our course projects.
+
+907
+02:25:53.730 --> 02:26:02.149
+Simon Wang: Alright, so, I hope you are not too overwhelmed by what we did here.
+
+908
+02:26:02.280 --> 02:26:12.790
+Simon Wang: And there, you know, we'll have plenty of time to figure things out, so even if it doesn't work on your computer, don't worry, we will come back to this.
+
+909
+02:26:13.030 --> 02:26:27.239
+Simon Wang: Now, I want to very briefly talk about the projects that we, plan to pursue, because this is an experiential learning course, so we are going to spend a little bit, well, actually.
+
+910
+02:26:27.420 --> 02:26:35.049
+Simon Wang: The bulk of the time that we're going to spend, in this semester is to pursue, good projects.
+
+911
+02:26:35.690 --> 02:26:40.639
+Simon Wang: And, well, this semester, we are actually very lucky.
+
+912
+02:26:40.780 --> 02:26:44.069
+Simon Wang: Because we have a relatively small class size.
+
+913
+02:26:44.240 --> 02:26:56.700
+Simon Wang: That means you will enjoy the luxury of having a remarkable teacher-student ratio, right? Last semester, we got,
+
+914
+02:26:57.620 --> 02:27:16.960
+Simon Wang: almost 30 students, right? More than 30 students. So you can imagine how hard it was for two of us to supervise, six projects. And each project team got, up to 5, sometimes 7, students. So it's, it's a lot of more work of supervision.
+
+915
+02:27:17.080 --> 02:27:20.009
+Simon Wang: But this semester, it's much better now.
+
+916
+02:27:20.550 --> 02:27:28.370
+Simon Wang: But, actually, I would, encourage you to stay in this course. If you are thinking about dropping or whatever, think again.
+
+917
+02:27:28.650 --> 02:27:39.319
+Simon Wang: Because, again, as I said, you know, we have very, kind of luxurious, kind of, access to, to a lot of material, resources, support.
+
+918
+02:27:39.750 --> 02:27:42.860
+Simon Wang: Now, if you come to the group projects.
+
+919
+02:27:43.460 --> 02:27:46.670
+Simon Wang: tab, you can see we have this,
+
+920
+02:27:48.670 --> 02:27:51.480
+Simon Wang: We have this, sidebar.
+
+921
+02:27:51.680 --> 02:27:57.750
+Simon Wang: So if you go to Google Project, we have a total of… 6 options.
+
+922
+02:27:57.890 --> 02:27:58.810
+Simon Wang: Alright?
+
+923
+02:27:59.010 --> 02:28:03.859
+Simon Wang: And obviously, we don't need 6 projects. I'm thinking about 2.
+
+924
+02:28:04.960 --> 02:28:12.220
+Simon Wang: Or maybe up to three, right? Two to three projects that we're going to pursue, this semester.
+
+925
+02:28:12.360 --> 02:28:20.290
+Simon Wang: Assuming that we're going to have this many students, I don't know, maybe, you know, tomorrow a couple more will show up.
+
+926
+02:28:20.530 --> 02:28:27.209
+Simon Wang: But, most likely, we're going to have 3 project teams. Each team, we're talking about 3
+
+927
+02:28:27.340 --> 02:28:31.889
+Simon Wang: Or 4 students, or if we have 2 project teams, then, you know, 4 or 5.
+
+928
+02:28:32.390 --> 02:28:34.629
+Simon Wang: I think that's a really nice setting.
+
+929
+02:28:34.890 --> 02:28:49.390
+Simon Wang: So, what I'm going to do is just very quickly give you a kind of an overview of some of the projects here. I don't even will go into the individual pages, just a kind of a sweeping kind of overview.
+
+930
+02:28:49.630 --> 02:28:57.500
+Simon Wang: Flu shots is a public health, manner, so every year we are facing seasonal influenza.
+
+931
+02:28:57.590 --> 02:29:10.759
+Simon Wang: it can become very serious. Some people will, you know, unfortunately die from it, and the entire healthcare system is overwhelmed. Public hospitals, emergency rooms with long queues.
+
+932
+02:29:10.940 --> 02:29:18.669
+Simon Wang: But the government is trying to promote flu shots every year, but the participation rate is still not good enough.
+
+933
+02:29:19.090 --> 02:29:26.680
+Simon Wang: So, if you pursue this project, we're going to investigate how the government can do a better job to promote flu shots, to protect public health.
+
+934
+02:29:27.010 --> 02:29:37.620
+Simon Wang: And there's a team last semester who already did this a little bit, you know, but I think we can continue working on this, so that's the first project.
+
+935
+02:29:38.260 --> 02:29:43.600
+Simon Wang: Column Cancer Screening Program, it's a…
+
+936
+02:29:44.760 --> 02:29:57.899
+Simon Wang: preventive project, a preventive scheme. So basically, anyone who are over 50 years old in Hong Kong can join the scheme, as long as they don't have these colon cancer symptoms.
+
+937
+02:29:58.160 --> 02:30:07.870
+Simon Wang: And, the idea is that if we can diagnose the cases earlier, then we're going to save public health resources.
+
+938
+02:30:08.600 --> 02:30:11.139
+Simon Wang: Now, if you only work on this.
+
+939
+02:30:11.710 --> 02:30:18.909
+Simon Wang: we can provide support, and also, I had some students who did some work before, so we can build upon this.
+
+940
+02:30:19.960 --> 02:30:32.929
+Simon Wang: Now, road safety is a completely different category. Now we're talking public transportation. We only have some data from the Hong Kong Police, as well as Transport Department, looking at how they identify what we call the black site.
+
+941
+02:30:33.010 --> 02:30:49.180
+Simon Wang: You know, those are the places where accidents are more likely to happen, all right? So we want to review to what extent this kind of black site scheme would actually help improve the road condition and reduce the risk of accidents.
+
+942
+02:30:49.480 --> 02:30:59.970
+Simon Wang: Alright, so again, that's a very, kind of, practical project, and the outcome of this kind of project will create value for our community and society.
+
+943
+02:31:01.000 --> 02:31:15.480
+Simon Wang: EMPF, NPF is the Hong Kong's retirement scheme, okay? Everybody is, required, anyone who works in Hong Kong are required to join this, mandatory providence, fund.
+
+944
+02:31:15.530 --> 02:31:28.029
+Simon Wang: It's, you know, you have to contribute, like, up 5% of your salary every month, and your boss, your employer, will contribute another 5%. You know, some, some employers will contribute more.
+
+945
+02:31:28.710 --> 02:31:48.540
+Simon Wang: And, recently, the government introduced this eMPF platform that aims to streamline the process of managing the fund, okay? And promises to reduce the fees, management fee. Now, we're going to request some data from NPF Authority.
+
+946
+02:31:48.540 --> 02:31:55.919
+Simon Wang: And to evaluate to what extent this platform is actually making a difference, and how we can further improve the platform.
+
+947
+02:31:56.030 --> 02:32:04.660
+Simon Wang: Now, again, it's very practical, it's, it's got, practical value for the community, but probably not so,
+
+948
+02:32:05.170 --> 02:32:14.020
+Simon Wang: I mean, it may be less relevant to young people, because, you know, your retirement is still on the horizon, you know, not on the horizon, it's still many years…
+
+949
+02:32:14.160 --> 02:32:15.350
+Simon Wang: this away.
+
+950
+02:32:15.450 --> 02:32:21.999
+Simon Wang: But still, it's… it's kind of relevant to people who are going to work anyway, so… so that's… that's that.
+
+951
+02:32:22.290 --> 02:32:36.380
+Simon Wang: And chronic disease co-care pilot scheme is a little bit related to this, because both are public health, but this one is to offer people the opportunity to actually see the private doctors with government subsidies.
+
+952
+02:32:36.520 --> 02:32:39.850
+Simon Wang: For certain chronic conditions, like hypertension.
+
+953
+02:32:40.080 --> 02:32:54.130
+Simon Wang: what's the other one? Hypertension and diabetes, all right? So that's, again, we need to look at, the participation rate, we need to look at whether, to what extent these, schemes are making a difference for the public health sector.
+
+954
+02:32:54.700 --> 02:32:59.360
+Simon Wang: Rodent control, that's a different one.
+
+955
+02:32:59.570 --> 02:33:07.419
+Simon Wang: So, the government has got some schemes to try to keep the number of rodents in different communities under control.
+
+956
+02:33:07.450 --> 02:33:23.839
+Simon Wang: And we want to look at how the government is assessing the situation, and to what extent this scheme is effective in terms of monitoring and also controlling this rodents or, you know, mice or rats.
+
+957
+02:33:23.910 --> 02:33:25.540
+Simon Wang: In our neighborhood.
+
+958
+02:33:26.170 --> 02:33:29.909
+Simon Wang: And finally, we have this project on bus stop merch.
+
+959
+02:33:30.250 --> 02:33:48.430
+Simon Wang: And, this is actually a… a very kind of neighborhood issue. So, in… actually, this is a neighborhood where I live. We found that there are two bus stops only about 50… 50 or 75 meters away, apart. So, we're trying to make the argument that the two bus stops should be merged.
+
+960
+02:33:48.710 --> 02:33:58.139
+Simon Wang: Because right now, all the buses that, especially during the rush hours, all the buses have to stop at both spots, creating a queue
+
+961
+02:33:58.300 --> 02:34:09.070
+Simon Wang: Right? And, because they're, you know, passengers have to get on the bus, and that would take time, the bus stop space is very limited.
+
+962
+02:34:10.330 --> 02:34:15.710
+Simon Wang: So we're trying to, look at, the possibility of, merging
+
+963
+02:34:15.930 --> 02:34:18.959
+Simon Wang: These two bus stops, making the argument.
+
+964
+02:34:19.570 --> 02:34:25.380
+Simon Wang: Now, if you go to the fall 2025, archive.
+
+965
+02:34:25.640 --> 02:34:34.480
+Simon Wang: You can see that, actually, for both flu shots and bus stop merge, the teams have already done some work.
+
+966
+02:34:34.730 --> 02:34:37.729
+Simon Wang: So you can actually get a taste on, you know.
+
+967
+02:34:37.870 --> 02:34:46.340
+Simon Wang: what they have done, and then we can build upon that. So, for flu shots, and for, bus stop merging.
+
+968
+02:34:46.480 --> 02:34:51.870
+Simon Wang: We actually have something which is, quite interesting.
+
+969
+02:34:52.350 --> 02:34:59.779
+Simon Wang: But again, it's up to you, and hopefully you guys can actually come up with something.
+
+970
+02:35:00.540 --> 02:35:03.609
+Simon Wang: Let me see if I have that simulation link.
+
+971
+02:35:04.680 --> 02:35:06.900
+Simon Wang: We probably don't have the simulation link, right?
+
+972
+02:35:09.220 --> 02:35:16.990
+Simon Wang: Anyway, so, I hope that that makes sense. I think that's pretty much, all I have to say for now.
+
+973
+02:35:21.850 --> 02:35:23.870
+Simon Wang: Right, okay, hold on.
+
+974
+02:35:24.870 --> 02:35:30.180
+Simon Wang: Okay, so going back here… So, any quick…
+
+975
+02:35:30.550 --> 02:35:33.909
+Simon Wang: Questions? Because we still got a few minutes left.
+
+976
+02:35:34.150 --> 02:35:39.849
+Simon Wang: Any quick questions about any of these projects? Any project that you find particularly interesting?
+
+977
+02:35:40.300 --> 02:35:57.419
+Simon Wang: Obviously, we don't want students to spread over different projects. We want to narrow down the scope to two, or up to three projects, so that's why I would encourage you guys to
+
+978
+02:35:58.480 --> 02:36:04.849
+Simon Wang: Reply my message, in the… In a group.
+
+979
+02:36:05.880 --> 02:36:06.770
+Simon Wang: Okay?
+
+980
+02:36:06.980 --> 02:36:12.649
+Simon Wang: So, I, I would just go ahead and, and, Take a picture.
+
+981
+02:36:13.450 --> 02:36:19.620
+Simon Wang: And, as you can see, in the group, we've… we've got all the seven… Projects.
+
+982
+02:36:19.970 --> 02:36:21.320
+Simon Wang: project ideas.
+
+983
+02:36:21.510 --> 02:36:25.830
+Simon Wang: And you go ahead and reply and let us know which one
+
+984
+02:36:26.020 --> 02:36:30.039
+Simon Wang: would you like to pursue? What's your first choice? What's your second choice? How about that?
+
+985
+02:36:30.160 --> 02:36:34.770
+Simon Wang: And then we will have some idea, you know, which…
+
+986
+02:36:35.160 --> 02:36:41.920
+Simon Wang: topics we want to pursue, okay? So I think, you know, we have plenty of options here.
+
+987
+02:36:42.030 --> 02:36:46.739
+Simon Wang: So, I hope you guys can, give… give it some thoughts.
+
+988
+02:36:47.030 --> 02:36:53.640
+Simon Wang: And when we come back, next Wednesday, we will start, you know, finalizing the group
+
+989
+02:36:53.900 --> 02:37:04.879
+Simon Wang: information and topics, and we will start, reviewing all the information that is publicly available, and we will start planning, you know, collecting some data from the government.
+
+990
+02:37:04.960 --> 02:37:18.780
+Simon Wang: And, also collecting data so we can run the math model to, to do some analysis, okay? So, and of course, the VIP coding and computers tools are here.
+
+991
+02:37:19.030 --> 02:37:20.879
+Simon Wang: To, to, to help.
+
+992
+02:37:21.400 --> 02:37:25.909
+Simon Wang: And for those of you who haven't got the notebook computer.
+
+993
+02:37:26.010 --> 02:37:34.390
+Simon Wang: This time, I hope next week you can bring your notebook computer, because that would be actually much more, convenient, alright?
+
+994
+02:37:35.520 --> 02:37:39.190
+Simon Wang: So, any questions?
+
+995
+02:37:41.750 --> 02:37:43.650
+Simon Wang: Any questions?
+
+996
+02:37:53.630 --> 02:37:58.060
+Simon Wang: I have no idea why I cannot, commit.
+
+997
+02:38:01.380 --> 02:38:05.079
+Simon Wang: my codes. Oh, okay, so now it's actually committed.
+
+998
+02:38:09.690 --> 02:38:13.089
+Simon Wang: But still, it's not… it's not being committed. I don't know why.
+
+999
+02:38:13.850 --> 02:38:17.030
+Simon Wang: Anyway, so, any questions?
+

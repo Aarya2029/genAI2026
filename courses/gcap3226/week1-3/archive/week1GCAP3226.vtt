@@ -1,0 +1,2734 @@
+WEBVTT
+
+1
+00:00:04.410 --> 00:00:06.510
+Simon Wang: Alright, so, huh.
+
+2
+00:00:07.860 --> 00:00:14.349
+Simon Wang: This is the second semester that we teach this course, which is,
+
+3
+00:00:15.050 --> 00:00:18.679
+Simon Wang: Kind of different from last semester, you know?
+
+4
+00:00:19.600 --> 00:00:32.599
+Simon Wang: In the last semester, we had quite, like, a room full of students, but right now, we don't have that many. But, hopefully we'll have more, so this video recording will be shared with students.
+
+5
+00:00:33.110 --> 00:00:41.399
+Simon Wang: And when you watch the video, you can also know more about this course. And we have a QR code, so maybe you guys can…
+
+6
+00:00:41.540 --> 00:00:43.920
+Simon Wang: Scan the QR code, and
+
+7
+00:00:44.320 --> 00:00:47.059
+Simon Wang: You'll be able to have this page.
+
+8
+00:00:47.540 --> 00:00:48.250
+Simon Wang: Okay.
+
+9
+00:00:48.550 --> 00:00:50.819
+Simon Wang: You only do that? Scan the QR code.
+
+10
+00:00:58.490 --> 00:01:03.629
+Simon Wang: Alright, so this is a GCAP course. It's a new GCAP course.
+
+11
+00:01:03.880 --> 00:01:07.040
+Simon Wang: And, as the title suggests.
+
+12
+00:01:07.360 --> 00:01:10.810
+Simon Wang: We are trying to empower citizens through data.
+
+13
+00:01:11.490 --> 00:01:16.700
+Simon Wang: Alright? And, it's called Participatory Policy Analysis.
+
+14
+00:01:17.350 --> 00:01:18.500
+Simon Wang: for Hong Kong.
+
+15
+00:01:19.550 --> 00:01:28.210
+Simon Wang: Now, obviously, we want to focus on some public policy issue in Hong Kong, And the word participatory
+
+16
+00:01:28.360 --> 00:01:40.669
+Simon Wang: implies that we want to participate, alright, as ordinary citizens. We want to join the discussion, join the conversation, and hopefully, we will be able to
+
+17
+00:01:40.860 --> 00:01:47.350
+Simon Wang: influence the behaviors and the decision-making process of the Hong Kong government.
+
+18
+00:01:48.110 --> 00:01:51.060
+Simon Wang: And, that's very difficult.
+
+19
+00:01:51.320 --> 00:02:01.630
+Simon Wang: Because the government has its own way of doing things, and they make a lot of decisions, and the process is not always transparent.
+
+20
+00:02:03.520 --> 00:02:09.910
+Simon Wang: And, I think the, kind of the long-term vision and the goal is for us to try to change that.
+
+21
+00:02:10.300 --> 00:02:18.180
+Simon Wang: Alright, because we won't… the government staff to be more transparent about how they make decisions. And hopefully.
+
+22
+00:02:18.290 --> 00:02:20.480
+Simon Wang: They can use more data.
+
+23
+00:02:20.610 --> 00:02:24.590
+Simon Wang: when they make decisions on public policies. So that's our goal.
+
+24
+00:02:25.780 --> 00:02:34.330
+Simon Wang: And, our team, the teaching team is very unique, because we have, the math teacher.
+
+25
+00:02:34.640 --> 00:02:36.610
+Simon Wang: Dr. Wu here, Talia.
+
+26
+00:02:36.870 --> 00:02:45.330
+Simon Wang: She's the coordinator, because the course is offered by math department, and I'm the co-teacher from the language center, so this is going to be…
+
+27
+00:02:45.870 --> 00:02:53.400
+Simon Wang: The kind of a synergy between the quantitative reasoning and the qualitative, reasoning.
+
+28
+00:02:54.340 --> 00:03:09.580
+Simon Wang: And I think that's a very unique combination, and for students who take this course, even though we will be doing some math, we'll be doing some modeling, we don't really expect the students to have very strong math background.
+
+29
+00:03:09.700 --> 00:03:20.680
+Simon Wang: Because, this is actually a general education course. So we try to design and present the materials in a way that students from different backgrounds can all benefit.
+
+30
+00:03:21.820 --> 00:03:22.640
+Simon Wang: Right?
+
+31
+00:03:23.820 --> 00:03:26.230
+Simon Wang: Now, in terms of course objectives.
+
+32
+00:03:26.440 --> 00:03:30.500
+Simon Wang: There are 4 items, or 4 themes, that we want to cover.
+
+33
+00:03:31.100 --> 00:03:49.270
+Simon Wang: The first one is, we're going to offer some analytical tools, alright? Again, you know, we want to emphasize the fact that we don't really expect you to have math background, but it seems like most of you have some background in math. By the way, what's your major?
+
+34
+00:03:50.200 --> 00:03:53.090
+Simon Wang: Oh, you're a math major! Okay, great.
+
+35
+00:03:53.310 --> 00:03:56.210
+Simon Wang: Right, so…
+
+36
+00:03:56.380 --> 00:04:15.769
+Simon Wang: even though you're not very familiar with all the math models and everything, the good news is that now we have artificial intelligence, we have AI, large language model, can bridge the gap between people who do not have such a background and those who have the background. And specifically, we want to…
+
+37
+00:04:15.820 --> 00:04:19.939
+Simon Wang: Adopt this approach called, vibe coding.
+
+38
+00:04:20.430 --> 00:04:25.259
+Simon Wang: Okay, so, raise your hand if you tried VIP coding before.
+
+39
+00:04:25.600 --> 00:04:26.360
+Simon Wang: Yeah?
+
+40
+00:04:26.850 --> 00:04:27.740
+Simon Wang: How about you?
+
+41
+00:04:28.830 --> 00:04:29.640
+Simon Wang: No?
+
+42
+00:04:30.630 --> 00:04:33.190
+Simon Wang: Have you done any programming before?
+
+43
+00:04:36.360 --> 00:04:38.230
+Simon Wang: Python, Elizabeth, how about you?
+
+44
+00:04:43.020 --> 00:04:46.650
+Simon Wang: R, okay, that's for, statistical analysis, great.
+
+45
+00:04:46.820 --> 00:05:03.240
+Simon Wang: So, yeah, so the idea of vibe coding is that you don't necessarily have to learn the syntax itself. As long as you know, you know, what you want with the codes, then you can ask the AI to write the code and run it, and you can see whether the result is good.
+
+46
+00:05:03.240 --> 00:05:10.709
+Simon Wang: even if there's some syntax, error or whatever, you know, the AI can actually help us to, to,
+
+47
+00:05:11.100 --> 00:05:12.689
+Simon Wang: fix it.
+
+48
+00:05:13.000 --> 00:05:27.520
+Simon Wang: So, okay, so hopefully there will be a couple of tools that you will pick up from this course, and you can apply it to problem solving, and you will be able to, you know, use it in your future, studies and career.
+
+49
+00:05:28.590 --> 00:05:35.109
+Simon Wang: Now, the second theme we want to emphasize in this course is called, government transparency and accountability.
+
+50
+00:05:35.570 --> 00:05:40.970
+Simon Wang: And specifically, we want to look at how the government staff make decisions.
+
+51
+00:05:41.200 --> 00:05:50.490
+Simon Wang: Because one of the assumptions in this course is that we believe data should play the central role in decision-making process.
+
+52
+00:05:51.200 --> 00:05:59.979
+Simon Wang: Alright? Because we believe that the best way to make decisions is to look at the data, instead of just based on experience or intuition.
+
+53
+00:06:00.180 --> 00:06:02.450
+Simon Wang: Or, stakeholders' opinion.
+
+54
+00:06:03.270 --> 00:06:15.550
+Simon Wang: But, to what extent the government staff is actually making decisions based on data? That's the question we want to ask, the question we want to actually, collect some data from.
+
+55
+00:06:15.820 --> 00:06:26.289
+Simon Wang: So, in other words, what we're going to do is we will write email to the specific government department staff and ask them questions about how they make decisions.
+
+56
+00:06:27.230 --> 00:06:28.150
+Simon Wang: Alright?
+
+57
+00:06:28.390 --> 00:06:38.000
+Simon Wang: And, you know, you may wonder, why should the government staff actually Respond to, our questions.
+
+58
+00:06:38.200 --> 00:06:45.940
+Simon Wang: Well, actually, we're going to talk about this a little bit later, but we have something called Code on Access to Information.
+
+59
+00:06:46.390 --> 00:06:47.210
+Simon Wang: Alright?
+
+60
+00:06:47.810 --> 00:07:02.909
+Simon Wang: So, code on access to information is one of the tools we're going to introduce in this course. Actually, it's more qualitative, because we're going to just write email to the government staff. And the government staff will have to answer our questions in three weeks.
+
+61
+00:07:03.170 --> 00:07:09.499
+Simon Wang: Okay? And, those answers hopefully will help us to better,
+
+62
+00:07:11.580 --> 00:07:20.220
+Simon Wang: Understand how they make decisions, and to what extent they are using the data, and also what kind of data is actually available.
+
+63
+00:07:20.800 --> 00:07:32.899
+Simon Wang: Okay, so this would be a very important part of this course, and also we try to align our projects with some of the SDGs.
+
+64
+00:07:33.150 --> 00:07:33.840
+Simon Wang: Okay.
+
+65
+00:07:35.900 --> 00:07:36.920
+Simon Wang: Now…
+
+66
+00:07:38.740 --> 00:07:57.259
+Simon Wang: The third item I want to, cover regarding the silo, regarding the course objectives, is experiential learning, all right? Because it is an experiential learning course. We don't just, you know, stay in the classroom and do all the theoretical stuff.
+
+67
+00:07:57.290 --> 00:08:05.989
+Simon Wang: or talk about the books. Instead, we are trying to apply some skills and techniques and try to solve a real-world problem.
+
+68
+00:08:06.250 --> 00:08:13.280
+Simon Wang: Alright? And we are going to conduct some fieldwork, and we're going to collect some, primary empirical data.
+
+69
+00:08:13.590 --> 00:08:22.889
+Simon Wang: Alright? And again, our ambition is that, what we're going to do will create real work impact.
+
+70
+00:08:23.370 --> 00:08:28.439
+Simon Wang: For example, last semester, we, did a project on flu shots.
+
+71
+00:08:28.990 --> 00:08:43.759
+Simon Wang: So, it's a vaccination program, right? And our goal is to evaluate the government's approach and government's decision-making process regarding the seasonal influenza vaccination program.
+
+72
+00:08:43.760 --> 00:08:53.609
+Simon Wang: And hopefully we'll have students to continue doing this project, because I think this is an ongoing kind of battle against the disease.
+
+73
+00:08:55.060 --> 00:09:04.229
+Simon Wang: And we also have the plan to submit our reports to the Legislative Council, alright, to engage the lawmakers, to engage different stakeholders.
+
+74
+00:09:05.030 --> 00:09:10.150
+Simon Wang: And if you are interested, you can also check out some of the students' work.
+
+75
+00:09:10.250 --> 00:09:16.659
+Simon Wang: from, last semester. You can see that we have one team work on flu shot.
+
+76
+00:09:16.890 --> 00:09:18.520
+Simon Wang: They did the presentation.
+
+77
+00:09:19.460 --> 00:09:25.740
+Simon Wang: And, another team working on… working on, bus routes.
+
+78
+00:09:26.320 --> 00:09:31.240
+Simon Wang: How to, right.
+
+79
+00:09:32.040 --> 00:09:39.250
+Simon Wang: how to coordinate the bus routes, so you guys can check out, and maybe Talia can talk about this project a bit more.
+
+80
+00:09:44.490 --> 00:09:45.360
+Simon Wang: Right?
+
+81
+00:09:45.950 --> 00:09:55.389
+Simon Wang: And, yeah, so ultimately, we want to become agents of change, and we want to advocate for policy improvements.
+
+82
+00:09:55.590 --> 00:10:00.280
+Simon Wang: That's going to be a long shot, because, you know.
+
+83
+00:10:00.420 --> 00:10:15.140
+Simon Wang: the government staff, as I mentioned earlier, they have their own way of doing things. They would have very little incentive to make changes unless we have very strong evidence, we have very strong case to make.
+
+84
+00:10:15.280 --> 00:10:20.150
+Simon Wang: So, but I think there's a real opportunity there, real possibility there.
+
+85
+00:10:20.360 --> 00:10:22.180
+Simon Wang: Term to do that.
+
+86
+00:10:22.620 --> 00:10:27.610
+Simon Wang: Okay? So that's kind of, the overview of, of this, this course.
+
+87
+00:10:27.800 --> 00:10:34.100
+Simon Wang: Before we move on, because we only got a few students, I just want to kind of quickly invite each of you to
+
+88
+00:10:34.290 --> 00:10:47.279
+Simon Wang: Talk a little bit about, what's your, impression, and, if you got a chance to work on a project here, what area, what policy area would you like to
+
+89
+00:10:47.580 --> 00:10:49.500
+Simon Wang: to, explore.
+
+90
+00:10:49.730 --> 00:10:52.730
+Simon Wang: Maybe, start from Kenshu.
+
+91
+00:10:57.210 --> 00:11:01.519
+Simon Wang: Any… any policy, anything you think the government can…
+
+92
+00:11:10.720 --> 00:11:13.119
+Simon Wang: Maybe the 650.
+
+93
+00:11:14.210 --> 00:11:15.020
+Simon Wang: 15.
+
+94
+00:11:16.440 --> 00:11:17.200
+Simon Wang: whichever.
+
+95
+00:11:17.490 --> 00:11:18.710
+Simon Wang: Which area?
+
+96
+00:11:19.210 --> 00:11:20.260
+Simon Wang: Safety.
+
+97
+00:11:22.860 --> 00:11:27.619
+Simon Wang: Oh, safety, you mean road safety?
+
+98
+00:11:28.120 --> 00:11:30.079
+Simon Wang: Or… file safety.
+
+99
+00:11:34.470 --> 00:11:36.010
+Simon Wang: Maybe we'll see.
+
+100
+00:11:36.870 --> 00:11:40.780
+Simon Wang: Road. Road safety. Okay, well, actually,
+
+101
+00:11:41.600 --> 00:11:48.210
+Simon Wang: That could be, one of the projects that we're going to explore, because if you look at Here…
+
+102
+00:11:48.790 --> 00:11:52.790
+Simon Wang: We have a couple of, group projects that you guys can…
+
+103
+00:11:52.950 --> 00:11:56.360
+Simon Wang: Can choose, and, road safety is one of them.
+
+104
+00:11:56.630 --> 00:11:58.060
+Simon Wang: So,
+
+105
+00:11:58.480 --> 00:12:04.799
+Simon Wang: you can take a look. I mean, these pages, we need to update, but as you can see.
+
+106
+00:12:05.030 --> 00:12:12.189
+Simon Wang: This is actually one of the projects. So, do you have anything specific in mind in terms of road safety? Have you done anything before?
+
+107
+00:12:13.660 --> 00:12:14.470
+Simon Wang: Okay.
+
+108
+00:12:19.560 --> 00:12:20.480
+Simon Wang: Thanks.
+
+109
+00:12:22.470 --> 00:12:23.470
+Simon Wang: How about you?
+
+110
+00:12:30.590 --> 00:12:34.680
+Simon Wang: And I want to do the project about Blueshot.
+
+111
+00:12:35.190 --> 00:12:43.030
+Simon Wang: Fish out this, like, just, public health issues, or some… I…
+
+112
+00:12:43.870 --> 00:12:50.739
+Simon Wang: I didn't have any other ideas, because it's out of this topic. Although it's a…
+
+113
+00:12:50.850 --> 00:13:02.620
+Simon Wang: But, like, also is, public health issues. It's, like, hospital accessing… Cost or fees.
+
+114
+00:13:03.800 --> 00:13:08.290
+Simon Wang: Oh, increase. Increasing the fee, right? So you're increasing the fees, yes. Okay.
+
+115
+00:13:08.460 --> 00:13:11.649
+Simon Wang: So what would be the issue here? Do you think,
+
+116
+00:13:12.250 --> 00:13:16.510
+Simon Wang: Do you want to look at the impact of the increasing fee, or…
+
+117
+00:13:18.040 --> 00:13:30.040
+Simon Wang: In their… Hong Kong citizen perspective, And we are also… It's a real… we are… briefing.
+
+118
+00:13:31.920 --> 00:13:33.470
+Simon Wang: It is not that hard.
+
+119
+00:13:37.270 --> 00:13:48.440
+Simon Wang: not acceptable, because this free is very expensive for everyone. Okay. Yeah. So you think, you think, it's, it's too… too expensive?
+
+120
+00:13:48.820 --> 00:13:52.610
+Simon Wang: Alright, but what about people who have insurance?
+
+121
+00:14:01.490 --> 00:14:05.590
+Simon Wang: I think this policy will… Burden dirt.
+
+122
+00:14:05.740 --> 00:14:13.750
+Simon Wang: residents to access to cares. I mean, it's, problem-making issues.
+
+123
+00:14:14.000 --> 00:14:15.380
+Simon Wang: Okay, sure.
+
+124
+00:14:15.570 --> 00:14:20.400
+Simon Wang: Well, yeah, I think, you pick a good topic, because,
+
+125
+00:14:20.640 --> 00:14:27.519
+Simon Wang: this is kind of talk of the town now, right? The public hospitals increased the fees.
+
+126
+00:14:27.990 --> 00:14:28.909
+Simon Wang: How about you?
+
+127
+00:14:29.360 --> 00:14:30.720
+Simon Wang: You have something in mind?
+
+128
+00:14:31.120 --> 00:14:37.830
+Simon Wang: Yeah, well, I don't really know that much about Hong Kong policy,
+
+129
+00:14:38.050 --> 00:14:40.369
+Simon Wang: But I think transportation is interesting.
+
+130
+00:14:40.470 --> 00:14:42.519
+Simon Wang: Transportation? Yeah. Okay.
+
+131
+00:14:42.820 --> 00:14:48.729
+Simon Wang: So, from where you, you live, do you use public transportation that much?
+
+132
+00:14:48.860 --> 00:14:53.390
+Simon Wang: No, the… it's almost… it's all driving. Right. Yeah.
+
+133
+00:14:53.580 --> 00:14:59.690
+Simon Wang: Actually, it's very good here, I like it a lot, so… Public transportation. Yeah, yeah. Okay.
+
+134
+00:15:00.220 --> 00:15:02.370
+Simon Wang: Yeah, I… I think…
+
+135
+00:15:02.640 --> 00:15:14.459
+Simon Wang: I mean, if you are more familiar with some private cars, we can also look into that. For example, like, there's, like, electric vehicles, that could be something to look at.
+
+136
+00:15:14.890 --> 00:15:29.000
+Simon Wang: Because I think it really depends on the car size. When we have a small class size, I think we can afford to kind of supervise some projects, not necessarily from the things that we prepare.
+
+137
+00:15:29.110 --> 00:15:39.669
+Simon Wang: But when we have a large class size like last semester, we have to kind of work on something that's, already kind of, we have something in the mouth, all right? So we will see, okay?
+
+138
+00:15:43.480 --> 00:15:44.909
+Simon Wang: Alright,
+
+139
+00:15:50.440 --> 00:15:58.340
+Simon Wang: So, going back to… Here… If you go to Coast Home, go back to Coast Home.
+
+140
+00:15:59.030 --> 00:16:07.349
+Simon Wang: You can see that, we have, kind of the entire semester map out, starting from today.
+
+141
+00:16:08.170 --> 00:16:12.989
+Simon Wang: And we have a total of, 13 weeks.
+
+142
+00:16:13.840 --> 00:16:15.550
+Simon Wang: Okay, so…
+
+143
+00:16:16.440 --> 00:16:22.850
+Simon Wang: Today, we're just doing a course introduction, to kind of introduce a little bit of what we're trying to do.
+
+144
+00:16:23.330 --> 00:16:33.469
+Simon Wang: And then, next week, we will be doing some hands-on, activity on, vibe coding, so you need to bring a mobile computer back.
+
+145
+00:16:33.970 --> 00:16:40.809
+Simon Wang: Actually, tablet may not work, so it's better if you, get a, mobile computer.
+
+146
+00:16:41.250 --> 00:16:47.210
+Simon Wang: You know, this is the week that could be a little bit challenging, because
+
+147
+00:16:47.430 --> 00:16:53.009
+Simon Wang: Especially for students with very limited, programming, experience.
+
+148
+00:16:53.290 --> 00:16:56.730
+Simon Wang: Yet, we will try to make it more,
+
+149
+00:16:56.880 --> 00:17:01.660
+Simon Wang: Kind of supportive and friendly, especially if we don't have that many students.
+
+150
+00:17:02.200 --> 00:17:09.010
+Simon Wang: All right, so, so, the vibe coding would be an important part that we want to,
+
+151
+00:17:09.130 --> 00:17:10.349
+Simon Wang: Focus on?
+
+152
+00:17:10.579 --> 00:17:12.339
+Simon Wang: And, you have to,
+
+153
+00:17:13.480 --> 00:17:22.869
+Simon Wang: install the VS Code, and there will be a Jupyter Notebook embedded in the VS Code, and you need to sign up for GitHub.
+
+154
+00:17:23.770 --> 00:17:32.049
+Simon Wang: a couple of things. So, week two will be much more hands-on, right? And also a little bit scary, a little bit intimidating.
+
+155
+00:17:32.180 --> 00:17:38.900
+Simon Wang: But, hopefully you will, appreciate the potential and power of, of, of that.
+
+156
+00:17:39.970 --> 00:17:42.020
+Simon Wang: Of, of the technologies.
+
+157
+00:17:42.610 --> 00:17:52.469
+Simon Wang: And then, by week 3, after the add-drop period, everybody will settle down, then we need to start, forming the groups and, select the topics.
+
+158
+00:17:52.730 --> 00:18:10.940
+Simon Wang: All right? And in week three and week 4, there will be some in-class exercises that you need to work on, and actually, that would also count for something towards the final grades, and that's why it's important for people to come back and work on things.
+
+159
+00:18:11.280 --> 00:18:20.699
+Simon Wang: And again, this is… this is kind of… there's a little bit of, like, a learning curve here, right? So everybody have to try to figure out things a bit.
+
+160
+00:18:20.910 --> 00:18:29.500
+Simon Wang: All right? And this is also during these two weeks that we need to select the topics, and we need to start, writing email to the government.
+
+161
+00:18:29.660 --> 00:18:40.430
+Simon Wang: About our, topics. So we're going to start collecting some, preliminary information from the government staff regarding their decision-making process, regarding their data governance.
+
+162
+00:18:41.020 --> 00:18:45.089
+Simon Wang: Okay, so that's, week 3 and 4.
+
+163
+00:18:45.340 --> 00:18:54.020
+Simon Wang: And then starting from week 5 all the way to week 10, a total of 6 weeks, these are all going to be small group meetings.
+
+164
+00:18:54.150 --> 00:19:05.549
+Simon Wang: Right, so, our course is, very, kind of personalized in the sense that, each team of students will be doing their own project. We'll have, two teachers helping you.
+
+165
+00:19:05.670 --> 00:19:07.270
+Simon Wang: And
+
+166
+00:19:07.300 --> 00:19:27.119
+Simon Wang: Each week, we'll have some agenda, we'll have some milestones, and students need to do something, before the meeting, and hopefully this will be the sort of very kind of personalized, project-based learning experience that you will find relevant and useful.
+
+167
+00:19:27.560 --> 00:19:33.840
+Simon Wang: Okay, and we'll also have a week assigned for students to do field work.
+
+168
+00:19:34.060 --> 00:19:38.300
+Simon Wang: So that means you need to go to the site and collect some data.
+
+169
+00:19:40.020 --> 00:19:48.070
+Simon Wang: Right, so that, that would be the kind of, bulk of this, this course, right? So the, the, the, the six-week.
+
+170
+00:19:48.320 --> 00:19:52.190
+Simon Wang: journey towards, accomplish…
+
+171
+00:19:52.360 --> 00:20:01.750
+Simon Wang: something for this… for this course. And then, the last 3 weeks, week 11, we're going to do a presentation, kind of a first round, like a rehearsal.
+
+172
+00:20:02.110 --> 00:20:04.759
+Simon Wang: And then another,
+
+173
+00:20:04.890 --> 00:20:18.120
+Simon Wang: meeting to kind of wrap things up. And finally, there will be the final presentation, and hopefully we will get something ready for submission to the lawmakers.
+
+174
+00:20:18.310 --> 00:20:34.569
+Simon Wang: And, usually in week 13, we're going to invite some stakeholders, invite some community partners as audience. Last semester, we invited a senior correspondence from South China Morning Post, Natalie Wong, as our guest.
+
+175
+00:20:34.680 --> 00:20:39.170
+Simon Wang: So we haven't decided, who we're going to invite.
+
+176
+00:20:39.520 --> 00:20:51.459
+Simon Wang: And also, throughout the semester, we might also have some guest speakers to give talks, not necessarily during the class time. It could be online in the evening, just as part of the
+
+177
+00:20:53.060 --> 00:20:59.550
+Simon Wang: So, that's kind of the general overview of…
+
+178
+00:20:59.800 --> 00:21:11.430
+Simon Wang: this course. And, based on the feedback from last semester, some students find the vibe coding part a bit challenging, some students feel that the course has too much work.
+
+179
+00:21:11.690 --> 00:21:22.769
+Simon Wang: We are trying to adjust it, you know, because, this is the second time we run this course, so hopefully everybody will have a good experience, taking this course.
+
+180
+00:21:23.110 --> 00:21:32.199
+Simon Wang: And also, we, kind of in the process of trying to recruit a few more students, even though,
+
+181
+00:21:32.580 --> 00:21:45.640
+Simon Wang: you know, I think the math department does not necessarily have a kind of a minimum requirement for the enrollment. I think it would be reasonable to expect at least 10 students to be enrolled in this course.
+
+182
+00:21:45.720 --> 00:21:54.160
+Simon Wang: But, that being said, you know, even we have fewer students, we should still be able to run this course, so hopefully we'll have students
+
+183
+00:21:54.250 --> 00:22:03.110
+Simon Wang: joining this course, we have a kind of an optimal, class size. That would be, very, very good.
+
+184
+00:22:05.230 --> 00:22:24.159
+Simon Wang: Okay, so… so that's kind of the introduction. Now I want to, start covering some materials that we, prepared for week one, and there will be two parts, part one from me talking about data governance, and part two from, my colleague, Talev from the math department, and she will be talking about technology and math.
+
+185
+00:22:24.300 --> 00:22:29.000
+Simon Wang: So that's, that's, what we're gonna do.
+
+186
+00:22:29.420 --> 00:22:39.180
+Simon Wang: Okay, so in terms of data governance, our primary goal in this course is to critically review the data governance of the Hong Kong government.
+
+187
+00:22:39.570 --> 00:22:42.289
+Simon Wang: So, here are the key questions we want to answer.
+
+188
+00:22:43.220 --> 00:22:46.589
+Simon Wang: The first question is, how does the Hong Kong government make decisions?
+
+189
+00:22:47.890 --> 00:22:52.740
+Simon Wang: And, to what extent are these decisions actually informed by data?
+
+190
+00:22:53.740 --> 00:22:55.150
+Simon Wang: And,
+
+191
+00:22:55.490 --> 00:23:08.760
+Simon Wang: then how can citizens like us, ordinary people, right, engage constructively to improve data governance? When we use the word constructively, that means we are going to do things
+
+192
+00:23:08.870 --> 00:23:11.730
+Simon Wang: Kind of in a very rational and peaceful way.
+
+193
+00:23:11.860 --> 00:23:15.629
+Simon Wang: But then we also want to create pressure for the government.
+
+194
+00:23:16.860 --> 00:23:32.320
+Simon Wang: All right, so, throughout this course, you will work in teams to investigate the real policy issues in Hong Kong. Your journey will involve, first, to identify, to choose a policy area and identify specific government decisions.
+
+195
+00:23:32.510 --> 00:23:46.279
+Simon Wang: To investigate, to, look at, you know, how government is making decisions by requesting information from them, and… and then we apply the math modeling to, explore how data governance could be
+
+196
+00:23:46.280 --> 00:23:52.599
+Simon Wang: Improved. And finally, we're going to submit a report and a poster to the lawmakers.
+
+197
+00:23:55.410 --> 00:23:56.360
+Simon Wang: Alright?
+
+198
+00:23:56.870 --> 00:24:00.920
+Simon Wang: So that's, that's kind of, what we're trying to do here.
+
+199
+00:24:01.870 --> 00:24:08.360
+Simon Wang: Now, I want to, Offer two case studies.
+
+200
+00:24:12.240 --> 00:24:13.120
+Simon Wang: No.
+
+201
+00:24:16.660 --> 00:24:19.829
+Simon Wang: If you're from Hong Kong, you should know what this is, right?
+
+202
+00:24:21.140 --> 00:24:22.660
+Simon Wang: Tianzu, do you use this?
+
+203
+00:24:23.350 --> 00:24:30.709
+Simon Wang: So this is an app, for, you know, one of the major bus companies in Hong Kong is called Colon Moto,
+
+204
+00:24:30.930 --> 00:24:32.160
+Simon Wang: bus company.
+
+205
+00:24:32.400 --> 00:24:39.629
+Simon Wang: Kim… Kim… C or something? Right, can be, right? Okay.
+
+206
+00:24:39.850 --> 00:24:42.350
+Simon Wang: So, as you can see here.
+
+207
+00:24:43.420 --> 00:24:46.870
+Simon Wang: Because I live in this neighborhood called, St. Martin.
+
+208
+00:24:47.350 --> 00:24:51.269
+Simon Wang: But then on this app, there's two… station called Martin.
+
+209
+00:24:51.500 --> 00:25:01.409
+Simon Wang: Even though it's the same names, but it's actually two bus stops, okay? One is on the side of where I live, the other… the other is across the street.
+
+210
+00:25:02.110 --> 00:25:07.439
+Simon Wang: And it's just a very little thing, but it's so annoying, because I got confused all the time.
+
+211
+00:25:07.750 --> 00:25:08.789
+Simon Wang: Is that me?
+
+212
+00:25:08.900 --> 00:25:19.269
+Simon Wang: Because I look at one bus stop, it says, oh, 5 minutes, the bus is 5 minutes away, I go down, but then actually it's the bus across the street, 5 minutes arriving, you see what I mean?
+
+213
+00:25:20.300 --> 00:25:24.760
+Simon Wang: See, this is actually a tiny problem, because it's also data governance.
+
+214
+00:25:24.940 --> 00:25:30.790
+Simon Wang: You see what I mean? So, so it's like, how do you govern, how do you manage the data? So,
+
+215
+00:25:31.140 --> 00:25:35.760
+Simon Wang: It could offer better user experience, essentially.
+
+216
+00:25:36.280 --> 00:25:38.619
+Simon Wang: So I start writing complaint letters.
+
+217
+00:25:39.410 --> 00:25:40.830
+Simon Wang: Can you believe that?
+
+218
+00:25:41.170 --> 00:25:43.900
+Simon Wang: It took, like, 4 years.
+
+219
+00:25:44.320 --> 00:25:51.700
+Simon Wang: before this is actually, resolved. So I, I started, writing complaint letters back in 2021,
+
+220
+00:25:51.880 --> 00:25:57.240
+Simon Wang: You know, asking, hey, can we, change this? Hi.
+
+221
+00:26:00.520 --> 00:26:03.789
+Simon Wang: And we go back and forth, back and forth.
+
+222
+00:26:05.520 --> 00:26:09.589
+Simon Wang: you know, started from March 2021, 3 years later.
+
+223
+00:26:10.380 --> 00:26:15.830
+Simon Wang: I just can't get, make progress, so eventually I decided to write
+
+224
+00:26:17.180 --> 00:26:21.710
+Simon Wang: this email to the Assistant Director of the Transport Department.
+
+225
+00:26:22.310 --> 00:26:23.270
+Simon Wang: Okay?
+
+226
+00:26:24.010 --> 00:26:26.490
+Simon Wang: And then that'd take, like, another…
+
+227
+00:26:26.980 --> 00:26:34.030
+Simon Wang: I don't know, a year or so, to eventually, Get to this point, You see?
+
+228
+00:26:35.700 --> 00:26:41.540
+Simon Wang: They got two… Bus stops names with the code.
+
+229
+00:26:42.270 --> 00:26:43.160
+Simon Wang: Alright?
+
+230
+00:26:43.300 --> 00:26:45.790
+Simon Wang: So now we have a, kind of.
+
+231
+00:26:46.850 --> 00:26:51.429
+Simon Wang: Distinguished, or disambiguation of these two bus stops.
+
+232
+00:26:52.080 --> 00:26:52.870
+Simon Wang: Alright?
+
+233
+00:26:53.910 --> 00:26:57.970
+Simon Wang: Now, the point of this story
+
+234
+00:26:58.310 --> 00:27:06.460
+Simon Wang: Is that if you find a problem related to data, related to public policy, or kind of public transportation in this case.
+
+235
+00:27:07.220 --> 00:27:21.189
+Simon Wang: there is a real possibility, a real chance to actually pressure the government to do something about it. And this time, of course, we pressure the government, and then the government asked the bus company to change the app.
+
+236
+00:27:22.780 --> 00:27:29.810
+Simon Wang: So… I hope, you know, through this story, you can see that this is not entirely impossible.
+
+237
+00:27:30.250 --> 00:27:34.850
+Simon Wang: Right? When you see something, there's, like, a room for improvement.
+
+238
+00:27:36.390 --> 00:27:39.790
+Simon Wang: If we do something about it, there's a chance that it can be improved.
+
+239
+00:27:40.000 --> 00:27:43.209
+Simon Wang: Alright, so that's kind of the take-home message.
+
+240
+00:27:45.310 --> 00:27:52.179
+Simon Wang: And, one little details you might want to know is that, there's this government telephone directory.
+
+241
+00:27:53.010 --> 00:28:02.159
+Simon Wang: That, you can actually get the email address from all the the departments, Including the…
+
+242
+00:28:04.380 --> 00:28:06.340
+Simon Wang: Let me see… transport…
+
+243
+00:28:10.430 --> 00:28:21.680
+Simon Wang: So, if you go to the transport department, I think I emailed… Mr… Patrick Hull.
+
+244
+00:28:22.210 --> 00:28:24.400
+Simon Wang: Alright, so I email, email him.
+
+245
+00:28:24.510 --> 00:28:28.380
+Simon Wang: See, most people don't know this site.
+
+246
+00:28:28.700 --> 00:28:29.540
+Simon Wang: Right?
+
+247
+00:28:29.870 --> 00:28:32.319
+Simon Wang: So, you won't be able to…
+
+248
+00:28:32.780 --> 00:28:35.320
+Simon Wang: Reach out to these people.
+
+249
+00:28:36.510 --> 00:28:41.349
+Simon Wang: Because if you just go to the Transport Department website, You only got this.
+
+250
+00:28:41.640 --> 00:28:44.620
+Simon Wang: And this email will go to 1823Team.
+
+251
+00:28:44.820 --> 00:28:47.840
+Simon Wang: Alright? But, if you know this website.
+
+252
+00:28:48.120 --> 00:28:55.129
+Simon Wang: you know, that piece of information, knowledge actually makes a world of difference. So this is what we call knowledge is power, right?
+
+253
+00:28:55.860 --> 00:29:01.599
+Simon Wang: So, so, so just, just being able to find this email and start writing an email, that makes a world of difference.
+
+254
+00:29:02.570 --> 00:29:03.250
+Simon Wang: Okay.
+
+255
+00:29:03.610 --> 00:29:08.510
+Simon Wang: So hopefully, hopefully that's, that's an inspirational story right there.
+
+256
+00:29:10.270 --> 00:29:14.809
+Simon Wang: Now… dumb… The next, kind of.
+
+257
+00:29:15.080 --> 00:29:17.200
+Simon Wang: a story I want to share.
+
+258
+00:29:17.610 --> 00:29:23.630
+Simon Wang: before I pass it over to my colleague, is, the influenza vaccination program.
+
+259
+00:29:24.450 --> 00:29:32.050
+Simon Wang: Now, I actually wrote, quite a number of letters to the editor in South China Post on this topic.
+
+260
+00:29:32.500 --> 00:29:38.429
+Simon Wang: And this is the one that… I think this is the first one I wrote, alright? So the policy issue…
+
+261
+00:29:38.670 --> 00:29:44.030
+Simon Wang: Is that, you know, the government actually runs a flu shot program for the elderly and for the schoolchildren.
+
+262
+00:29:44.200 --> 00:29:46.549
+Simon Wang: But then the participation rates remain low.
+
+263
+00:29:46.670 --> 00:29:52.770
+Simon Wang: Alright, so there are questions we have to answer, including what data does the government collect on vaccination coverage?
+
+264
+00:29:52.930 --> 00:29:59.159
+Simon Wang: How do they decide where to allocate the resources, and could better data governance improve participation rates?
+
+265
+00:29:59.550 --> 00:30:00.380
+Simon Wang: Right?
+
+266
+00:30:01.260 --> 00:30:05.870
+Simon Wang: So you can see, this is… this is a letter that, I published.
+
+267
+00:30:06.730 --> 00:30:08.509
+Simon Wang: Almost 10 years ago.
+
+268
+00:30:09.410 --> 00:30:15.690
+Simon Wang: Right? So my argument is that, the program needs better marketing, and so on and so forth.
+
+269
+00:30:15.820 --> 00:30:17.910
+Simon Wang: And you guys can, can take a look.
+
+270
+00:30:18.690 --> 00:30:22.810
+Simon Wang: Oh, the girl just arrived, maybe I show you a QR code.
+
+271
+00:30:23.490 --> 00:30:25.509
+Simon Wang: So you can access this page.
+
+272
+00:30:26.250 --> 00:30:28.080
+Simon Wang: Before we go any further.
+
+273
+00:30:29.750 --> 00:30:31.719
+Simon Wang: You only scan the QR code, yeah.
+
+274
+00:30:33.530 --> 00:30:34.589
+Simon Wang: What's your name?
+
+275
+00:30:35.350 --> 00:30:36.100
+Simon Wang: Kate?
+
+276
+00:30:38.090 --> 00:30:38.920
+Simon Wang: case.
+
+277
+00:30:40.040 --> 00:30:41.409
+Simon Wang: What's your major?
+
+278
+00:30:42.530 --> 00:30:43.920
+Simon Wang: Oh, marketing, alright.
+
+279
+00:30:44.580 --> 00:30:46.330
+Simon Wang: So we have two business schools.
+
+280
+00:30:47.060 --> 00:30:49.980
+Simon Wang: Right. Two pieces, one med student, one biotech student.
+
+281
+00:30:53.190 --> 00:31:01.910
+Simon Wang: Alright, now, if you, if you read this, you can see that,
+
+282
+00:31:02.960 --> 00:31:07.420
+Simon Wang: I did a little bit of data collection, Right? So I asked…
+
+283
+00:31:07.870 --> 00:31:12.569
+Simon Wang: The government, in terms of how many people
+
+284
+00:31:12.990 --> 00:31:22.290
+Simon Wang: are actually eligible. So, see, the thing is, this is the data that the government released to their Website.
+
+285
+00:31:22.960 --> 00:31:31.960
+Simon Wang: Right? So the number of vaccines administered under the government vaccination program and vaccination subsidy programs has increased.
+
+286
+00:31:33.180 --> 00:31:34.040
+Simon Wang: Alright?
+
+287
+00:31:35.230 --> 00:31:39.490
+Simon Wang: So… so this… this seems to be good news.
+
+288
+00:31:39.950 --> 00:31:46.869
+Simon Wang: But then the outcome is not very good. The outcome was that the total number of cases actually increased.
+
+289
+00:31:47.280 --> 00:31:48.690
+Simon Wang: So how come?
+
+290
+00:31:49.390 --> 00:31:55.399
+Simon Wang: The number of people who got shots increased, but then the cases also increased.
+
+291
+00:31:55.990 --> 00:32:00.100
+Simon Wang: Well… That's because… we…
+
+292
+00:32:00.550 --> 00:32:05.149
+Simon Wang: What the government didn't tell us, but we have to write an email to ask is.
+
+293
+00:32:05.290 --> 00:32:08.860
+Simon Wang: There's 1.5 million Hong Kong residents eligible
+
+294
+00:32:09.720 --> 00:32:15.380
+Simon Wang: For the free vaccination program, and the 1.9 million eligible for the subsidies scheme.
+
+295
+00:32:17.050 --> 00:32:26.939
+Simon Wang: Alright? So… The actual participation rate is actually pretty low. It's only under 30%.
+
+296
+00:32:27.140 --> 00:32:35.489
+Simon Wang: And unfortunately, this data is not publicly available. You have to write to the Department of Health in order to get these numbers.
+
+297
+00:32:36.590 --> 00:32:37.540
+Simon Wang: Okay.
+
+298
+00:32:38.010 --> 00:32:39.450
+Simon Wang: And so on and so forth.
+
+299
+00:32:39.640 --> 00:32:44.070
+Simon Wang: So, and you can also see we have, this…
+
+300
+00:32:45.220 --> 00:32:48.699
+Simon Wang: flow here, right? So we got…
+
+301
+00:32:48.820 --> 00:32:55.390
+Simon Wang: The data, and and then we propose the solution and everything, so you can… you can look at this a little bit.
+
+302
+00:32:56.010 --> 00:33:08.430
+Simon Wang: Alright, so… and hopefully, what we are going to do in this course will be more sophisticated than that, because this was done back in 2017, you know?
+
+303
+00:33:08.670 --> 00:33:11.510
+Simon Wang: at the time, I don't have the,
+
+304
+00:33:11.880 --> 00:33:15.690
+Simon Wang: you know, collaboration, I don't have a… co-teacher.
+
+305
+00:33:15.960 --> 00:33:24.929
+Simon Wang: you know, it's with math background, so I can only just ask some very simple questions. But now I think we can do things in a more sophisticated way.
+
+306
+00:33:25.080 --> 00:33:29.590
+Simon Wang: Alright, which, we can talk more if you guys are interested in…
+
+307
+00:33:29.710 --> 00:33:44.699
+Simon Wang: doing this. But as I said, this is a real, real problem, you see what I mean? You know, every year, we actually got some schoolchildren and elderly people, unfortunately, died from influenza.
+
+308
+00:33:45.210 --> 00:33:51.860
+Simon Wang: So, if we can further increase the participation rate of this program.
+
+309
+00:33:52.380 --> 00:33:56.259
+Simon Wang: You know, it's going to make a real world of difference.
+
+310
+00:33:58.840 --> 00:34:04.070
+Simon Wang: Okay, so I think that's… that's all I have to say for now.
+
+311
+00:34:04.820 --> 00:34:07.789
+Simon Wang: Shall we move on, or take a short break?
+
+312
+00:34:08.380 --> 00:34:10.790
+Simon Wang: Okay, let's take a 3-minute break.
+
+313
+00:35:36.400 --> 00:35:37.440
+Simon Wang: On the answer on…
+
+314
+00:35:43.970 --> 00:35:45.709
+Simon Wang: You can see the assessment here.
+
+315
+00:35:48.060 --> 00:35:51.170
+Simon Wang: scanner.
+
+316
+00:35:51.610 --> 00:35:55.640
+Simon Wang: Scandin, you need, we have a sidebar.
+
+317
+00:38:20.650 --> 00:38:25.230
+Simon Wang: Okay, so good morning, everyone. I'm Talia from the Department of Mathematics.
+
+318
+00:38:25.420 --> 00:38:33.439
+Simon Wang: So, in week one, I will briefly introduce the math that will be covered in this course, and also the corresponding technologies.
+
+319
+00:38:34.020 --> 00:38:39.889
+Simon Wang: So the purpose of this sharing is to give you an idea of the scope of math tools.
+
+320
+00:38:43.970 --> 00:38:48.989
+Simon Wang: So overall, we will introduce two types of mathematical tools.
+
+321
+00:38:49.270 --> 00:39:00.779
+Simon Wang: The first one is, optimization problem. So, and actually later you will see the second type of mathematical model will be, linear regression.
+
+322
+00:39:01.600 --> 00:39:08.140
+Simon Wang: So these two type of tool can help us to solve some, real-world problem.
+
+323
+00:39:08.280 --> 00:39:16.089
+Simon Wang: So, the tool, the purpose is to serve the research question, or the research topic you… you will, work on.
+
+324
+00:39:17.610 --> 00:39:22.239
+Simon Wang: So let me briefly introduce the optimization type of problem first.
+
+325
+00:39:22.400 --> 00:39:26.170
+Simon Wang: So actually, we meet this optimization problem every day.
+
+326
+00:39:26.610 --> 00:39:31.730
+Simon Wang: To suppose you, you would like to go to somewhere that you haven't been there before.
+
+327
+00:39:31.950 --> 00:39:45.459
+Simon Wang: What you would do is, very likely to open the Google Map, and just type in the destination, and Google Map would generate an ideal, or several ideal options for you to go there.
+
+328
+00:39:46.070 --> 00:39:47.690
+Simon Wang: And overall.
+
+329
+00:39:47.870 --> 00:39:57.170
+Simon Wang: It shows the, the so-called best option, which either takes the shortest time there, or the shortest distance.
+
+330
+00:39:58.040 --> 00:40:03.829
+Simon Wang: So this is a typical optimization problem. You want to go somewhere, but…
+
+331
+00:40:04.360 --> 00:40:06.870
+Simon Wang: You want to minimize the traveling time.
+
+332
+00:40:06.990 --> 00:40:10.199
+Simon Wang: Or you want to minimize the overall traveling distance.
+
+333
+00:40:10.870 --> 00:40:15.410
+Simon Wang: That is a very commonly seen optimization problem.
+
+334
+00:40:16.070 --> 00:40:19.210
+Simon Wang: And another one might be,
+
+335
+00:40:19.340 --> 00:40:26.340
+Simon Wang: As a student, you want to maximize your GPA, while at the same time, you want to minimize your study time.
+
+336
+00:40:26.830 --> 00:40:30.810
+Simon Wang: Maybe that is another, optimization problem.
+
+337
+00:40:31.930 --> 00:40:49.880
+Simon Wang: And in, public transportation, it is always try to, the purpose of, like, the overall public transportation system is try to, say, minimize the, short… minimize the queuing time for either the buses
+
+338
+00:40:50.160 --> 00:40:51.969
+Simon Wang: And for the passengers.
+
+339
+00:40:52.990 --> 00:40:57.069
+Simon Wang: So The overall objective
+
+340
+00:40:57.330 --> 00:41:07.220
+Simon Wang: Of this optimization in the, these systems is always to try to, set up an efficient, system operation.
+
+341
+00:41:09.080 --> 00:41:18.460
+Simon Wang: And… The way to, set up and to solve the optimization problems, in general, there are two ways.
+
+342
+00:41:19.220 --> 00:41:24.820
+Simon Wang: So the first way, the traditional way, is, more, analytical.
+
+343
+00:41:25.290 --> 00:41:34.069
+Simon Wang: So we usually write out our objective function, so we want to minimize the traveling distance.
+
+344
+00:41:34.780 --> 00:41:37.100
+Simon Wang: And then we have certain constraints.
+
+345
+00:41:37.700 --> 00:41:41.830
+Simon Wang: And we just solved the, the system of equations.
+
+346
+00:41:42.210 --> 00:41:46.360
+Simon Wang: To minimize or minimize our objective function.
+
+347
+00:41:46.480 --> 00:41:48.370
+Simon Wang: So that is the traditional way.
+
+348
+00:41:49.690 --> 00:41:56.410
+Simon Wang: And another commonly used way is to, solve the optimization problem via simulation.
+
+349
+00:41:57.490 --> 00:42:02.139
+Simon Wang: So I will, show you an example of the so-called simulation.
+
+350
+00:42:02.420 --> 00:42:07.019
+Simon Wang: And this is actually one of the previous work of, student.
+
+351
+00:42:08.530 --> 00:42:13.850
+Simon Wang: a question… comes from this bus roads planning program.
+
+352
+00:42:14.140 --> 00:42:16.329
+Simon Wang: for a certain districts in Hong Kong.
+
+353
+00:42:17.160 --> 00:42:31.980
+Simon Wang: So actually, every year, the Department of Transportation will collect opinions from the bus companies to have a plan to adjust the bus frequencies for certain routes.
+
+354
+00:42:33.700 --> 00:42:37.379
+Simon Wang: And the reason is, here.
+
+355
+00:42:38.510 --> 00:42:41.519
+Simon Wang: So there are some criterias,
+
+356
+00:42:42.210 --> 00:42:48.420
+Simon Wang: That the service of the bus need to be, need to be adjusted.
+
+357
+00:42:49.880 --> 00:42:52.970
+Simon Wang: For example, regarding the frequency.
+
+358
+00:42:53.500 --> 00:43:01.180
+Simon Wang: So, under what circumstances the bus company would consider to, increase the frequency of buses?
+
+359
+00:43:01.700 --> 00:43:04.420
+Simon Wang: Well, actually, there are clear criteria.
+
+360
+00:43:05.090 --> 00:43:14.580
+Simon Wang: It says that if the… Occupancy rate of any bus route reaches 90% and 75%.
+
+361
+00:43:14.880 --> 00:43:23.300
+Simon Wang: during any busiest half hour of the peak period. And during that one hour, respectively, Or…
+
+362
+00:43:23.780 --> 00:43:28.869
+Simon Wang: Reaches 60% during the busiest one hour of the off-peak period.
+
+363
+00:43:29.510 --> 00:43:36.230
+Simon Wang: Then, the transportation department and the bus companies will consider increasing its service frequency.
+
+364
+00:43:37.120 --> 00:43:41.930
+Simon Wang: So there's very clear criteria, when to adjust
+
+365
+00:43:42.030 --> 00:43:46.199
+Simon Wang: Or in this case, to, increase the bus frequency.
+
+366
+00:43:46.320 --> 00:43:51.420
+Simon Wang: So that, overall, the passenger experience can be improved.
+
+367
+00:43:52.970 --> 00:44:04.570
+Simon Wang: And… One of the students find that in North District, The city bus wrote, Number 56.
+
+368
+00:44:04.750 --> 00:44:09.490
+Simon Wang: The frequency and also the road, were adjusted.
+
+369
+00:44:11.100 --> 00:44:18.409
+Simon Wang: So… That must be based on the, the…
+
+370
+00:44:26.390 --> 00:44:38.000
+Simon Wang: So it must be the case that the overall seat utilization of the buses reached the criteria, so that they decided to increase the bus frequency.
+
+371
+00:44:39.780 --> 00:44:46.650
+Simon Wang: So he wanted to know, under the existing setting, so after the adjustment.
+
+372
+00:44:46.770 --> 00:44:52.429
+Simon Wang: Whether the seat utilization on this bus is actually improved.
+
+373
+00:44:53.290 --> 00:44:56.650
+Simon Wang: In other words, lower than the criteria.
+
+374
+00:44:57.080 --> 00:44:58.779
+Simon Wang: before the adjustment.
+
+375
+00:45:00.280 --> 00:45:08.369
+Simon Wang: So he set up such, simulation. So you can see this is the bus route number 56 bus simulation.
+
+376
+00:45:09.120 --> 00:45:13.179
+Simon Wang: And there are two… Directions for this bus.
+
+377
+00:45:13.530 --> 00:45:17.360
+Simon Wang: One is inbound from Timmun to Shaan Shou.
+
+378
+00:45:18.040 --> 00:45:21.609
+Simon Wang: This is the outbound, the other direction.
+
+379
+00:45:22.960 --> 00:45:27.259
+Simon Wang: So, these dots just represent different bus stops.
+
+380
+00:45:27.890 --> 00:45:31.839
+Simon Wang: And here you can see there are some percentages.
+
+381
+00:45:32.110 --> 00:45:35.030
+Simon Wang: Which represent the seat utilization rate.
+
+382
+00:45:35.760 --> 00:45:39.520
+Simon Wang: So it is basically the number of passengers on the bus
+
+383
+00:45:39.710 --> 00:45:42.800
+Simon Wang: Divided by the total number of seats on the bus.
+
+384
+00:45:44.020 --> 00:45:50.930
+Simon Wang: So if the bus is full, everyone is sitting on their seats, then this percentage will be 100%.
+
+385
+00:45:52.950 --> 00:46:01.429
+Simon Wang: Also, you can see a lambda here, so that represents the average arrival rate in that bus stop.
+
+386
+00:46:03.020 --> 00:46:09.170
+Simon Wang: For example, this 0.5 means that, on average, In one minute.
+
+387
+00:46:09.390 --> 00:46:13.259
+Simon Wang: 0.5 passenger will arrive at that bus stop.
+
+388
+00:46:14.920 --> 00:46:16.139
+Simon Wang: So then…
+
+389
+00:46:16.350 --> 00:46:25.969
+Simon Wang: For 10 minutes in this time interval, for 10 minutes, then on average, 5 passengers will arrive at this bus stop to wait for this bus.
+
+390
+00:46:27.830 --> 00:46:33.959
+Simon Wang: And also, there is a small queue, represents the number of passengers queuing at this bus stop.
+
+391
+00:46:37.390 --> 00:46:41.790
+Simon Wang: So now, this current clock time is 9 o'clock in the morning.
+
+392
+00:46:41.930 --> 00:46:44.579
+Simon Wang: And then I can just start simulation.
+
+393
+00:46:44.770 --> 00:46:47.349
+Simon Wang: Then the clock will start ticking.
+
+394
+00:46:48.500 --> 00:46:53.420
+Simon Wang: And some numbers changes here, because people are, queuing.
+
+395
+00:46:54.960 --> 00:47:03.389
+Simon Wang: Then the first bus departure at 910, so you can see this moving green box represents a bus.
+
+396
+00:47:03.770 --> 00:47:10.949
+Simon Wang: So the number represents the number of passengers on this bus, And correspondingly, the,
+
+397
+00:47:11.060 --> 00:47:16.299
+Simon Wang: Seat utilization can be calculated in a real-time, real-time way.
+
+398
+00:47:18.760 --> 00:47:25.970
+Simon Wang: So, the bus moves fast between these stops, whereas it moves low
+
+399
+00:47:26.280 --> 00:47:36.430
+Simon Wang: Slowly here, because the distance between the two stops here is actually, way long than the bus stops.
+
+400
+00:47:36.660 --> 00:47:39.710
+Simon Wang: For example, these two.
+
+401
+00:47:41.830 --> 00:47:47.730
+Simon Wang: So by doing this, so this is kind of simulation to simulate the real world.
+
+402
+00:47:48.120 --> 00:47:51.019
+Simon Wang: And the data will be automatically recorded.
+
+403
+00:47:52.490 --> 00:47:53.520
+Simon Wang: And…
+
+404
+00:47:53.730 --> 00:48:01.629
+Simon Wang: We can run this kind of simulation for a lot of times, say 100 times, just in a few minutes.
+
+405
+00:48:01.800 --> 00:48:10.390
+Simon Wang: So we don't have to really, collect the data, for every journey of the bus in every morning.
+
+406
+00:48:12.600 --> 00:48:16.840
+Simon Wang: And we can also capture some randomness in this process as well.
+
+407
+00:48:16.950 --> 00:48:25.269
+Simon Wang: Because we know the passenger flow, and actually also the bus traveling will not be exactly the same every day.
+
+408
+00:48:26.530 --> 00:48:27.350
+Simon Wang: So…
+
+409
+00:48:27.740 --> 00:48:41.430
+Simon Wang: Imagine that if you have morning classes, you may get up earlier and take bus at an earlier time period, whereas if you do not have earlier class, you may choose to, like, come to the campus in the afternoon.
+
+410
+00:48:42.380 --> 00:48:46.830
+Simon Wang: So overall, the passenger flow will not be exactly the same every day.
+
+411
+00:48:47.430 --> 00:48:51.570
+Simon Wang: And the simulation can also capture this kind of randomness.
+
+412
+00:48:52.320 --> 00:48:55.660
+Simon Wang: And by running this a lot of times,
+
+413
+00:48:55.950 --> 00:49:08.939
+Simon Wang: Considering this kind of randomness, we can have an overall estimate of, on average, what are the, say, the bus… the seat utilization rate for all these stops.
+
+414
+00:49:09.590 --> 00:49:11.349
+Simon Wang: During a period of time.
+
+415
+00:49:13.480 --> 00:49:15.209
+Simon Wang: Then, we can check.
+
+416
+00:49:15.370 --> 00:49:18.650
+Simon Wang: whether this… Seat utilization rate.
+
+417
+00:49:19.020 --> 00:49:24.549
+Simon Wang: It's really decreased after the adjustment of this buzz frequency.
+
+418
+00:49:25.280 --> 00:49:33.040
+Simon Wang: So if it's really decreased, then it justified the decision to increase the frequency of the bus.
+
+419
+00:49:36.390 --> 00:49:38.680
+Simon Wang: So this is an example of
+
+420
+00:50:00.640 --> 00:50:02.589
+Simon Wang: Yeah, that is a good question.
+
+421
+00:50:02.820 --> 00:50:14.529
+Simon Wang: So, although you may argue that, well, this is, like, artificial thing, it's not real, but the key parameters in this simulation are from the real-world, data.
+
+422
+00:50:14.860 --> 00:50:21.480
+Simon Wang: So, for example, how do I know at this bus stop, on average, in one minute, 0.5 passengers will come?
+
+423
+00:50:22.250 --> 00:50:34.950
+Simon Wang: Well, this depends on the field work. So that student really went to, went to take this bus several times to record the number of people, queuing at each bus stop.
+
+424
+00:50:35.170 --> 00:50:37.929
+Simon Wang: For several times, so that he can give
+
+425
+00:50:38.480 --> 00:50:43.230
+Simon Wang: A relatively realistic estimate of the parameter.
+
+426
+00:50:43.360 --> 00:50:50.749
+Simon Wang: Like, so this parameter is about the passenger flow, right? How many people, will wait at that bus stop?
+
+427
+00:50:51.980 --> 00:50:59.370
+Simon Wang: And actually, you can observe that for this lambda, for some stops, this number is big, like 0.5,
+
+428
+00:50:59.560 --> 00:51:03.890
+Simon Wang: Whereas for some other stops, like only 0.15,
+
+429
+00:51:05.510 --> 00:51:12.410
+Simon Wang: So that means these stops with smaller lambda value, there are less people waiting there.
+
+430
+00:51:12.620 --> 00:51:17.990
+Simon Wang: During morning, this morning, time period.
+
+431
+00:51:19.250 --> 00:51:25.839
+Simon Wang: And for some stops, like this MTR station, usually the lambda will be larger.
+
+432
+00:51:26.000 --> 00:51:31.930
+Simon Wang: So this is an MTR station, and many people will wait there.
+
+433
+00:51:32.290 --> 00:51:37.910
+Simon Wang: to get on the bus to maybe go back home. So that's… just looking at this,
+
+434
+00:51:38.220 --> 00:51:40.719
+Simon Wang: Parameters, you can see, it is reasonable.
+
+435
+00:51:41.750 --> 00:51:47.690
+Simon Wang: It is not… it is not like all the bus stops have the same amount of passengers.
+
+436
+00:52:03.570 --> 00:52:13.600
+Simon Wang: I think he just took this bus, and when bus arrived at a specific stop, he counts the number of people get on the bus.
+
+437
+00:52:14.490 --> 00:52:16.429
+Simon Wang: So that will be the number of…
+
+438
+00:52:20.040 --> 00:52:23.570
+Simon Wang: That will be the number of people who chewed there.
+
+439
+00:52:25.260 --> 00:52:26.980
+Simon Wang: Before they get on the bus.
+
+440
+00:52:28.530 --> 00:52:31.930
+Simon Wang: Okay, so, so we have some real,
+
+441
+00:52:32.030 --> 00:52:40.600
+Simon Wang: data from the site, right? From the fieldwork that can help us to build a model. But then, can we still,
+
+442
+00:52:41.350 --> 00:52:53.899
+Simon Wang: validate the results a little bit, and we'll get back… get to him very soon. Is there any way we can validate the result, or can we just show this to lawmakers or policy makers and ask them to use this
+
+443
+00:52:54.070 --> 00:52:55.470
+Simon Wang: for decision making.
+
+444
+00:52:57.860 --> 00:53:08.619
+Simon Wang: I think for this simulation, it is more like a, reflect of reality. It is not a real hypothetical situation, because this is…
+
+445
+00:53:09.330 --> 00:53:21.169
+Simon Wang: this basically records what… what is happening. It is not like a… we plan to have an adjustment, and we, we need to have certain
+
+446
+00:53:21.450 --> 00:53:25.029
+Simon Wang: hypothetical assumption were that this is a…
+
+447
+00:53:25.300 --> 00:53:29.519
+Simon Wang: I think a mirror of the reality. So I think for that…
+
+448
+00:53:29.720 --> 00:53:33.220
+Simon Wang: for this case, I think,
+
+449
+00:53:34.570 --> 00:53:39.189
+Simon Wang: I think it is reliable, because for the key parameters, they are really…
+
+450
+00:53:39.380 --> 00:53:46.600
+Simon Wang: estimated based on the reality. Okay. Yeah, and as long as the model can capture the key…
+
+451
+00:53:47.130 --> 00:53:51.730
+Simon Wang: The key variables, the key… Mmm…
+
+452
+00:53:53.160 --> 00:53:57.309
+Simon Wang: how to say, the key factor to the problem, then I think it's good enough.
+
+453
+00:53:59.820 --> 00:54:06.500
+Simon Wang: Yeah, one thing that confuses me is, like, let's say… The lambda is 0.
+
+454
+00:54:06.780 --> 00:54:10.969
+Simon Wang: Yeah, because… So, will it never, like…
+
+455
+00:54:11.230 --> 00:54:21.580
+Simon Wang: Like, in the simulation, there will never be a passenger, so it's like… There's no, like, the…
+
+456
+00:54:22.530 --> 00:54:40.320
+Simon Wang: the station… whatever the stop is, is kind of, like, not… Useless. Useless, yeah. Yeah, the reason that there are certain stops, having this lambda equals to zero is that based on the observation from the students, based on the limited time of field work of the student.
+
+457
+00:54:40.490 --> 00:54:46.410
+Simon Wang: He really did not observe any passengers get on the bus on those stop… at that… at those stops.
+
+458
+00:54:47.250 --> 00:54:52.230
+Simon Wang: Okay, and then, did he, like, record a… A standard deviation?
+
+459
+00:54:52.810 --> 00:55:00.119
+Simon Wang: I think in the original data, in the Excel, he recorded all the data there is.
+
+460
+00:55:01.670 --> 00:55:08.310
+Simon Wang: But I believe for those equals to zero, there's no standard deviation, zero. Yeah. Yeah.
+
+461
+00:55:09.680 --> 00:55:13.440
+Simon Wang: Yeah, I think, with a team, I think it's,
+
+462
+00:55:13.830 --> 00:55:22.799
+Simon Wang: better than individual work, because at that time, this is actually his, dissertation, so he worked this independently, and
+
+463
+00:55:23.290 --> 00:55:38.349
+Simon Wang: he only has limited time, so he can only took the bus maybe twice or three times at most, but I think with a team, there will be more chance for the students to observe the same thing more times, so that more data can be collected.
+
+464
+00:55:40.300 --> 00:55:46.790
+Simon Wang: I think this case may also point to the possibility of the government
+
+465
+00:55:46.910 --> 00:55:49.660
+Simon Wang: To collect data more systematically.
+
+466
+00:55:49.680 --> 00:56:03.040
+Simon Wang: Right? Because, obviously, if we only just, you know, take the bus a couple of times to collect the data, that's a kind of a very small set of data, even though it can be useful. But what if, you know, just imagine a world
+
+467
+00:56:03.040 --> 00:56:10.299
+Simon Wang: In which, like, the bus company can collect the octopus card, readers.
+
+468
+00:56:10.580 --> 00:56:27.890
+Simon Wang: Because most people use Octopus cards these days to, you know, tap the card and get on the bus, and I would assume that the data would come with time, right? And even the location. So, presumably, we should be able to have a real data set
+
+469
+00:56:27.960 --> 00:56:32.220
+Simon Wang: With, you know, how many passengers would get on bus in each stop.
+
+470
+00:56:32.560 --> 00:56:37.790
+Simon Wang: on a given period of time, you know, this data should be available. It's probably…
+
+471
+00:56:37.940 --> 00:56:57.709
+Simon Wang: held by the bus company. Now, the question would become, you know, if we have such data, would that help us to make better decisions when it comes to frequency adjustment of the buses? And if so, then should we make a case for the government to actually collect the data from the bus companies?
+
+472
+00:56:58.000 --> 00:57:04.689
+Simon Wang: You see what I mean? So, what do you think? Do you think that that might be something we could explore as well?
+
+473
+00:57:05.550 --> 00:57:09.170
+Simon Wang: Yeah, I think if the Octopus data
+
+474
+00:57:09.300 --> 00:57:25.659
+Simon Wang: would be available, then students don't have to really collect the data by themselves. If the data is already available, that would be much more convenient. But I think the work is still valuable, because we are trying to use this work
+
+475
+00:57:25.730 --> 00:57:34.809
+Simon Wang: To illustrate or to make the argument that we should, or the government should collect the data from the bus company.
+
+476
+00:57:34.940 --> 00:57:43.150
+Simon Wang: Which I think is not entirely, you know, wishful thinking, because back during the pandemic.
+
+477
+00:57:43.300 --> 00:57:49.040
+Simon Wang: the University of Hong Kong team actually got Octopus data to try to track the…
+
+478
+00:57:49.250 --> 00:58:02.249
+Simon Wang: I couldn't remember exactly what they do, but they got some Octopus data to track the pandemic or something. The transmission of the virus? Yeah, yeah, it's on the news, so we can check it out, yeah.
+
+479
+00:58:03.540 --> 00:58:04.260
+Simon Wang: Okay.
+
+480
+00:58:05.270 --> 00:58:13.009
+Simon Wang: So this is one of the examples to show, to use simulation to solve the optimization problem.
+
+481
+00:58:16.780 --> 00:58:26.500
+Simon Wang: Okay, so you can see that simulation can be used to model some, complex systems. So, especially this system is quite,
+
+482
+00:58:26.650 --> 00:58:30.569
+Simon Wang: Dynamic is not a static, system.
+
+483
+00:58:31.360 --> 00:58:37.989
+Simon Wang: And it can also be used to explore some hypothetical situations and answer the what-if scenarios.
+
+484
+00:58:38.590 --> 00:58:52.250
+Simon Wang: So even, we know that we want to increase the frequency of bus so that the overall seat utilization rate can be lower down, then how much should we increase the frequency?
+
+485
+00:58:53.630 --> 00:58:55.819
+Simon Wang: This is also a problem, right?
+
+486
+00:58:56.220 --> 00:59:00.669
+Simon Wang: So suppose, originally, there are only two buses in 1 hour.
+
+487
+00:59:01.170 --> 00:59:03.400
+Simon Wang: So the headway is 30 minutes.
+
+488
+00:59:03.950 --> 00:59:12.720
+Simon Wang: Then, whether we should, like, make the headway become 25 minutes, Or 20 minutes, Or 15 minutes.
+
+489
+00:59:13.570 --> 00:59:16.480
+Simon Wang: So which one is the best solution?
+
+490
+00:59:17.070 --> 00:59:23.280
+Simon Wang: To serve the, passengers, to make the… Seat utilization rate lower down.
+
+491
+00:59:23.630 --> 00:59:28.539
+Simon Wang: But at the same time, we also need to consider about the cost of the bus company.
+
+492
+00:59:29.570 --> 00:59:34.289
+Simon Wang: Because with more buses, say, in one hour, if there are 4 buses.
+
+493
+00:59:34.430 --> 00:59:37.650
+Simon Wang: Then the bus company needs to hire two more drivers.
+
+494
+00:59:38.030 --> 00:59:41.430
+Simon Wang: Compared to the two buses per hour scenario.
+
+495
+00:59:41.940 --> 00:59:45.739
+Simon Wang: And not mention about the funeral, the other cost.
+
+496
+00:59:46.400 --> 00:59:51.029
+Simon Wang: So then, at which point is, is the win-win solution?
+
+497
+00:59:51.340 --> 01:00:02.630
+Simon Wang: That the passengers can be, can have better experience, because they don't have to stand on a bus, they can sit, and at the same time, the bus company can also have, their profit.
+
+498
+01:00:03.950 --> 01:00:08.580
+Simon Wang: So if we want to have a, like, quantified
+
+499
+01:00:08.870 --> 01:00:13.419
+Simon Wang: Solution, then simulation can, can help us.
+
+500
+01:00:15.530 --> 01:00:19.269
+Simon Wang: It can test the new solutions in a cheaper and safer manner.
+
+501
+01:00:19.640 --> 01:00:28.790
+Simon Wang: So we don't have to really implement our new plan immediately and collect data. We can just test the new, potential plan
+
+502
+01:00:29.120 --> 01:00:34.090
+Simon Wang: On the computer, and then have an estimation, then
+
+503
+01:00:34.460 --> 01:00:39.710
+Simon Wang: If we find that a specific plan works the best, then we can maybe implement it.
+
+504
+01:00:47.050 --> 01:00:57.250
+Simon Wang: So this kind of simulation can actually be implemented using the simulation module in Python, which is called SynPy.
+
+505
+01:00:57.620 --> 01:01:10.079
+Simon Wang: So later in, I think, maybe week four, we will, use examples to show you how to implement this kind of simulation, using this Python module.
+
+506
+01:01:15.560 --> 01:01:25.500
+Simon Wang: And recall that overall, we only cover two type of mathematical models. The first one is optimization, using simulation.
+
+507
+01:01:25.680 --> 01:01:34.819
+Simon Wang: And the second way is actually a statistical model, which is called linear regression, and some variations of linear regression.
+
+508
+01:01:35.600 --> 01:01:42.800
+Simon Wang: So this… Linear regression, the aim is to do certain interpretation of data.
+
+509
+01:01:43.030 --> 01:01:49.449
+Simon Wang: So I think, may I ask how many of you have heard about this linear regression before? Do you mind raising your hand?
+
+510
+01:01:50.080 --> 01:01:51.389
+Simon Wang: Okay, okay.
+
+511
+01:01:51.640 --> 01:01:52.470
+Simon Wang: That's great.
+
+512
+01:01:53.510 --> 01:01:59.309
+Simon Wang: So overall, we use linear regression to answer the questions like this.
+
+513
+01:02:00.280 --> 01:02:05.979
+Simon Wang: So, for example, how population density impacts the demand for public services.
+
+514
+01:02:06.580 --> 01:02:09.620
+Simon Wang: So whether there's a certain relationship between the two.
+
+515
+01:02:10.090 --> 01:02:15.779
+Simon Wang: And if there is an association, then whether this association is positive or negative.
+
+516
+01:02:16.490 --> 01:02:20.130
+Simon Wang: And if it is positive, then what the effect size is.
+
+517
+01:02:22.170 --> 01:02:25.250
+Simon Wang: And by answering these type of question.
+
+518
+01:02:25.530 --> 01:02:37.489
+Simon Wang: the answer can be used to inform the public resource allocation and also the development of sustainable cities. So we can see, we should… if we find that there's positive relationship between the two.
+
+519
+01:02:37.590 --> 01:02:46.620
+Simon Wang: Then maybe we could consider to allocate more public services or resources to those areas with a higher population density.
+
+520
+01:02:48.760 --> 01:02:50.570
+Simon Wang: And also,
+
+521
+01:02:50.840 --> 01:03:00.499
+Simon Wang: Regression can help us to answer what are the relationships among certain public opinion, political trust, and public satisfaction.
+
+522
+01:03:01.950 --> 01:03:11.109
+Simon Wang: So this can be used to assess the government performance and the legitimacy of certain public policies.
+
+523
+01:03:12.660 --> 01:03:24.440
+Simon Wang: If you scan this QR code, you will find a questionnaire that, was performed by a previous student. It is about the, garbage bag charging scheme.
+
+524
+01:03:25.110 --> 01:03:33.440
+Simon Wang: So that is part of the policies of the, municipal solid waste management.
+
+525
+01:03:33.990 --> 01:03:43.380
+Simon Wang: But unfortunately, this policy, is… Basically permanently suspended.
+
+526
+01:03:43.730 --> 01:03:49.859
+Simon Wang: So the government will not consider to charge for the, garbage bag in the short term.
+
+527
+01:03:51.640 --> 01:03:58.499
+Simon Wang: But overall, the purpose of that survey through this questionnaire is.
+
+528
+01:03:58.620 --> 01:04:04.730
+Simon Wang: The students want to know what factors influence the public support for this policy.
+
+529
+01:04:06.630 --> 01:04:09.959
+Simon Wang: So, she designed, several sections.
+
+530
+01:04:10.980 --> 01:04:12.919
+Simon Wang: Maybe it's better for me to…
+
+531
+01:04:14.160 --> 01:04:15.730
+Simon Wang: Simon, do you know how to…
+
+532
+01:04:20.940 --> 01:04:23.930
+Simon Wang: I mean, how can I scan this QR code?
+
+533
+01:04:31.670 --> 01:04:35.770
+Simon Wang: Okay, then may I invite you to scan it, you, sir?
+
+534
+01:04:36.120 --> 01:04:37.290
+Simon Wang: Mobile phone.
+
+535
+01:04:39.400 --> 01:04:40.160
+Simon Wang: Oh.
+
+536
+01:04:45.130 --> 01:04:45.970
+Simon Wang: What's green.
+
+537
+01:04:50.910 --> 01:04:52.530
+Simon Wang: I think it's bilingual.
+
+538
+01:04:53.450 --> 01:04:54.470
+Simon Wang: Questionnaire.
+
+539
+01:04:57.130 --> 01:04:57.910
+Simon Wang: Oh.
+
+540
+01:05:01.740 --> 01:05:02.470
+Simon Wang: Yo.
+
+541
+01:05:03.420 --> 01:05:06.140
+Simon Wang: So there's certain description of this survey.
+
+542
+01:05:06.530 --> 01:05:14.670
+Simon Wang: It says this survey aims to understand Hong Kong residents' awareness, attitudes, and daily waste management behaviors
+
+543
+01:05:14.780 --> 01:05:17.199
+Simon Wang: Related to the waste charging policy.
+
+544
+01:05:18.270 --> 01:05:23.240
+Simon Wang: So I think… The core, research question
+
+545
+01:05:23.430 --> 01:05:30.749
+Simon Wang: That, hopefully, to be answered using this questionnaire is, what factors would influence people's
+
+546
+01:05:30.970 --> 01:05:38.380
+Simon Wang: Perceived level of support, where this garbage bag charging scheme.
+
+547
+01:05:39.650 --> 01:05:48.149
+Simon Wang: So whether it's, like, people who have a higher education level, they are more likely to support this policy.
+
+548
+01:05:48.760 --> 01:05:54.029
+Simon Wang: Or, if people already have their recycling behavior.
+
+549
+01:05:54.470 --> 01:05:58.560
+Simon Wang: Those people are more likely to support this new policy.
+
+550
+01:05:58.860 --> 01:06:03.160
+Simon Wang: Or whether the elderlies, or females.
+
+551
+01:06:03.500 --> 01:06:08.170
+Simon Wang: Whether these groups of people are more likely to support this new policy.
+
+552
+01:06:08.340 --> 01:06:15.090
+Simon Wang: Or, if people think that this policy will be helpful for the overall recycling rate of Hong Kong.
+
+553
+01:06:15.560 --> 01:06:19.229
+Simon Wang: They perceived that This policy is helpful.
+
+554
+01:06:19.540 --> 01:06:21.080
+Simon Wang: or effective.
+
+555
+01:06:21.500 --> 01:06:34.359
+Simon Wang: For the problem solving, like increasing the recycling rate, or decrease the overall amount of waste, then this group of people are more likely to support this policy.
+
+556
+01:06:36.370 --> 01:06:43.790
+Simon Wang: So overall, this linear regression model can help us to, explore the relationship among these variables.
+
+557
+01:06:46.420 --> 01:06:52.759
+Simon Wang: And if I remember correctly, the conclusion for her, research question is.
+
+558
+01:06:52.930 --> 01:06:57.019
+Simon Wang: Overall, the perceived level of fairness
+
+559
+01:06:57.190 --> 01:07:02.539
+Simon Wang: Of the policy is the most important factor that influenced the level of support.
+
+560
+01:07:04.400 --> 01:07:09.100
+Simon Wang: So if the, if the resident believes that this policy is fair.
+
+561
+01:07:10.040 --> 01:07:12.569
+Simon Wang: Then they're more likely to support this policy.
+
+562
+01:07:17.540 --> 01:07:24.509
+Simon Wang: And specifically in this course, the level of support to this policy is called the dependent variable.
+
+563
+01:07:24.940 --> 01:07:33.490
+Simon Wang: And we want to know what kind of factors, or what kind of one or more independent variables, like some demographic factors mentioned.
+
+564
+01:07:33.600 --> 01:07:48.309
+Simon Wang: or the recycling behavior, or the knowledge about recycling. Those can be regarded as independent variables, and we want to know how these variables are, correlated.
+
+565
+01:07:50.490 --> 01:07:54.539
+Simon Wang: And the model is built, or called fitted, based on data.
+
+566
+01:07:54.780 --> 01:08:04.890
+Simon Wang: And later in our course, we will see how we can use the, another commonly used Python library, which is called scikit-learn, to fit a model.
+
+567
+01:08:05.180 --> 01:08:10.430
+Simon Wang: So that we can, study the exact relationship among these variables.
+
+568
+01:08:14.780 --> 01:08:16.000
+Simon Wang: Okay, so…
+
+569
+01:08:16.330 --> 01:08:22.819
+Simon Wang: No matter if it is an optimization problem or a regression type of problem, we want to do some
+
+570
+01:08:23.050 --> 01:08:24.380
+Simon Wang: interpretation.
+
+571
+01:08:24.729 --> 01:08:27.740
+Simon Wang: We cannot do them by hand.
+
+572
+01:08:28.939 --> 01:08:32.280
+Simon Wang: If we cannot solve the, dynamic
+
+573
+01:08:32.890 --> 01:08:38.519
+Simon Wang: Like, public transportation problem, or to find the,
+
+574
+01:08:39.040 --> 01:08:41.669
+Simon Wang: To fit the line using our hands.
+
+575
+01:08:42.529 --> 01:08:46.930
+Simon Wang: So finally, we will use computer to use Python to help us.
+
+576
+01:08:47.270 --> 01:08:49.270
+Simon Wang: To implement those models.
+
+577
+01:08:50.580 --> 01:08:51.460
+Simon Wang: And…
+
+578
+01:08:51.569 --> 01:09:02.069
+Simon Wang: I understand that this is a GE course, so we, as Simon has already mentioned, we do not expect students have prior programming experience.
+
+579
+01:09:02.330 --> 01:09:05.269
+Simon Wang: Because nowadays we have generative AI.
+
+580
+01:09:06.000 --> 01:09:11.599
+Simon Wang: We can ask its help to generate code, to help us implement the models.
+
+581
+01:09:13.000 --> 01:09:20.199
+Simon Wang: So overall, I think, no matter it is about math models, or it's about vibe coding.
+
+582
+01:09:20.520 --> 01:09:23.820
+Simon Wang: All these two, they serve your
+
+583
+01:09:23.970 --> 01:09:26.609
+Simon Wang: Research topic, or a research question.
+
+584
+01:09:27.609 --> 01:09:31.990
+Simon Wang: So research question and research topic is the most important.
+
+585
+01:09:32.880 --> 01:09:35.580
+Simon Wang: And a math model will be just a tool.
+
+586
+01:09:35.830 --> 01:09:37.939
+Simon Wang: To study your research question.
+
+587
+01:09:38.479 --> 01:09:46.369
+Simon Wang: Whereas to implement those models, we need, vibecoding or generative AI to help us to implement the models.
+
+588
+01:09:46.689 --> 01:09:50.540
+Simon Wang: So that's the overall, logic.
+
+589
+01:09:52.040 --> 01:10:02.729
+Simon Wang: And for those who have not used the, so-called vibe coding before, here is a very short video clip to show you, how, how it works.
+
+590
+01:10:05.700 --> 01:10:07.679
+Simon Wang: Now that we have… Sorry.
+
+591
+01:10:08.000 --> 01:10:08.869
+Simon Wang: Let me…
+
+592
+01:10:12.780 --> 01:10:18.780
+Simon Wang: So later, this engineer will show, how this GitHub co-pilot works.
+
+593
+01:10:19.290 --> 01:10:23.429
+Simon Wang: So suppose that we have already had this co-pilot installed.
+
+594
+01:10:25.010 --> 01:10:29.759
+Simon Wang: Maybe let me make the… Speed is lower.
+
+595
+01:11:51.750 --> 01:11:54.430
+Simon Wang: So basically here, it defines a function.
+
+596
+01:11:54.600 --> 01:11:58.319
+Simon Wang: And as long as you put the name of the function.
+
+597
+01:11:58.430 --> 01:12:03.239
+Simon Wang: It guests what you want to write, and generates this ghost text.
+
+598
+01:12:03.450 --> 01:12:07.929
+Simon Wang: Basically, this is, should be correct.
+
+599
+01:12:08.380 --> 01:12:16.119
+Simon Wang: And if you click tab, those ghost tests will become cold, and you can try to run it and see whether it works.
+
+600
+01:14:10.220 --> 01:14:14.980
+Simon Wang: Yeah, I think we can stop here. So the purpose is to sell GitHub Copilot.
+
+601
+01:14:15.440 --> 01:14:25.120
+Simon Wang: And we are working on GitHub Copilot, not other Copilot in Microsoft. Okay, so make it clear, it's GitHub Copilot.
+
+602
+01:14:25.730 --> 01:14:30.070
+Simon Wang: We will talk more about it, In the next weeks.
+
+603
+01:14:30.650 --> 01:14:31.640
+Simon Wang: next week.
+
+604
+01:14:35.980 --> 01:14:50.699
+Simon Wang: Okay, and actually there is a newly published textbook. So this textbook is published, I think, around 1 years ago. It is called your Learn AI-Assisted Python Programming with GitHub Copilot and ChatGPT.
+
+605
+01:14:51.070 --> 01:14:55.330
+Simon Wang: So later I will share the, software ins…
+
+606
+01:14:55.950 --> 01:15:13.220
+Simon Wang: installation chapter, on Moodle, so, if you have not installed, like, VS Code, or if you have not applied for the education benefit of GitHub, you may follow the instruction to, to, set up things.
+
+607
+01:15:17.900 --> 01:15:20.199
+Simon Wang: And I think the,
+
+608
+01:15:20.700 --> 01:15:26.289
+Simon Wang: the GitHub Copilot, dramatically changed how people learn to program.
+
+609
+01:15:26.980 --> 01:15:31.449
+Simon Wang: So in the past, in the past years, I mean, maybe 3 years ago.
+
+610
+01:15:32.040 --> 01:15:36.909
+Simon Wang: The programmer spend a lot of time on the syntax and structure of problem?
+
+611
+01:15:37.560 --> 01:15:51.659
+Simon Wang: And if you look at the recruitment advertisement for programmers, very likely, it is for a specific program language. Say we want someone who can write Java, or with someone who can write Python.
+
+612
+01:15:52.110 --> 01:16:03.440
+Simon Wang: Because learning to program in languages take a lot of times, and usually those syntax are quite different for different programming languages.
+
+613
+01:16:04.360 --> 01:16:13.889
+Simon Wang: But nowadays, actually, with the help of GitHub Copilot, it can generate basic programs almost immediately, and almost always correct.
+
+614
+01:16:15.040 --> 01:16:23.259
+Simon Wang: And what we need to do is just to describe the program we want in words, like what you saw in the video clip.
+
+615
+01:16:23.410 --> 01:16:36.150
+Simon Wang: I want the program to consider this, to change to that, to be able to adapt to multiple email address, then GitHub Copilot will generate the updated code for you.
+
+616
+01:16:38.500 --> 01:16:42.179
+Simon Wang: And the way it works is that when we type a prompt.
+
+617
+01:16:42.790 --> 01:16:48.920
+Simon Wang: The GitHub Copilot will send our prompt to the large language model, on the internet.
+
+618
+01:16:49.450 --> 01:16:55.479
+Simon Wang: And then OpenAI's GPT, LLM, interpret our prompt, and then generate code.
+
+619
+01:16:56.890 --> 01:16:59.799
+Simon Wang: That's overall how, this worked.
+
+620
+01:17:00.080 --> 01:17:01.140
+Simon Wang: How this works?
+
+621
+01:17:03.340 --> 01:17:17.100
+Simon Wang: But, in this way, what… then do we need to, like, ignore everything, and, do we… do we still need to, read some small programs, or do we still need to learn programming?
+
+622
+01:17:17.510 --> 01:17:25.389
+Simon Wang: Well, I think, for the basic programming part, it is not that, important.
+
+623
+01:17:25.740 --> 01:17:34.299
+Simon Wang: But still, we need to have or develop the skill to break down a large problem into some smaller tasks.
+
+624
+01:17:34.420 --> 01:17:37.140
+Simon Wang: that can be handled by GitHub Copilot.
+
+625
+01:17:38.560 --> 01:17:43.730
+Simon Wang: So recall that we have that, public transportation optimization problem.
+
+626
+01:17:44.200 --> 01:17:53.369
+Simon Wang: So, I really don't expect that if I just use one or two sentences to describe, hey, give me a simulation of this bus.
+
+627
+01:17:54.560 --> 01:18:00.369
+Simon Wang: I won't believe the result will be good, because this task is too big, too vague.
+
+628
+01:18:01.140 --> 01:18:07.810
+Simon Wang: And there are many detailed assumptions behind this very, general one-sentence.
+
+629
+01:18:08.120 --> 01:18:14.059
+Simon Wang: So I have to break down this very big simulation problem into some pieces.
+
+630
+01:18:14.200 --> 01:18:17.839
+Simon Wang: So that GitHub co-pilot can handle those pieces one by one.
+
+631
+01:18:18.570 --> 01:18:22.449
+Simon Wang: And then, later, I can put them together so that,
+
+632
+01:18:22.630 --> 01:18:26.200
+Simon Wang: So that, that, big, program.
+
+633
+01:18:26.720 --> 01:18:28.690
+Simon Wang: does exactly what I want to do.
+
+634
+01:18:30.770 --> 01:18:39.620
+Simon Wang: Another example is that I cannot… I cannot tell the GitHub compiler, like, hey, write me a video game. Write me a game.
+
+635
+01:18:40.210 --> 01:18:46.810
+Simon Wang: That is also quite vague, right? There's no specific instructions, so…
+
+636
+01:18:46.950 --> 01:18:50.729
+Simon Wang: We need to, develop the skill to be able to break down
+
+637
+01:18:51.430 --> 01:18:54.729
+Simon Wang: The very big problem into smaller pieces.
+
+638
+01:18:56.340 --> 01:19:02.990
+Simon Wang: And also, it is important to, to learn how to communicate with GitHub Copilot.
+
+639
+01:19:03.620 --> 01:19:08.350
+Simon Wang: That… there is a name for it, it's called Prompt Engineering.
+
+640
+01:19:08.740 --> 01:19:11.870
+Simon Wang: And I suppose, you have heard
+
+641
+01:19:12.030 --> 01:19:17.039
+Simon Wang: some of the tricks already, like giving a role to the AI,
+
+642
+01:19:17.780 --> 01:19:21.349
+Simon Wang: Setting the role and, give more context information.
+
+643
+01:19:21.560 --> 01:19:25.530
+Simon Wang: And also, be explicit about the requirement.
+
+644
+01:19:25.890 --> 01:19:30.840
+Simon Wang: So, I think that also needs certain, practice.
+
+645
+01:19:31.360 --> 01:19:35.449
+Simon Wang: So that's the, copilot understand what we want.
+
+646
+01:19:37.920 --> 01:19:45.609
+Simon Wang: Okay, I think that will be all of the, content related to math and the, technology.
+
+647
+01:19:45.740 --> 01:19:52.040
+Simon Wang: So overall, they serve, again, they serve your research question.
+
+648
+01:19:52.500 --> 01:20:00.840
+Simon Wang: The research question is the most important. And if it turns out that the research topic you will work on,
+
+649
+01:20:01.290 --> 01:20:08.140
+Simon Wang: cannot be… studied using either optimization or regression, then…
+
+650
+01:20:08.520 --> 01:20:16.800
+Simon Wang: we can find more appropriate tools to work on the research question. So these tools are just S…
+
+651
+01:20:17.890 --> 01:20:20.579
+Simon Wang: They, they serve your research question, okay?
+
+652
+01:20:22.070 --> 01:20:25.890
+Simon Wang: Do you have any questions about… this.
+
+653
+01:20:38.060 --> 01:20:43.179
+Simon Wang: Alright, so, any, any questions? Thanks, Talia. So, I think,
+
+654
+01:20:43.340 --> 01:20:53.700
+Simon Wang: That's… that's pretty much what we plan to cover today, you know, this, week one is still the agile period, so we're not going to kind of overwhelm you.
+
+655
+01:20:53.900 --> 01:21:01.669
+Simon Wang: But, I do encourage you to start looking at, the… some of the good projects that we,
+
+656
+01:21:01.810 --> 01:21:03.040
+Simon Wang: Heavy mind.
+
+657
+01:21:03.160 --> 01:21:14.489
+Simon Wang: As I said, if we got a small class size, we actually can afford some time and efforts to supervise, your own project.
+
+658
+01:21:14.890 --> 01:21:22.219
+Simon Wang: As long as this is something related to the public policy and the Hong Kong government in particular.
+
+659
+01:21:22.520 --> 01:21:30.580
+Simon Wang: And, you know, that policy decision has been made and can be discussed and evaluated in the context of data governance
+
+660
+01:21:30.950 --> 01:21:37.240
+Simon Wang: We can apply some mass models, then it's, it's game, you know, we can, we can do it.
+
+661
+01:21:37.600 --> 01:21:43.810
+Simon Wang: But, of course, I would encourage you to look into some of the projects here as well.
+
+662
+01:21:44.430 --> 01:21:50.299
+Simon Wang: Right, so… You guys have, any other thoughts?
+
+663
+01:21:50.770 --> 01:21:57.230
+Simon Wang: Something you want to, ask before we, kind of… End the discussion here.
+
+664
+01:22:01.510 --> 01:22:05.410
+Simon Wang: Oh, I think some of you asked about assessment earlier.
+
+665
+01:22:05.850 --> 01:22:09.460
+Simon Wang: Maybe I can just quickly, go through this.
+
+666
+01:22:09.920 --> 01:22:16.299
+Simon Wang: Starting from week 3 and week 4, we will have some in-class exercise.
+
+667
+01:22:16.450 --> 01:22:21.079
+Simon Wang: And, you know, that would be, like, just 10%.
+
+668
+01:22:21.300 --> 01:22:28.080
+Simon Wang: And then, in around week 5, 7, and 9, there will be 3 reflective essays that you have to write.
+
+669
+01:22:28.230 --> 01:22:35.159
+Simon Wang: So, all this… so, together would be 30%, so this 30% would be individually assessed.
+
+670
+01:22:36.390 --> 01:22:41.259
+Simon Wang: And then the, the presentation, there will be two presentations.
+
+671
+01:22:41.380 --> 01:22:54.589
+Simon Wang: That would be a total of 25%, and that's group project, so it will be assessed based on the whole group's presentation. Well, we do take into consideration the specific
+
+672
+01:22:54.780 --> 01:22:58.460
+Simon Wang: students, both animals as well.
+
+673
+01:22:58.940 --> 01:23:05.719
+Simon Wang: So that would be a total of, you know, 50%.
+
+674
+01:23:06.060 --> 01:23:12.609
+Simon Wang: And then there's just the final report and poster, which will be 30%, and
+
+675
+01:23:12.880 --> 01:23:17.140
+Simon Wang: there's the human AI collaboration report, 20%, so…
+
+676
+01:23:17.400 --> 01:23:20.530
+Simon Wang: In terms of breakdown, that's how it works.
+
+677
+01:23:20.710 --> 01:23:23.459
+Simon Wang: I think we'll still kind of, update this.
+
+678
+01:23:23.600 --> 01:23:26.450
+Simon Wang: But, I…
+
+679
+01:23:26.980 --> 01:23:33.210
+Simon Wang: Based on our experience last semester, we're going to adjust things a bit. Hopefully, we're going to provide more scaffolding and support.
+
+680
+01:23:33.640 --> 01:23:42.419
+Simon Wang: Throughout the semester, instead of, you know, towards the end of the semester, you know, everybody would rush to get things done.
+
+681
+01:23:42.690 --> 01:23:50.879
+Simon Wang: And also, in this course, we embrace AI. We, offer different ways that you can use AI.
+
+682
+01:23:51.000 --> 01:24:01.500
+Simon Wang: unlike some of the other courses that you may have to take, you know, here, you know, some teachers are kind of a bit more skeptical about AI and plagiarism.
+
+683
+01:24:01.590 --> 01:24:20.840
+Simon Wang: well, we do take care… we do take it seriously. We… we're going to respect all university honor codes, but we believe that, human-AI partnership is the… is the future, right? So… so that's why we're going to, help you to benefit and leverage the technology as much as possible.
+

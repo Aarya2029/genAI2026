@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCAP 3226 — Project Workflow</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --accent: #3b82f6;
+      --accent-dim: #2563eb;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border: #334155;
+      --success: #22c55e;
+      --warning: #eab308;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 1.5rem;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem 0;
+      color: var(--text);
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .workflow {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+    .step {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .step:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .step.open { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.9rem 1rem;
+      user-select: none;
+    }
+    .step-num {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .step-title { font-weight: 600; flex: 1; }
+    .step-arrow {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+    }
+    .step.open .step-arrow { transform: rotate(90deg); }
+    .step-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .step.open .step-body { max-height: 420px; }
+    .step-content {
+      padding: 0 1rem 1rem 1rem;
+      padding-left: calc(1rem + 2rem + 0.75rem);
+    }
+    .step-content p {
+      margin: 0 0 0.5rem 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+    .step-content p:last-child { margin-bottom: 0; }
+    .step-content a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .step-content a:hover { text-decoration: underline; }
+    .timeline-hint {
+      font-size: 0.75rem;
+      color: var(--warning);
+      margin-top: 0.5rem;
+    }
+    .legend {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .legend strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <h1>GCAP 3226 — Project Workflow</h1>
+  <p class="subtitle">Click a step to expand. Core question: To what extent did HK government staff make decisions informed by data?</p>
+
+  <div class="workflow">
+    <div class="step" data-step="1" role="button" tabindex="0">
+      <div class="step-header">
+        <span class="step-num">1</span>
+        <span class="step-title">Identify a government decision</span>
+        <span class="step-arrow">▶</span>
+      </div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Choose one or more decisions that are <strong>concrete and specific</strong> (e.g. a named policy or programme).</p>
+          <p>Use course project topics (flu shot, road safety, eMPF, rodent control, bus stop merge, etc.) and align with SDGs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" data-step="2" role="button" tabindex="0">
+      <div class="step-header">
+        <span class="step-num">2</span>
+        <span class="step-title">Review the decision — room for improvement</span>
+        <span class="step-arrow">▶</span>
+      </div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Ask: In what ways is this decision <strong>controversial or disputable</strong>? Document gaps (e.g. lack of data, unclear criteria).</p>
+          <p>This defines your entry point for requesting data and making recommendations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" data-step="3" role="button" tabindex="0">
+      <div class="step-header">
+        <span class="step-num">3</span>
+        <span class="step-title">Search and curate public information</span>
+        <span class="step-arrow">▶</span>
+      </div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Collect government and Legco documents (reports, meeting minutes). Focus on <strong>decision-making process</strong> and <strong>how data is managed</strong>.</p>
+          <p>Use AI agent to search <a href="https://www.legco.gov.hk" target="_blank" rel="noopener">Legco.gov.hk</a> and <a href="https://www.gov.hk" target="_blank" rel="noopener">gov.hk</a>. Use the <strong>government telephone directory</strong> to find staff contacts.</p>
+          <p><a href="https://gcap3226.hkbu.tech/spring-2026/resources/curating-public-data" target="_blank" rel="noopener">Resource: Curating public data</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" data-step="4" role="button" tabindex="0">
+      <div class="step-header">
+        <span class="step-num">4</span>
+        <span class="step-title">Raise questions under the Code on Access to Information</span>
+        <span class="step-arrow">▶</span>
+      </div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Draft a clear request: state the decision, what information you need, and why. Cite the <strong>Code on Access to Information</strong>.</p>
+          <p class="timeline-hint">⏱ Expect ~3 weeks for a response; allow up to 7 weeks. Send early (Weeks 3–4).</p>
+          <p><a href="https://gcap3226.hkbu.tech/spring-2026/resources/government-info-requests" target="_blank" rel="noopener">Resource: Government information requests</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" data-step="5" role="button" tabindex="0">
+      <div class="step-header">
+        <span class="step-num">5</span>
+        <span class="step-title">Collect community data (in parallel)</span>
+        <span class="step-arrow">▶</span>
+      </div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Design small-scale data collection (survey, site observations) to understand the problem and data management on the ground.</p>
+          <p>Use the <strong>fieldwork allowance</strong> (HK$300 per student; submit by Week 6). Data sheds light and complements government data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" data-step="6" role="button" tabindex="0">
+      <div class="step-header">
+        <span class="step-num">6</span>
+        <span class="step-title">Analyse data and make recommendations</span>
+        <span class="step-arrow">▶</span>
+      </div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Use <strong>math and visualization tools</strong> (optimization, regression, simulation, Python/Jupyter) on: your data (Step 5), government responses (Step 4), and curated documents (Step 3).</p>
+          <p>Produce clear recommendations on how decision-making could become <strong>more data-driven</strong>. Link every chart to a clear question.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" data-step="7" role="button" tabindex="0">
+      <div class="step-header">
+        <span class="step-num">7</span>
+        <span class="step-title">Present to Legco via the Redress System</span>
+        <span class="step-arrow">▶</span>
+      </div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Deliverables: <strong>group report</strong> (~3,000 words), <strong>poster</strong>, and <strong>two presentations</strong>. Frame as a complaint about government data governance.</p>
+          <p><a href="https://www.legco.gov.hk/en/legco-business/redress-system/handling-cases-received-under-redress-system.html" target="_blank" rel="noopener">Legco Redress System — handling cases</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <strong>Tip:</strong> See <code>enhancedApproaches.md</code> for actionable insights, suggested math tools (optimization, regression, simulation, visualization), and a Weeks 3–4 checklist.
+  </div>
+
+  <script>
+    (function () {
+      var steps = document.querySelectorAll('.step');
+      steps.forEach(function (el) {
+        el.addEventListener('click', function () {
+          var open = this.classList.contains('open');
+          steps.forEach(function (s) { s.classList.remove('open'); });
+          if (!open) this.classList.add('open');
+        });
+        el.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -9,6 +9,18 @@ Select your group project below to access the discussion board, shared files, an
 
 ## Project Topics
 
+Each topic has its own folder under **`topics/`** with background (README.md), actionable roadmap (roadmap.md, roadmap.html), and AI vs human roles. Course topics page: [gcap3226.hkbu.tech/spring-2026/topics](https://gcap3226.hkbu.tech/spring-2026/topics).
+
+| Group | Topic | Folder |
+|-------|-------|--------|
+| 1 | Flu Shot | [topics/flu-shot/](topics/flu-shot/) |
+| 2 | Colorectal Cancer Screening | [topics/colorectal-cancer-screening/](topics/colorectal-cancer-screening/) |
+| 3 | Road Safety | [topics/road-safety/](topics/road-safety/) |
+| 4 | eMPF | [topics/empf/](topics/empf/) |
+| 5 | CDCC Pilot Scheme | [topics/cdcc/](topics/cdcc/) |
+| 6 | Rodent Control | [topics/rodent-control/](topics/rodent-control/) |
+| 7 | Bus Stop Merge | [topics/bus-stop-merge/](topics/bus-stop-merge/) |
+
 ### Group 1: Flu Shot
 **Seasonal influenza vaccination program and public health campaigns in Hong Kong.**
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDCC Pilot Scheme — Project Roadmap</title>
+  <style>
+    :root { --bg: #0f1419; --card: #1a2332; --accent: #3b82f6; --text: #e2e8f0; --text-muted: #94a3b8; --border: #334155; --ai: #22c55e; --human: #eab308; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 1.5rem; min-height: 100vh; }
+    h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 0.25rem 0; }
+    .subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .workflow { display: flex; flex-direction: column; gap: 0.75rem; max-width: 42rem; margin: 0 auto; }
+    .step { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: border-color 0.2s, box-shadow 0.2s; cursor: pointer; }
+    .step:hover, .step.open { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .step-header { display: flex; align-items: center; gap: 0.75rem; padding: 0.9rem 1rem; user-select: none; }
+    .step-num { width: 2rem; height: 2rem; border-radius: 50%; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+    .step-title { font-weight: 600; flex: 1; }
+    .step-arrow { color: var(--text-muted); font-size: 1.1rem; transition: transform 0.2s; }
+    .step.open .step-arrow { transform: rotate(90deg); }
+    .step-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease-out; }
+    .step.open .step-body { max-height: 520px; }
+    .step-content { padding: 0 1rem 1rem 1rem; padding-left: calc(1rem + 2rem + 0.75rem); font-size: 0.9rem; line-height: 1.5; color: var(--text-muted); }
+    .step-content p { margin: 0 0 0.5rem 0; }
+    .step-content .role { margin-top: 0.75rem; padding: 0.5rem 0 0 0; border-top: 1px solid var(--border); }
+    .step-content .role strong { color: var(--text); font-size: 0.8rem; }
+    .step-content .ai strong { color: var(--ai); }
+    .step-content .human strong { color: var(--human); }
+    .legend { margin-top: 1.5rem; padding: 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 8px; font-size: 0.85rem; color: var(--text-muted); }
+    .legend strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <h1>CDCC Pilot Scheme — Project Roadmap</h1>
+  <p class="subtitle">Actionable steps with AI vs human roles. Click a step to expand.</p>
+
+  <div class="workflow">
+    <div class="step" role="button" tabindex="0">
+      <div class="step-header"><span class="step-num">1</span><span class="step-title">Identify a government decision</span><span class="step-arrow">▶</span></div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Choose a concrete decision (e.g. CDCC eligibility, pricing, outcome measures). Align with SDGs.</p>
+          <div class="role ai"><strong>AI can help:</strong> Search Legco/gov.hk for CDCC, chronic disease co-care; list meetings and papers; draft candidate decisions.</div>
+          <div class="role human"><strong>Human steers:</strong> Decide which decision to investigate; confirm scope and course alignment.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step" role="button" tabindex="0">
+      <div class="step-header"><span class="step-num">2</span><span class="step-title">Review the decision — room for improvement</span><span class="step-arrow">▶</span></div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Document how the decision is controversial or disputable (e.g. outcomes data, equity). Frame as room for improvement.</p>
+          <div class="role ai"><strong>AI can help:</strong> Summarise Legco/news on CDCC; suggest gaps; draft an issues list.</div>
+          <div class="role human"><strong>Human steers:</strong> Choose which gaps to focus on; set tone and scope.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step" role="button" tabindex="0">
+      <div class="step-header"><span class="step-num">3</span><span class="step-title">Search and curate public information</span><span class="step-arrow">▶</span></div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Collect gov and Legco docs on the CDCC pilot. Focus on decision-making and data. Use government telephone directory.</p>
+          <div class="role ai"><strong>AI can help:</strong> Search/fetch links; extract quotes or tables; organise findings; suggest contacts.</div>
+          <div class="role human"><strong>Human steers:</strong> Choose authoritative sources; verify facts; decide what to cite.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step" role="button" tabindex="0">
+      <div class="step-header"><span class="step-num">4</span><span class="step-title">Raise questions under the Code on Access to Information</span><span class="step-arrow">▶</span></div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Draft clear request to relevant department (e.g. Health Bureau, Dept of Health). Send by Weeks 3–4; expect ~3 weeks (up to 7) for response.</p>
+          <div class="role ai"><strong>AI can help:</strong> Draft request letter; suggest Code citation; check clarity.</div>
+          <div class="role human"><strong>Human steers:</strong> Finalise and send request; manage follow-up; interpret response.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step" role="button" tabindex="0">
+      <div class="step-header"><span class="step-num">5</span><span class="step-title">Collect community data (in parallel)</span><span class="step-arrow">▶</span></div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Design small-scale collection (e.g. survey of participants or providers). Use fieldwork allowance (HK$300/student; Week 6 deadline).</p>
+          <div class="role ai"><strong>AI can help:</strong> Draft survey template; suggest tabulation; help build CSV.</div>
+          <div class="role human"><strong>Human steers:</strong> Design and conduct fieldwork; interpret data in context.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step" role="button" tabindex="0">
+      <div class="step-header"><span class="step-num">6</span><span class="step-title">Analyse data and make recommendations</span><span class="step-arrow">▶</span></div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Use math and visualization (stats, comparison, Python/Jupyter). Link every chart to a question. Produce recommendations.</p>
+          <div class="role ai"><strong>AI can help:</strong> Write/run code; generate charts and stats; draft bullet recommendations.</div>
+          <div class="role human"><strong>Human steers:</strong> Choose analyses; interpret and write narrative; decide what to present to Legco.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step" role="button" tabindex="0">
+      <div class="step-header"><span class="step-num">7</span><span class="step-title">Present to Legco via the Redress System</span><span class="step-arrow">▶</span></div>
+      <div class="step-body">
+        <div class="step-content">
+          <p>Complete report (~3,000 words), poster, two presentations. Frame as complaint on data governance. Submit via Legco Redress System.</p>
+          <div class="role ai"><strong>AI can help:</strong> Draft report sections; suggest structure; format poster/slides.</div>
+          <div class="role human"><strong>Human steers:</strong> Set argument and tone; ensure accuracy; present and submit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend"><strong>Links:</strong> <a href="README.md" style="color: var(--accent);">README</a> · <a href="../enhancedApproaches.md" style="color: var(--accent);">Enhanced approaches</a> · <a href="../projectWorkflow.html" style="color: var(--accent);">Project workflow</a></div>
+
+  <script>
+    document.querySelectorAll('.step').forEach(function(el) {
+      el.addEventListener('click', function() { var open = this.classList.contains('open'); document.querySelectorAll('.step').forEach(function(s) { s.classList.remove('open'); }); if (!open) this.classList.add('open'); });
+      el.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); } });
+    });
+  </script>
+</body>
+</html>
