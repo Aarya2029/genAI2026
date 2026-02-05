@@ -1,0 +1,14 @@
+{
+  "name": "postergen",
+  "version": "1.0.0",
+  "description": "Poster generation and Poe-powered improvement for Ambassador Programme",
+  "scripts": {
+    "screenshot": "node screenshot-poster.js",
+    "better": "node genBetterPoster.js",
+    "better-jpg": "node genBetterPosterJpg.js"
+  },
+  "dependencies": {
+    "openai": "^4.77.0",
+    "puppeteer": "^24.36.1"
+  }
+}

@@ -7,3 +7,6 @@ vite.config.ts.*
 
 # Replit: root .replit is generated from replit/config.toml (npm run replit:setup)
 .replit
+
+# Local API keys (not committed; remains on disk for local AI agent)
+AmbassadorProgramme/LLM/poeKey.md

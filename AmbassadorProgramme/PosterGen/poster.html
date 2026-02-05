@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative AI Agent 101 – Workshop Poster</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .poster {
+      max-width: 720px;
+      background: linear-gradient(180deg, #1e2a4a 0%, #152238 100%);
+      border-radius: 20px;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .poster h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+    .poster .tagline {
+      margin: 0 0 1.75rem;
+      font-size: 1rem;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+    .row {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .photo {
+      flex-shrink: 0;
+      width: 140px;
+      height: 140px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.15);
+    }
+    .details {
+      flex: 1;
+      min-width: 0;
+    }
+    .details p {
+      margin: 0.35rem 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .details strong { color: #e2e8f0; }
+    .highlight {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.25);
+      color: #93c5fd;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-top: 0.25rem;
+    }
+    .when {
+      margin: 1.25rem 0;
+      padding: 1rem 1.25rem;
+      background: rgba(255,255,255,0.06);
+      border-radius: 12px;
+      border-left: 4px solid #3b82f6;
+    }
+    .when p { margin: 0.25rem 0; }
+    .when .date { font-size: 1.1rem; font-weight: 600; color: #fff; }
+    .when .time { color: #94a3b8; }
+    .ccl {
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #86efac;
+    }
+    .cta {
+      margin-top: 1.75rem;
+      text-align: center;
+    }
+    .cta a {
+      display: inline-block;
+      background: #3b82f6;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      transition: background 0.2s;
+    }
+    .cta a:hover { background: #2563eb; }
+    .qr {
+      margin-top: 0.75rem;
+    }
+    .qr img {
+      display: block;
+      margin: 0 auto;
+      width: 140px;
+      height: 140px;
+      border-radius: 8px;
+      background: #fff;
+      padding: 6px;
+    }
+    .qr span {
+      display: block;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 0.35rem;
+    }
+    .audience {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <h1>Generative AI Agent 101</h1>
+    <p class="tagline">Online workshop</p>
+
+    <div class="row">
+      <img class="photo" src="https://lc.hkbu.edu.hk/main/wp-content/uploads/simon-1.jpg" alt="Dr Simon Wang">
+      <div class="details">
+        <p><strong>Speaker</strong> Dr Simon Wang</p>
+        <p>Lecturer &amp; Innovation Officer</p>
+        <p>Language Centre, Hong Kong Baptist University</p>
+        <p class="audience">For HKBU students and staff, and students and staff from other universities.</p>
+      </div>
+    </div>
+
+    <div class="when">
+      <p class="date">Friday, 20 January 2026</p>
+      <p class="time">10:00 am – 12:00 noon</p>
+    </div>
+
+    <p class="ccl">CCL credits available.</p>
+
+    <div class="cta">
+      <a href="https://forms.office.com/r/tB9HqyGmuH" target="_blank" rel="noopener">Register here</a>
+      <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fforms.office.com%2Fr%2FtB9HqyGmuH" alt="QR code for registration" width="140" height="140">
+        <span>Scan to open registration form</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
