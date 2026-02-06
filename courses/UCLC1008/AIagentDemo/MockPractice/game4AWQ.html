@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWQ Challenge Game - Learn Academic Writing Quiz Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .game-menu, .game-round, .results, .leaderboard {
+            display: none;
+        }
+
+        .game-menu.active, .game-round.active, .results.active, .leaderboard.active {
+            display: block;
+        }
+
+        .game-menu {
+            text-align: center;
+        }
+
+        .menu-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .game-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .game-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-small {
+            padding: 10px 20px;
+            font-size: 0.95em;
+        }
+
+        .instructions {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+            text-align: left;
+        }
+
+        .instructions h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .question-card {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .question-text {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option {
+            padding: 15px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .option:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+            transform: translateX(5px);
+        }
+
+        .option.selected {
+            border-color: #667eea;
+            background: #667eea;
+            color: white;
+        }
+
+        .option.correct {
+            border-color: #4caf50;
+            background: #4caf50;
+            color: white;
+        }
+
+        .option.incorrect {
+            border-color: #f44336;
+            background: #f44336;
+            color: white;
+        }
+
+        .feedback {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            border-left-color: #28a745;
+            color: #155724;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            border-left-color: #f5365c;
+            color: #721c24;
+        }
+
+        .score-display {
+            text-align: center;
+            font-size: 3em;
+            color: #667eea;
+            font-weight: bold;
+            margin: 40px 0;
+        }
+
+        .results {
+            text-align: center;
+        }
+
+        .results-message {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .score-breakdown {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .score-breakdown h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .score-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .score-item:last-child {
+            border-bottom: none;
+        }
+
+        .timer {
+            text-align: center;
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .skill-badge {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+
+        .skill-badges {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .next-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 AWQ Challenge</h1>
+            <p class="subtitle">Master Academic Writing Quiz Skills</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </header>
+
+        <!-- MENU -->
+        <div class="game-menu active">
+            <div class="menu-title">Choose Your Challenge</div>
+            
+            <div class="game-buttons">
+                <button class="btn btn-primary" onclick="startGame('synthesis')">
+                    🔗 SYNTHESIS SPRINT<br><small>Connect ideas from different sources</small>
+                </button>
+                <button class="btn btn-primary" onclick="startGame('citation')">
+                    📚 CITATION QUEST<br><small>Fix APA citations</small>
+                </button>
+                <button class="btn btn-primary" onclick="startGame('paraphrase')">
+                    ✍️ PARAPHRASE PARTY<br><small>Reword text in your own voice</small>
+                </button>
+                <button class="btn btn-primary" onclick="startGame('stance')">
+                    💡 STANCE SOLVER<br><small>Identify author perspectives</small>
+                </button>
+            </div>
+
+            <div class="instructions">
+                <h3>📖 How to Play:</h3>
+                <ol>
+                    <li>Choose a challenge above</li>
+                    <li>Answer 5 questions (1 minute per question)</li>
+                    <li>Get instant feedback on your answers</li>
+                    <li>Earn badges based on your performance</li>
+                    <li>Review tips to improve your AWQ skills</li>
+                </ol>
+            </div>
+
+            <div class="instructions">
+                <h3>🎯 Game Modes:</h3>
+                <p><strong>Synthesis Sprint:</strong> Learn how to connect and compare two sources effectively.</p>
+                <p><strong>Citation Quest:</strong> Master APA in-text citations and proper source attribution.</p>
+                <p><strong>Paraphrase Party:</strong> Practice rewording without changing meaning or plagiarizing.</p>
+                <p><strong>Stance Solver:</strong> Identify authors' perspectives (support, doubt, question, etc.)</p>
+            </div>
+        </div>
+
+        <!-- GAME ROUND -->
+        <div class="game-round">
+            <div class="timer">⏱️ <span id="timeLeft">60</span>s</div>
+            <div id="question" class="question-card">
+                <div class="question-text" id="questionText"></div>
+                <div class="options" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+            <div style="text-align: center;">
+                <button class="btn btn-secondary btn-small" onclick="submitAnswer()" id="submitBtn">SUBMIT</button>
+                <button class="btn btn-secondary btn-small" onclick="nextQuestion()" id="nextBtn" style="display: none;">NEXT</button>
+            </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="results">
+            <div class="results-message" id="resultMessage"></div>
+            <div class="score-display" id="scoreDisplay">0%</div>
+            <div class="score-breakdown" id="scoreBreakdown"></div>
+            <div class="skill-badges" id="skillBadges"></div>
+            <button class="btn btn-primary next-btn" onclick="backToMenu()">← Back to Menu</button>
+        </div>
+    </div>
+
+    <script>
+        let gameState = {
+            currentMode: null,
+            currentQuestion: 0,
+            score: 0,
+            totalQuestions: 5,
+            answered: false,
+            selectedAnswer: null,
+            timeLeft: 60
+        };
+
+        const questions = {
+            synthesis: [
+                {
+                    question: "Which of these BEST synthesizes the following sources?\n\nSource A: Chatbots reduce social anxiety through non-judgmental conversations\nSource B: Chatbots create emotional dependence and mental health issues",
+                    options: [
+                        "Both sources discuss AI chatbots in mental health contexts",
+                        "While Source A emphasizes benefits of supportive chatbot interactions, Source B raises concerns that excessive use leads to dependency, revealing a tension between immediate emotional support and long-term psychological wellbeing",
+                        "Chatbots are used for two different purposes",
+                        "Source A agrees with Source B about the effects of chatbots"
+                    ],
+                    correct: 1,
+                    explanation: "True synthesis compares opposing views and highlights the tension or relationship between them. Option B does this with words like 'While...Source B' (contrast) and 'revealing a tension' (explicit connection)."
+                },
+                {
+                    question: "What does effective synthesis require?",
+                    options: [
+                        "Summarizing each source separately in different paragraphs",
+                        "Copying exact phrases to show accuracy",
+                        "Explicitly comparing/contrasting sources AND explaining the relationship between their ideas",
+                        "Including both sources' main points without any commentary"
+                    ],
+                    correct: 2,
+                    explanation: "Synthesis goes beyond summary. It requires you to show HOW the sources relate to each other (comparison) and WHY that relationship matters."
+                },
+                {
+                    question: "Which transition words best signal SYNTHESIS?",
+                    options: [
+                        "First, second, third",
+                        "In addition, furthermore, moreover",
+                        "However, whereas, conversely, in contrast, yet",
+                        "For example, such as, specifically"
+                    ],
+                    correct: 2,
+                    explanation: "Contrast words (Option C) signal that you're comparing different perspectives. This is synthesis, not just listing ideas."
+                },
+                {
+                    question: "A student writes: 'Article A talks about benefits. Article B talks about dangers.' Is this synthesis?",
+                    options: [
+                        "Yes, both articles are mentioned",
+                        "Yes, it's simple but effective",
+                        "No, this is just summary. No comparison or connection is made",
+                        "Yes, because the student identified the stance of each article"
+                    ],
+                    correct: 2,
+                    explanation: "Simply stating what each source says is NOT synthesis. You must explain how they relate (conflict, support, complement) and what that means."
+                },
+                {
+                    question: "How should your thesis statement help readers understand why synthesis matters?",
+                    options: [
+                        "It should list all sources you'll discuss",
+                        "It should preview the debate/tension between sources AND hint at why their disagreement is important",
+                        "It should only mention the strongest argument",
+                        "It should avoid revealing which source you prefer"
+                    ],
+                    correct: 1,
+                    explanation: "A strong thesis frames the sources in relationship to each other and suggests the significance of their disagreement (tension between benefit and risk, old vs. new perspective, etc.)."
+                }
+            ],
+            citation: [
+                {
+                    question: "Which sentence has the CORRECT APA in-text citation?",
+                    options: [
+                        "Chatbots improve emotional wellbeing Sklav et al. (2021)",
+                        "Sklav et al. (2021) found that chatbots improve emotional wellbeing",
+                        "Chatbots improve emotional wellbeing (Sklav, 2021)",
+                        "According to researchers, chatbots improve wellbeing (et al., 2021)"
+                    ],
+                    correct: 1,
+                    explanation: "Option B uses proper author-prominent style: [Author] ([Year]) [reporting verb] [claim]. The citation is complete and properly formatted."
+                },
+                {
+                    question: "A student writes: 'Facial recognition enhances school security.' Should this sentence be cited?",
+                    options: [
+                        "No, it's general knowledge",
+                        "Yes, because it's a specific claim made by an article (even if general)",
+                        "No, unless directly copied from the source",
+                        "Only if the sentence is more than 10 words"
+                    ],
+                    correct: 1,
+                    explanation: "In an AWQ, ANY major claim from your sources needs citation, even if it seems like general knowledge. You're synthesizing article ideas, not writing your own opinion."
+                },
+                {
+                    question: "How should you cite when using more than one source together?",
+                    options: [
+                        "(Author 1, 2021; Author 2, 2020)",
+                        "Author 1 (2021) and Author 2 (2020) both say...",
+                        "Both options are acceptable",
+                        "You should not cite both sources in the same sentence"
+                    ],
+                    correct: 2,
+                    explanation: "You can use either format. Option A is compact; Option B emphasizes each author. Both are APA-correct and help readers understand your synthesis."
+                },
+                {
+                    question: "Where should in-text citations go in this sentence type? 'According to [Author], [claim].'",
+                    options: [
+                        "After the author name: 'According to (Author, 2021), [claim]'",
+                        "At the end: 'According to Author, [claim] (2021)'",
+                        "After the author name is clearer: 'According to Author (2021), [claim]'",
+                        "Citations belong only in Bibliography, not in the text"
+                    ],
+                    correct: 2,
+                    explanation: "Place the year immediately after the author name for author-prominent style: 'According to Author (2021)...' This makes it immediately clear when the idea was published."
+                },
+                {
+                    question: "Which pairing is INCORRECT?",
+                    options: [
+                        "Report structure / states | Sklav et al. (2021) report that users self-disclose more",
+                        "Claim structure / argues | Laetadius et al. (2021) argue that emotional dependence harms users",
+                        "Finding structure / indicates | Wang (2020) indicates rising trends | should be 'indicates a rising trend'",
+                        "All of the above are correct structures"
+                    ],
+                    correct: 2,
+                    explanation: "Option C has a grammatical error. It should be 'indicates A rising trend' or 'show rising trends.' Also, make sure your reporting verbs match the type of claim (argue for opinions, report for findings, indicate for data)."
+                }
+            ],
+            paraphrase: [
+                {
+                    question: "Which is a GOOD paraphrase of: 'Users share deeper conversations after receiving non-judgmental responses'?",
+                    options: [
+                        "Users share deeper conversations after receiving non-judgmental responses (Sklav et al., 2021) [DIRECT COPY]",
+                        "When chatbots provide impartial and accepting feedback, users tend to disclose more personal thoughts",
+                        "Users communicate more intimately when they feel the chatbot is not evaluating them",
+                        "Both B and C are good paraphrases"
+                    ],
+                    correct: 3,
+                    explanation: "Good paraphrasing changes both word choice AND sentence structure. Options B and C both do this: they replace 'deeper conversations' with 'disclose more' or 'communicate more intimately' and vary the structure."
+                },
+                {
+                    question: "A student paraphrases an article sentence as: 'Excessive chatbot use can result in psychological reliance.' The original says: 'Frequent talking to chatbots would make people... develop emotional dependence.' Is this plagiarism?",
+                    options: [
+                        "Yes, similar words = plagiarism",
+                        "No, the structure and some words are changed",
+                        "It's borderline; better to add a citation even though words differ",
+                        "No paraphrase with a citation is needed for summaries"
+                    ],
+                    correct: 2,
+                    explanation: "The student has changed words and structure meaningfully, BUT in an AWQ, you ALWAYS cite, even well-paraphrased ideas. Citations are always required when synthesizing sources."
+                },
+                {
+                    question: "To paraphrase effectively, what TWO things should you change?",
+                    options: [
+                        "Capitalization and punctuation",
+                        "Vocabulary AND sentence structure",
+                        "First and last sentences only",
+                        "Just remove 10% of words"
+                    ],
+                    correct: 1,
+                    explanation: "Good paraphrasing requires changing BOTH vocabulary (synonym substitution) AND structure (rearrange clauses, merge/split sentences). Changing only one often results in plagiarism."
+                },
+                {
+                    question: "Which technique is NOT helpful for paraphrasing?",
+                    options: [
+                        "Write the idea in your own words without looking at the original",
+                        "Use a thesaurus to replace key words",
+                        "Read the source, then rewrite it in your own style",
+                        "Compare your paraphrase to the original to check for similarities"
+                    ],
+                    correct: 1,
+                    explanation: "While helpful for avoiding word-for-word copying, relying only on writing from memory can miss important nuances. Better approach: read, understand, rewrite, THEN compare to check accuracy and originality."
+                },
+                {
+                    question: "Original text: 'The study found that parents' acceptance of FRT in schools increases with perceived utility.' Which is the BEST paraphrase?",
+                    options: [
+                        "The research discovered that parents' acceptance of FRT in schools increases with perceived utility",
+                        "Parents in schools more readily accept facial recognition technology when they view it as practical and valuable",
+                        "Parental acceptance of FRT increases in schools",
+                        "The study found FRT acceptance goes up"
+                    ],
+                    correct: 1,
+                    explanation: "Option B is best: it replaces 'acceptance' with 'readily accept', 'perceived utility' with 'practical and valuable', and restructures the sentence while keeping the meaning intact. It's sufficiently different from the original."
+                }
+            ],
+            stance: [
+                {
+                    question: "A paper title is: 'Limitations of Social Media for Youth Mental Health.' What is the likely stance?",
+                    options: [
+                        "Support for social media",
+                        "Neutral/balanced perspective",
+                        "Doubt or criticism of social media benefits",
+                        "Promotion of youth participation online"
+                    ],
+                    correct: 2,
+                    explanation: "The word 'Limitations' signals the author is critical or doubtful about social media's role in youth mental health. Key words (pro/con) in titles reveal stance."
+                },
+                {
+                    question: "How can you identify an author's STANCE from the abstract?",
+                    options: [
+                        "Look for emotional language only",
+                        "Check the keywords and tone; look for words like 'challenges,' 'benefits,' 'effectiveness'",
+                        "Assume the stance from the introduction",
+                        "Count the number of citations"
+                    ],
+                    correct: 1,
+                    explanation: "Abstracts contain clue words. 'Benefits' or 'improved outcomes' suggest support; 'risks,' 'concerns,' 'limitations' suggest doubt or criticism."
+                },
+                {
+                    question: "Which textual signal suggests the author DOUBTS or QUESTIONS the technology?",
+                    options: [
+                        "'We recommend adoption of this system.'",
+                        "'Can a valid case ever be made for allowing this technology?'",
+                        "'This technology has proven successful in multiple contexts.'",
+                        "'Our results indicate strong positive outcomes.'"
+                    ],
+                    correct: 1,
+                    explanation: "The phrase 'Can ever be made' with 'ever' signals doubt and skepticism. Rhetorical questions with negative implications show the author's doubt about the technology."
+                },
+                {
+                    question: "An article concludes: 'Despite initial concerns, the technology shows promise for improved security and efficiency.' What is the stance?",
+                    options: [
+                        "Strong doubt",
+                        "Strong support",
+                        "Qualified support (acknowledges concerns but sees benefits)",
+                        "Neutral"
+                    ],
+                    correct: 2,
+                    explanation: "Key phrase: 'Despite concerns' (acknowledges problems) + 'shows promise' (sees positive potential). This is QUALIFIED SUPPORT—not fully endorsing but leaning positive."
+                },
+                {
+                    question: "Why is identifying STANCE important for your AWQ?",
+                    options: [
+                        "It helps you choose the 'correct' article to agree with",
+                        "It helps you understand and explain the relationship between sources' PERSPECTIVES",
+                        "It inflates your score",
+                        "It's not important; just summarize both articles"
+                    ],
+                    correct: 1,
+                    explanation: "Stance is crucial for SYNTHESIS. If Article A supports a technology and Article B doubts it, you've identified a core tension/debate. This informs your synthesis of their relationship."
+                }
+            ]
+        };
+
+        function startGame(mode) {
+            gameState.currentMode = mode;
+            gameState.currentQuestion = 0;
+            gameState.score = 0;
+            gameState.answered = false;
+            gameState.selectedAnswer = null;
+
+            document.querySelector('.game-menu').classList.remove('active');
+            document.querySelector('.game-round').classList.add('active');
+
+            loadQuestion();
+            startTimer();
+        }
+
+        function loadQuestion() {
+            const qArray = questions[gameState.currentMode];
+            const q = qArray[gameState.currentQuestion];
+
+            document.getElementById('questionText').textContent = `Question ${gameState.currentQuestion + 1}/${gameState.totalQuestions}\n\n${q.question}`;
+            
+            const optionsDiv = document.getElementById('options');
+            optionsDiv.innerHTML = '';
+
+            q.options.forEach((opt, idx) => {
+                const optDiv = document.createElement('div');
+                optDiv.className = 'option';
+                optDiv.textContent = opt;
+                optDiv.onclick = () => selectOption(idx, optDiv);
+                optionsDiv.appendChild(optDiv);
+            });
+
+            document.getElementById('feedback').innerHTML = '';
+            document.getElementById('feedback').style.display = 'none';
+            document.getElementById('submitBtn').style.display = 'inline-block';
+            document.getElementById('nextBtn').style.display = 'none';
+            gameState.answered = false;
+            gameState.selectedAnswer = null;
+
+            updateProgressBar();
+        }
+
+        function selectOption(idx, element) {
+            if (gameState.answered) return;
+
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            element.classList.add('selected');
+            gameState.selectedAnswer = idx;
+        }
+
+        function submitAnswer() {
+            if (gameState.selectedAnswer === null) {
+                alert('Please select an answer');
+                return;
+            }
+
+            gameState.answered = true;
+            const qArray = questions[gameState.currentMode];
+            const q = qArray[gameState.currentQuestion];
+            const isCorrect = gameState.selectedAnswer === q.correct;
+
+            if (isCorrect) {
+                gameState.score++;
+                document.querySelectorAll('.option')[q.correct].classList.add('correct');
+                showFeedback(true, q.explanation);
+            } else {
+                document.querySelectorAll('.option')[gameState.selectedAnswer].classList.add('incorrect');
+                document.querySelectorAll('.option')[q.correct].classList.add('correct');
+                showFeedback(false, q.explanation);
+            }
+
+            document.getElementById('submitBtn').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'inline-block';
+        }
+
+        function showFeedback(correct, explanation) {
+            const fb = document.getElementById('feedback');
+            fb.innerHTML = `<strong>${correct ? '✓ Correct!' : '✗ Incorrect'}</strong><br>${explanation}`;
+            fb.className = `feedback ${correct ? 'correct' : 'incorrect'}`;
+            fb.style.display = 'block';
+        }
+
+        function nextQuestion() {
+            gameState.currentQuestion++;
+            if (gameState.currentQuestion < gameState.totalQuestions) {
+                loadQuestion();
+                gameState.timeLeft = 60;
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.querySelector('.game-round').classList.remove('active');
+            document.querySelector('.results').classList.add('active');
+
+            const percentage = Math.round((gameState.score / gameState.totalQuestions) * 100);
+            document.getElementById('scoreDisplay').textContent = `${percentage}%`;
+
+            let message = '';
+            if (percentage === 100) {
+                message = '🌟 Perfect Score! You're an AWQ Master!';
+            } else if (percentage >= 80) {
+                message = '🎉 Excellent! You've mastered these concepts!';
+            } else if (percentage >= 60) {
+                message = '👍 Good work! Practice more to improve.';
+            } else {
+                message = '💪 Keep practicing! Review the materials and try again.';
+            }
+
+            document.getElementById('resultMessage').textContent = message;
+
+            let breakdown = `<h3>Score Breakdown</h3>
+            <div class="score-item">
+                <span>Questions Correct:</span>
+                <strong>${gameState.score}/${gameState.totalQuestions}</strong>
+            </div>
+            <div class="score-item">
+                <span>Accuracy:</span>
+                <strong>${percentage}%</strong>
+            </div>
+            <div class="score-item">
+                <span>Mode:</span>
+                <strong>${gameState.currentMode.toUpperCase()}</strong>
+            </div>`;
+
+            document.getElementById('scoreBreakdown').innerHTML = breakdown;
+
+            // Award badges
+            let badges = '';
+            if (percentage === 100) badges += '<div class="skill-badge">🏆 Perfect Scorer</div>';
+            if (gameState.currentMode === 'synthesis' && percentage >= 80) badges += '<div class="skill-badge">🔗 Synthesis Master</div>';
+            if (gameState.currentMode === 'citation' && percentage >= 80) badges += '<div class="skill-badge">📚 Citation Expert</div>';
+            if (gameState.currentMode === 'paraphrase' && percentage >= 80) badges += '<div class="skill-badge">✍️ Paraphrase Pro</div>';
+            if (gameState.currentMode === 'stance' && percentage >= 80) badges += '<div class="skill-badge">💡 Stance Solver</div>';
+
+            document.getElementById('skillBadges').innerHTML = badges;
+        }
+
+        function backToMenu() {
+            document.querySelector('.results').classList.remove('active');
+            document.querySelector('.game-menu').classList.add('active');
+        }
+
+        function updateProgressBar() {
+            const progress = ((gameState.currentQuestion + 1) / gameState.totalQuestions) * 100;
+            document.querySelector('.progress-fill').style.width = progress + '%';
+        }
+
+        function startTimer() {
+            gameState.timeLeft = 60;
+            const timerInterval = setInterval(() => {
+                gameState.timeLeft--;
+                document.getElementById('timeLeft').textContent = gameState.timeLeft;
+
+                if (gameState.timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    if (!gameState.answered) {
+                        submitAnswer();
+                    }
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
