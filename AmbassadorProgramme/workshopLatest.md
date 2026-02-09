@@ -1,23 +1,38 @@
 # Workshop - 20 February 2026
 
+## Title
+AI agent 101 in GitHub for university students and scholars
+
+## Time
+10:00–12:00, 20 February 2026
+
+## Speaker
+Dr Simon Wang, Lecturer and Innovation Officer, the Language Centre, HKBU
+
 ## Overview
-[Placeholder: Workshop overview will be added soon]
+An interactive online workshop introducing AI agents in the IDE as a way to interact and partner with AI. Covers prompt-editing strategies using file and folder paths, and using a Gen AI agent to process files and generate code. Aimed at undergraduates in writing-intensive or exam/preparation contexts and at research students working on papers and research.
 
 ## Objectives
-[Placeholder: Workshop objectives will be added soon]
+- Introduce AI agent in IDE as a new way to interact and partner with AI
+- Describe the strategies of editing prompts in files involving the use of file and folder paths
+- Leverage Gen AI agent to process files and generate code
+
+## Target audience
+- Undergraduates taking writing-intensive courses or who need help to prepare for presentations and closed-book exams
+- Research students struggling to publish papers and do research
 
 ## Agenda
-[Placeholder: Workshop agenda will be added soon]
+[To be added]
 
 ## Materials
-[Placeholder: Workshop materials will be added soon]
+[To be added]
 
 ## Activities
-[Placeholder: Workshop activities will be added soon]
+[To be added]
 
 ## Resources
-[Placeholder: Additional resources will be added soon]
+[To be added]
 
 ---
 
-**Note:** This document is under preparation. Content will be updated soon. Please check back for the latest information.
+**Note:** Workshop details may be updated. Check back for the latest information.
